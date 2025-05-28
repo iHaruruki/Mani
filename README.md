@@ -4,7 +4,7 @@ https://www.hebirobotics.com/
 ### Apps
 https://www.hebirobotics.com/apps
 ## Manual
-[](A-2085-06_Manial.pdf)
+[](A-2085-06_Manual.pdf)
 ## ROS 2 pkg
-[hebi_cpp_api_examples](https://wiki.ros.org/hebi_cpp_api_ros_examples)
+[hebi_cpp_api_examples](https://wiki.ros.org/hebi_cpp_api_ros_examples)<br>
 [https://github.com/HebiRobotics/hebi_ros2_examples.git](https://github.com/HebiRobotics/hebi_ros2_examples.git)
