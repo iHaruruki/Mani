@@ -35,8 +35,6 @@ git clone https://github.com/iHaruruki/hebi_moveit_configs.git
 Install the necessary dependencies using `rosdep`:
 ```bash
 rosdep update
-```
-```bash
 cd ~/hebi_ws/
 rosdep install --from-paths src --ignore-src -r -y
 ```
