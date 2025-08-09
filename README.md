@@ -8,17 +8,14 @@ mkdir -p ~/hebi_ws/src
 cd ~/hebi_ws/src
 
 # Install HEBI C++ ROS API package
-# Option 1: Install the pre-built HEBI C++ API package
 sudo apt-get install ros-$ROS_DISTRO-hebi-cpp-api
-# Option 2: Clone the HEBI C++ API from source (if you prefer to build it yourself)
-#git clone https://github.com/iHaruruki/hebi_cpp_api_ros.git
 
 # Clone the HEBI description package
 git clone -b ros2/humble https://github.com/iHaruruki/hebi_description.git
 
 # Clone the HEBI messages package
-git clone https://github.com/HebiRobotics/hebi_msgs.git
+git clone https://github.com/iHaruruki/hebi_msgs.git
 
 # Clone this examples repository
-git clone https://github.com/HebiRobotics/hebi_ros2_examples.git
+git clone https://github.com/iHaruruki/hebi_ros2_examples.git
 ```
