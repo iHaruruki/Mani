@@ -1,5 +1,12 @@
 # Mani
 This is a 
+## Packages List
+* [hebi_description](https://github.com/iHaruruki/hebi_description.git)
+* [hebi_msgs](https://github.com/iHaruruki/hebi_msgs.git)
+* [hebi_ros2_examples](https://github.com/iHaruruki/hebi_ros2_examples.git)
+* [hebi_hardware](https://github.com/iHaruruki/hebi_hardware.git)
+* [hebi_bringup](https://github.com/iHaruruki/hebi_bringup.git)
+* [hebi_moveit_configs](https://github.com/iHaruruki/hebi_moveit_configs.git)
 ## Setting up your Workspace
 
 Run the following commands to set up and download the HEBI ROS 2 packages:
