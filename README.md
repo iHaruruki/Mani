@@ -19,6 +19,18 @@ git clone https://github.com/iHaruruki/hebi_msgs.git
 
 # Clone this examples repository
 git clone https://github.com/iHaruruki/hebi_ros2_examples.git
+
+# Install hardware package
+git clone https://github.com/iHaruruki/hebi_hardware.git
+
+# Install bringup package
+git clone -b humble https://github.com/iHaruruki/hebi_bringup.git
+
+# Install ROS2 Control dependencies
+sudo apt install ros-$ROS_DISTRO-ros2-control ros-$ROS_DISTRO-ros2-controllers -y
+
+# Moveit2 package
+git clone https://github.com/iHaruruki/hebi_moveit_configs.git
 ```
 Install the necessary dependencies using `rosdep`:
 ```bash
