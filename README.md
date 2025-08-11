@@ -57,3 +57,38 @@ source install/setup.bash
 ```bash
 pip install -r src/hebi_ros2_examples/requirements.txt
 ```
+## Standalone HEBI ROS2 API
+Launching the Arm Node
+```shell
+ros2 launch hebi_ros2_examples arm.launch.py hebi_arm:=A-2085-06G
+```
+**There are two ways to send angles:**
+Example1:Using ros2 topic pub
+```shell
+ros2 topic pub /joint_trajectory trajectory_msgs/JointTrajectory "{ 
+  joint_names: [
+    'Base','Shoulder','Elbow',
+    'Wrist1','Wrist2','Wrist3'
+  ],
+  points: [
+    { 
+      positions:     [0.0,1.2,2.6,1.4,1.5,0.5],
+      velocities:    [0.0,0.0,0.0,0.0,0.0,0.0],
+      accelerations: [0.0,0.0,0.0,0.0,0.0,0.0],
+      time_from_start: { sec: 5, nanosec: 0 }
+    }
+  ]
+}"
+```
+Example2:Using Joy Stick
+```shell
+ros2 launch hebi_ros2_examples arm_joystick_teleop.launch.py hebi_arm:=A-2085-06G
+```
+## ROS2 Control
+
+## Moveit2
+
+## Additional Resources
+* [HEBI Documentation](https://docs.hebi.us/)
+* [ROS2 Control Documentation](https://docs.hebi.us/)
+* [Moveit Documentation](https://moveit.ai/)
