@@ -58,12 +58,12 @@ source install/setup.bash
 pip install -r src/hebi_ros2_examples/requirements.txt
 ```
 ## Standalone HEBI ROS2 API
+**There are two ways to send angles:**
+Example1:Using ros2 topic pub
 Launching the Arm Node
 ```shell
 ros2 launch hebi_ros2_examples arm.launch.py hebi_arm:=A-2085-06G
 ```
-**There are two ways to send angles:**
-Example1:Using ros2 topic pub
 ```shell
 ros2 topic pub /joint_trajectory trajectory_msgs/JointTrajectory "{ 
   joint_names: [
