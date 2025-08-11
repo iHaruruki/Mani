@@ -90,5 +90,5 @@ ros2 launch hebi_ros2_examples arm_joystick_teleop.launch.py hebi_arm:=A-2085-06
 
 ## Additional Resources
 * [HEBI Documentation](https://docs.hebi.us/)
-* [ROS2 Control Documentation](https://docs.hebi.us/)
+* [ROS2 Control Documentation](https://control.ros.org/humble/index.html)
 * [Moveit Documentation](https://moveit.ai/)
