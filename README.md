@@ -42,8 +42,8 @@ git clone https://github.com/iHaruruki/hebi_moveit_configs.git
 ```
 Install the necessary dependencies using `rosdep`:
 ```bash
-rosdep update
 cd ~/hebi_ws/
+rosdep update
 rosdep install --from-paths src --ignore-src -r -y
 ```
 Build the workspace and source it:
