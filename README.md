@@ -60,7 +60,7 @@ pip install -r src/hebi_ros2_examples/requirements.txt
 ## How to use
 ### Standalone HEBI ROS2 API
 **There are two ways to send angles:**    
-Example1:Using ros2 topic pub
+Example1 : Using ros2 topic pub
 Launching the Arm Node
 ```shell
 ros2 launch hebi_ros2_examples arm.launch.py hebi_arm:=A-2085-06G
@@ -81,7 +81,7 @@ ros2 topic pub /joint_trajectory trajectory_msgs/JointTrajectory "{
   ]
 }"
 ```
-Example2:Using Joy Stick
+Example2 : Using Joy Stick
 ```shell
 ros2 launch hebi_ros2_examples arm_joystick_teleop.launch.py hebi_arm:=A-2085-06G
 ```
