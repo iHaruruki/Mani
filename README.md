@@ -57,7 +57,8 @@ source install/setup.bash
 ```bash
 pip install -r src/hebi_ros2_examples/requirements.txt
 ```
-## Standalone HEBI ROS2 API
+## How to use
+### Standalone HEBI ROS2 API
 **There are two ways to send angles:**
 Example1:Using ros2 topic pub
 Launching the Arm Node
@@ -84,9 +85,9 @@ Example2:Using Joy Stick
 ```shell
 ros2 launch hebi_ros2_examples arm_joystick_teleop.launch.py hebi_arm:=A-2085-06G
 ```
-## ROS2 Control
+### ROS2 Control
 
-## Moveit2
+### Moveit2
 
 ## Additional Resources
 * [HEBI Documentation](https://docs.hebi.us/)
