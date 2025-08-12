@@ -59,7 +59,7 @@ pip install -r src/hebi_ros2_examples/requirements.txt
 ```
 ## How to use
 ### Standalone HEBI ROS2 API
-**There are two ways to send angles:**
+**There are two ways to send angles:**    
 Example1:Using ros2 topic pub
 Launching the Arm Node
 ```shell
