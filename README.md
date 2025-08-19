@@ -86,6 +86,9 @@ Example2 : Using Joy Stick
 ros2 launch hebi_ros2_examples arm_joystick_teleop.launch.py hebi_arm:=A-2085-06G generate_urdf:=false
 ```
 ### ROS2 Control
+```shell
+ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
+```
 
 ### Moveit2
 
