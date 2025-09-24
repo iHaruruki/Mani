@@ -2,6 +2,7 @@
 This is a package for Mani.
 
 ## Packages List
+* [hebi_cpp_api_ros](https://github.com/iHaruruki/hebi_cpp_api_ros.git)
 * [hebi_description](https://github.com/iHaruruki/hebi_description.git)
 * [hebi_msgs](https://github.com/iHaruruki/hebi_msgs.git)
 * [hebi_ros2_examples](https://github.com/iHaruruki/hebi_ros2_examples.git)
