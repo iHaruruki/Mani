@@ -1,6 +1,6 @@
 # Mani
 This is a package for Mani.  
-Mani is a dual-arm robot based on the Arm Kits from HEBI robotics.
+Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.hebirobotics.com/).
 
 ## Packages List
 * [hebi_cpp_api_ros](https://github.com/iHaruruki/hebi_cpp_api_ros.git)
@@ -111,7 +111,7 @@ HEBI Robotics
 * [HEBI Documentation](https://docs.hebi.us/)
 
 ROS 2 Control
-* [ROS2 Control Documentation](https://control.ros.org/humble/index.html)
+* [ros2_control Documentation](https://control.ros.org/humble/index.html)
 
 Moveit2
 * [Moveit Documentation](https://moveit.ai/)
