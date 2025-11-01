@@ -117,6 +117,14 @@ ros2 action send_goal /gripper_controller/gripper_cmd control_msgs/action/Grippe
 ```
 
 ### Moveit
+#### Launch Robot Control(Use real hardware)
+```bash
+ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
+```
+#### Launch Moveit
+```bash
+ros2 launch hebi_bringup move_group.launch.py hebi_arm:=A-2085-06G use_sim_time:=false
+```
 
 ## Additional Resources
 HEBI Robotics
