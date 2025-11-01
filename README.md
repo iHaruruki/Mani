@@ -61,9 +61,9 @@ pip install -r src/hebi_ros2_examples/requirements.txt
 ## How to use
 HEBI arms can be controlled with ROS 2 in three ways:
 
-- Standalone HEBI API
-- ROS 2 Control
-- MoveIt
+- [Standalone HEBI API](#standalone-hebi-ros2-api)
+- [ROS 2 Control](#ros-2-control)
+- [MoveIt](#moveit)
 
 The standalone HEBI API provides direct control via the HEBI C++ API, ROS 2 Control offers standardized interfaces, and MoveIt provides advanced motion planning capabilities.
 
