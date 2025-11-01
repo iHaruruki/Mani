@@ -70,7 +70,7 @@ The standalone HEBI API provides direct control via the HEBI C++ API, ROS 2 Cont
 
 ### Standalone HEBI ROS2 API
 **There are two ways to send angles:**    
-Example1 : Using ros2 topic pub
+#### Example1 : Using ros2 topic pub
 Launching the Arm Node
 ```bash
 ros2 launch hebi_ros2_examples arm.launch.py hebi_arm:=A-2085-06G generate_urdf:=false
@@ -91,7 +91,7 @@ ros2 topic pub /joint_trajectory trajectory_msgs/JointTrajectory "{
   ]
 }"
 ```
-Example2 : Using Joy Stick
+#### Example2 : Using Joy Stick
 ```bash
 ros2 launch hebi_ros2_examples arm_joystick_teleop.launch.py hebi_arm:=A-2085-06G generate_urdf:=false
 ```
@@ -101,13 +101,19 @@ For ROS 2 control integration, you'll need the following three types of files:
 - ROS2 Control Macro File - Defines hardware interfaces(`/hebi_description/urdf/kits/ros2_control/A-2085-06G.ros2_control.xacro`)
 - Combined URDF File - Combines the macro with the existing URDF(`/hebi_description/urdf/kits/ros2_control/A-2095-06G.urdf.xacro`)
 - Controller Parameter File - Configures controllers(`/hebi_bringup/config/A-2085-06G_controller.yaml`)
-For standard HEBI kits, these files are already provided in the hebi_bringup and hebi_description packages.
+For standard HEBI kits, these files are already provided in the hebi_bringup and hebi_description packages.  
+
+#### To launch the ROS 2 Control node with hardware
 ```bash
 ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
 ```
-Send gripper cosition
+#### Check Joint condition
 ```bash
-ros2 action send_goal /gripper_controller/gripper_cmd control_msgs/action/GripperCommand "{command: {position: 1.0}}"
+ros2 topic echo /joint_states
+```
+#### Send gripper cosition
+```bash
+ros2 action send_goal /gripper_controller/gripper_cmd control_msgs/action/GripperCommand "{command: {position: 1.0, max_effort: 10.0}}"
 ```
 
 ### Moveit
