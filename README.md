@@ -1,5 +1,5 @@
 # Mani
-This is a package for Mani.
+This is a package for Mani.  
 Mani is a dual-arm robot based on the Arm Kits from HEBI robotics.
 
 ## Packages List
