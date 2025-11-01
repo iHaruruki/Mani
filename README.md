@@ -1,5 +1,6 @@
 # Mani
 This is a package for Mani.
+Mani is a dual-arm robot based on the Arm Kits from HEBI robotics.
 
 ## Packages List
 * [hebi_cpp_api_ros](https://github.com/iHaruruki/hebi_cpp_api_ros.git)
