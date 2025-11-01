@@ -96,6 +96,12 @@ Example2 : Using Joy Stick
 ros2 launch hebi_ros2_examples arm_joystick_teleop.launch.py hebi_arm:=A-2085-06G generate_urdf:=false
 ```
 ### ROS2 Control
+For ROS 2 control integration, you'll need the following three types of files:
+
+- ROS2 Control Macro File - Defines hardware interfaces(`/hebi_description/urdf/kits/ros2_control/A-2085-06G.ros2_control.xacro`)
+- Combined URDF File - Combines the macro with the existing URDF(`/hebi_description/urdf/kits/ros2_control/A-2095-06G.urdf.xacro`)
+- Controller Parameter File - Configures controllers(``)
+For standard HEBI kits, these files are already provided in the hebi_bringup and hebi_description packages.
 ```bash
 ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
 ```
