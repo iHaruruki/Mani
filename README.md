@@ -100,7 +100,7 @@ For ROS 2 control integration, you'll need the following three types of files:
 
 - ROS2 Control Macro File - Defines hardware interfaces(`/hebi_description/urdf/kits/ros2_control/A-2085-06G.ros2_control.xacro`)
 - Combined URDF File - Combines the macro with the existing URDF(`/hebi_description/urdf/kits/ros2_control/A-2095-06G.urdf.xacro`)
-- Controller Parameter File - Configures controllers(``)
+- Controller Parameter File - Configures controllers(`/hebi_bringup/config/A-2085-06G_controller.yaml`)
 For standard HEBI kits, these files are already provided in the hebi_bringup and hebi_description packages.
 ```bash
 ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
