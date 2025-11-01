@@ -58,6 +58,11 @@ source install/setup.bash
 pip install -r src/hebi_ros2_examples/requirements.txt
 ```
 ## How to use
+HEBI arms can be controlled with ROS 2 in three ways:
+
+- Standalone HEBI API
+- ROS 2 Control
+- MoveIt
 ### Standalone HEBI ROS2 API
 **There are two ways to send angles:**    
 Example1 : Using ros2 topic pub
