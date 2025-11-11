@@ -1,5 +1,6 @@
 # Mani
-This is a package for Mani.
+This is a package for Mani.  
+Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.hebirobotics.com/).
 
 ## Packages List
 * [hebi_cpp_api_ros](https://github.com/iHaruruki/hebi_cpp_api_ros.git)
@@ -59,14 +60,22 @@ source install/setup.bash
 pip install -r src/hebi_ros2_examples/requirements.txt
 ```
 ## How to use
+HEBI arms can be controlled with ROS 2 in three ways:
+
+- [Standalone HEBI API](#standalone-hebi-ros2-api)
+- [ROS 2 Control](#ros2-control)
+- [MoveIt](#moveit)
+
+The standalone HEBI API provides direct control via the HEBI C++ API, ROS 2 Control offers standardized interfaces, and MoveIt provides advanced motion planning capabilities.
+
 ### Standalone HEBI ROS2 API
 **There are two ways to send angles:**    
-Example1 : Using ros2 topic pub
+#### Example1 : Using ros2 topic pub
 Launching the Arm Node
-```shell
+```bash
 ros2 launch hebi_ros2_examples arm.launch.py hebi_arm:=A-2085-06G generate_urdf:=false
 ```
-```shell
+```bash
 ros2 topic pub /joint_trajectory trajectory_msgs/JointTrajectory "{ 
   joint_names: [
     'Base','Shoulder','Elbow',
@@ -82,22 +91,48 @@ ros2 topic pub /joint_trajectory trajectory_msgs/JointTrajectory "{
   ]
 }"
 ```
-Example2 : Using Joy Stick
-```shell
+#### Example2 : Using Joy Stick
+```bash
 ros2 launch hebi_ros2_examples arm_joystick_teleop.launch.py hebi_arm:=A-2085-06G generate_urdf:=false
 ```
 ### ROS2 Control
-```shell
+For ROS 2 control integration, you'll need the following three types of files:
+
+- ROS2 Control Macro File - Defines hardware interfaces(`/hebi_description/urdf/kits/ros2_control/A-2085-06G.ros2_control.xacro`)
+- Combined URDF File - Combines the macro with the existing URDF(`/hebi_description/urdf/kits/ros2_control/A-2095-06G.urdf.xacro`)
+- Controller Parameter File - Configures controllers(`/hebi_bringup/config/A-2085-06G_controller.yaml`)
+> [!TIP]  
+> For standard HEBI kits, these files are already provided in the `hebi_bringup` and `hebi_description` packages.  
+
+#### To launch the ROS 2 Control node with hardware
+```bash
 ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
 ```
-Send gripper cosition
-```shell
-ros2 action send_goal /gripper_controller/gripper_cmd control_msgs/action/GripperCommand "{command: {position: 1.0}}"
+#### Check Joint condition
+```bash
+ros2 topic echo /joint_states
+```
+#### Send gripper cosition
+```bash
+ros2 action send_goal /gripper_controller/gripper_cmd control_msgs/action/GripperCommand "{command: {position: 1.0, max_effort: 10.0}}"
 ```
 
-### Moveit2
+### Moveit
+#### Launch Robot Control(Use real hardware)
+```bash
+ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
+```
+#### Launch Moveit
+```bash
+ros2 launch hebi_bringup move_group.launch.py hebi_arm:=A-2085-06G use_sim_time:=false
+```
 
 ## Additional Resources
+HEBI Robotics
 * [HEBI Documentation](https://docs.hebi.us/)
-* [ROS2 Control Documentation](https://control.ros.org/humble/index.html)
+
+ROS 2 Control
+* [ros2_control Documentation](https://control.ros.org/humble/index.html)
+
+Moveit2
 * [Moveit Documentation](https://moveit.ai/)
