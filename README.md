@@ -40,7 +40,8 @@ git clone -b humble https://github.com/HebiRobotics/hebi_bringup.git
 sudo apt install ros-$ROS_DISTRO-ros2-control ros-$ROS_DISTRO-ros2-controllers -y
 
 # Moveit2 package
-git clone https://github.com/iHaruruki/hebi_moveit_configs.git
+git clone -b ros2 https://github.com/HebiRobotics/hebi_moveit_configs.git
+
 ```
 Install the necessary dependencies using `rosdep`:
 ```bash
