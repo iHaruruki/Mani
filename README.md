@@ -31,7 +31,7 @@ git clone https://github.com/HebiRobotics/hebi_msgs.git
 git clone https://github.com/HebiRobotics/hebi_ros2_examples.git
 
 # Install hardware package
-git clone https://github.com/iHaruruki/hebi_hardware.git
+git clone https://github.com/HebiRobotics/hebi_hardware.git
 
 # Install bringup package
 git clone -b humble https://github.com/iHaruruki/hebi_bringup.git
