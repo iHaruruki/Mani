@@ -25,7 +25,7 @@ git clone -b ros2 https://github.com/HebiRobotics/hebi_cpp_api_ros.git
 git clone -b ros2/humble https://github.com/HebiRobotics/hebi_description.git
 
 # Clone the HEBI messages package
-git clone https://github.com/iHaruruki/hebi_msgs.git
+git clone https://github.com/HebiRobotics/hebi_msgs.git
 
 # Clone this examples repository
 git clone https://github.com/iHaruruki/hebi_ros2_examples.git
