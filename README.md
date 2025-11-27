@@ -34,7 +34,7 @@ git clone https://github.com/HebiRobotics/hebi_ros2_examples.git
 git clone https://github.com/HebiRobotics/hebi_hardware.git
 
 # Install bringup package
-git clone -b humble https://github.com/iHaruruki/hebi_bringup.git
+git clone -b humble https://github.com/HebiRobotics/hebi_bringup.git
 
 # Install ROS2 Control dependencies
 sudo apt install ros-$ROS_DISTRO-ros2-control ros-$ROS_DISTRO-ros2-controllers -y
