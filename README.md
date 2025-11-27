@@ -22,7 +22,7 @@ cd ~/hebi_ws/src
 git clone -b ros2 https://github.com/HebiRobotics/hebi_cpp_api_ros.git
 
 # Clone the HEBI description package
-git clone -b ros2/humble https://github.com/iHaruruki/hebi_description.git
+git clone -b ros2/humble https://github.com/HebiRobotics/hebi_description.git
 
 # Clone the HEBI messages package
 git clone https://github.com/iHaruruki/hebi_msgs.git
