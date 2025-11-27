@@ -28,7 +28,7 @@ git clone -b ros2/humble https://github.com/HebiRobotics/hebi_description.git
 git clone https://github.com/HebiRobotics/hebi_msgs.git
 
 # Clone this examples repository
-git clone https://github.com/iHaruruki/hebi_ros2_examples.git
+git clone https://github.com/HebiRobotics/hebi_ros2_examples.git
 
 # Install hardware package
 git clone https://github.com/iHaruruki/hebi_hardware.git
