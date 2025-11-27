@@ -41,14 +41,15 @@ sudo apt install ros-$ROS_DISTRO-ros2-control ros-$ROS_DISTRO-ros2-controllers -
 
 # Moveit2 package
 git clone -b ros2 https://github.com/HebiRobotics/hebi_moveit_configs.git
-
 ```
+
 Install the necessary dependencies using `rosdep`:
 ```bash
 cd ~/hebi_ws/
 rosdep update
 rosdep install --from-paths src --ignore-src -r -y
 ```
+
 Build the workspace and source it:
 ```bash
 cd ~/hebi_ws
@@ -128,7 +129,7 @@ ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_har
 ros2 launch hebi_bringup move_group.launch.py hebi_arm:=A-2085-06G use_sim_time:=false
 ```
 
-## Additional Resources
+## References
 HEBI Robotics
 * [HEBI Documentation](https://docs.hebi.us/)
 
