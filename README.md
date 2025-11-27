@@ -3,13 +3,13 @@ This is a package for Mani.
 Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.hebirobotics.com/).
 
 ## Packages List
-* [hebi_cpp_api_ros](https://github.com/iHaruruki/hebi_cpp_api_ros.git)
-* [hebi_description](https://github.com/iHaruruki/hebi_description.git)
-* [hebi_msgs](https://github.com/iHaruruki/hebi_msgs.git)
-* [hebi_ros2_examples](https://github.com/iHaruruki/hebi_ros2_examples.git)
-* [hebi_hardware](https://github.com/iHaruruki/hebi_hardware.git)
-* [hebi_bringup](https://github.com/iHaruruki/hebi_bringup.git)
-* [hebi_moveit_configs](https://github.com/iHaruruki/hebi_moveit_configs.git)
+* [hebi_cpp_api_ros](https://github.com/HebiRobotics/hebi_cpp_api_ros.git)
+* [hebi_description](https://github.com/HebiRobotics/hebi_description.git)
+* [hebi_msgs](https://github.com/HebiRobotics/hebi_msgs.git)
+* [hebi_ros2_examples](https://github.com/HebiRobotics/hebi_ros2_examples.git)
+* [hebi_hardware](hhttps://github.com/HebiRobotics/hebi_hardware.git)
+* [hebi_bringup](https://github.com/HebiRobotics/hebi_bringup.git)
+* [hebi_moveit_configs](https://github.com/HebiRobotics/hebi_moveit_configs.git)
 
 ## Setting up your Workspace
 Run the following commands to set up and download the HEBI ROS 2 packages:
