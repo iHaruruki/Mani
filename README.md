@@ -7,7 +7,7 @@ Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.
 * [hebi_description](https://github.com/HebiRobotics/hebi_description.git)
 * [hebi_msgs](https://github.com/HebiRobotics/hebi_msgs.git)
 * [hebi_ros2_examples](https://github.com/HebiRobotics/hebi_ros2_examples.git)
-* [hebi_hardware](hhttps://github.com/HebiRobotics/hebi_hardware.git)
+* [hebi_hardware](https://github.com/HebiRobotics/hebi_hardware.git)
 * [hebi_bringup](https://github.com/HebiRobotics/hebi_bringup.git)
 * [hebi_moveit_configs](https://github.com/HebiRobotics/hebi_moveit_configs.git)
 
