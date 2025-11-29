@@ -128,6 +128,10 @@ ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_har
 ```bash
 ros2 launch hebi_bringup move_group.launch.py hebi_arm:=A-2085-06G use_sim_time:=false
 ```
+> [!NOTE]
+> Gripper opening and closing
+> Movable range: 0 degrees to -90 degrees (0 [rad] to -1.570 [rad])
+> 可動範囲：0度 ～ -90度(0 [rad] ~ -1.570 [rad])
 
 ## References
 HEBI Robotics
