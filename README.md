@@ -141,6 +141,16 @@ rviz2
 ```bash
 rviz2
 ```
+- Displaysパネル下部の`Add`ボタンをクリックし  
+`By topic`タブ`/epth_registered`:arrow_right:`/points`:arrow_right:`PointCloud2`と選択し，`OK`をクリック  
+- Displaysパネルに表示されたを開き，次の項目を設定する
+
+| 設定項目 | ドロップダウンリスト | 値 |
+| --- | --- | --- |
+| Global Options | Fixed Frame:camera_link | camera_link |
+
+カラー付きポイントクラウドのデータが表示される．
+![sunsun](/meida/sunsun.png)
 
 ## References
 HEBI Robotics
