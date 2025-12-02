@@ -133,6 +133,15 @@ ros2 launch hebi_bringup move_group.launch.py hebi_arm:=A-2085-06G use_sim_time:
 > Movable range: 0 degrees to -90 degrees (0 [rad] to -1.570 [rad])  
 > 可動範囲：0度 ～ -90度(0 [rad] ~ -1.570 [rad])
 
+#### Run camera
+```bash
+ros2 launch orbbec_camera astra_stereo_u3.launch.py
+```
+rviz2
+```bash
+
+```
+
 ## References
 HEBI Robotics
 * [HEBI Documentation](https://docs.hebi.us/)
