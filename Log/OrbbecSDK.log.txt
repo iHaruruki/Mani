@@ -1021,3 +1021,270 @@
 [12/02 20:54:27.028274][warning][12497][ObException.cpp:5] Property is not supported! propertyId: 1003
 [12/02 20:54:28.028271][warning][12497][ObException.cpp:5] Property is not supported! propertyId: 1003
 [12/02 20:54:29.028275][warning][12497][ObException.cpp:5] Property is not supported! propertyId: 1003
+[12/02 20:54:30.028278][warning][12497][ObException.cpp:5] Property is not supported! propertyId: 1003
+[12/02 20:54:30.665779][debug][12525][Pipeline.cpp:323] Pipeline streaming... frameset output rate=30.061718fps
+[12/02 20:54:30.790310][debug][12516][VideoSensor.cpp:427] OB_SENSOR_COLOR Streaming... frameRate=30.103670fps
+[12/02 20:54:31.028275][warning][12497][ObException.cpp:5] Property is not supported! propertyId: 1003
+[12/02 20:54:31.589025][debug][12520][Pipeline.cpp:319] Frame received on pipeline! type=OB_FRAME_IR [**361 logs in 12003ms**]
+[12/02 20:54:31.597480][debug][12525][Pipeline.cpp:319] Frame received on pipeline! type=OB_FRAME_DEPTH [**361 logs in 12009ms**]
+[12/02 20:54:31.787465][debug][12528][Pipeline.cpp:319] Frame received on pipeline! type=OB_FRAME_COLOR [**362 logs in 12024ms**]
+[12/02 20:54:32.028242][warning][12497][ObException.cpp:5] Property is not supported! propertyId: 1003
+[12/02 20:54:33.028271][warning][12497][ObException.cpp:5] Property is not supported! propertyId: 1003
+[12/02 20:54:34.028306][warning][12497][ObException.cpp:5] Property is not supported! propertyId: 1003
+[12/02 20:54:34.982062][info][12497][Pipeline.cpp:411] Try to stop pipeline!
+[12/02 20:54:34.982080][info][12497][Pipeline.cpp:383] Try to stop streams!
+[12/02 20:54:34.982085][debug][12497][OpenNIVideoSensor.cpp:783] Shutting down USB IR read thread...
+[12/02 20:54:34.982087][debug][12497][OpenNIUSBLinux.cpp:344] Shutdown read thread...
+[12/02 20:54:34.984586][debug][12518][OpenNIUSBLinux.cpp:217] Cancel request transfer(37)...
+[12/02 20:54:34.984723][debug][12508][RequestLibusb.cpp:21] transfer cancelled!
+[12/02 20:54:35.006480][debug][12528][FrameBufferManager.cpp:35] New frame buffer allocated=0.879MB, total usage: allocated=6.439MB, max limit=2048.000MB
+[12/02 20:54:35.084943][warning][12518][OpenNIUSBLinux.cpp:244] Endpoint  0x82, Buffer37: Failed waiting on asynch transfer event:OB_EVENT_TIMEOUT
+[12/02 20:54:35.085024][debug][12518][OpenNIUSBLinux.cpp:217] Cancel request transfer(61)...
+[12/02 20:54:35.085190][debug][12508][RequestLibusb.cpp:21] transfer cancelled!
+[12/02 20:54:35.185322][warning][12518][OpenNIUSBLinux.cpp:244] Endpoint  0x82, Buffer61: Failed waiting on asynch transfer event:OB_EVENT_TIMEOUT
+[12/02 20:54:35.185344][debug][12518][OpenNIDataProcessor.cpp:28] IR: Expected 11756, got 12063
+[12/02 20:54:35.185348][debug][12518][OpenNIFrameProcessor.cpp:88] IR frame is corrupt!
+[12/02 20:54:35.185408][debug][12518][OpenNIUSBLinux.cpp:217] Cancel request transfer(21)...
+[12/02 20:54:35.185574][debug][12508][RequestLibusb.cpp:21] transfer cancelled!
+[12/02 20:54:35.285740][warning][12518][OpenNIUSBLinux.cpp:244] Endpoint  0x82, Buffer21: Failed waiting on asynch transfer event:OB_EVENT_TIMEOUT
+[12/02 20:54:35.285764][debug][12518][OpenNIDataProcessor.cpp:28] IR: Expected 12073, got 12380
+[12/02 20:54:35.285769][warning][12518][OpenNIUSBLinux.cpp:203] exist(0) read thread(22)
+[12/02 20:54:35.285843][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285872][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285886][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285889][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285890][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285892][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285894][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285896][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285898][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285909][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285911][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285912][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285914][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285915][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285917][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285918][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285920][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285921][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285923][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285924][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285925][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285927][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285929][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285930][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285932][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285933][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285934][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285936][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285937][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285939][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285940][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285942][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285943][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285944][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285948][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285950][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285951][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285952][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285954][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285955][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285957][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285958][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285960][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285961][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285963][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285964][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285966][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285967][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285969][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285970][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285971][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285973][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285975][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285976][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285978][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285979][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285980][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285982][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285983][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285987][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285988][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285990][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285991][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.285992][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:130, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.286171][debug][12497][OpenNIUSBLinux.cpp:379] Shutdown read thread end...
+[12/02 20:54:35.286175][debug][12497][OpenNISensorParams.cpp:110] set property Stream0Mode(0)
+[12/02 20:54:35.287882][debug][12497][OpenNISensorParams.cpp:121] Stream0Mode(0)was successfully set.
+[12/02 20:54:35.287892][error][12497][OpenNIVideoSensor.cpp:692] OpenNI IR  stream stop failed!
+[12/02 20:54:35.288587][debug][12497][FrameProcessingBlock.cpp:74] Process thread stoped! N11libobsensor13FrameUnpackerE@0x719450033230 
+[12/02 20:54:35.288596][debug][12497][FrameProcessor.cpp:165] FrameProcessor stoped!
+[12/02 20:54:35.288632][debug][12497][OpenNISensorStreams.cpp:114] Erase FW Stream IR
+[12/02 20:54:35.288635][debug][12497][OpenNISensorStreams.cpp:124] released FW Stream strType
+[12/02 20:54:35.288638][error][12497][OpenNIVideoSensor.cpp:708] OpenNI IR stream stop completed.
+[12/02 20:54:35.288645][info][12497][Pipeline.cpp:396] Sensor stream stopped, sensorType=OB_SENSOR_IR
+[12/02 20:54:35.288650][debug][12497][OpenNIVideoSensor.cpp:783] Shutting down USB Depth read thread...
+[12/02 20:54:35.288651][debug][12497][OpenNIUSBLinux.cpp:344] Shutdown read thread...
+[12/02 20:54:35.299239][debug][12517][OpenNIUSBLinux.cpp:217] Cancel request transfer(1)...
+[12/02 20:54:35.299395][debug][12508][RequestLibusb.cpp:21] transfer cancelled!
+[12/02 20:54:35.399448][warning][12517][OpenNIUSBLinux.cpp:244] Endpoint  0x81, Buffer1: Failed waiting on asynch transfer event:OB_EVENT_TIMEOUT
+[12/02 20:54:35.399512][debug][12517][OpenNIUSBLinux.cpp:217] Cancel request transfer(30)...
+[12/02 20:54:35.399606][debug][12508][RequestLibusb.cpp:21] transfer cancelled!
+[12/02 20:54:35.499680][warning][12517][OpenNIUSBLinux.cpp:244] Endpoint  0x81, Buffer30: Failed waiting on asynch transfer event:OB_EVENT_TIMEOUT
+[12/02 20:54:35.499693][debug][12517][OpenNIDataProcessor.cpp:28] Depth: Expected 12, got 386
+[12/02 20:54:35.499695][debug][12517][OpenNIFrameProcessor.cpp:88] Depth frame is corrupt!
+[12/02 20:54:35.499750][debug][12517][OpenNIUSBLinux.cpp:217] Cancel request transfer(59)...
+[12/02 20:54:35.499879][debug][12508][RequestLibusb.cpp:21] transfer cancelled!
+[12/02 20:54:35.599965][warning][12517][OpenNIUSBLinux.cpp:244] Endpoint  0x81, Buffer59: Failed waiting on asynch transfer event:OB_EVENT_TIMEOUT
+[12/02 20:54:35.599976][debug][12517][OpenNIDataProcessor.cpp:28] Depth: Expected 391, got 765
+[12/02 20:54:35.599978][warning][12517][OpenNIUSBLinux.cpp:203] exist(0) read thread(60)
+[12/02 20:54:35.600028][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600034][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600039][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600041][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600042][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600052][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600054][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600055][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600057][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600058][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600060][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600061][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600062][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600064][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600065][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600067][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600068][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600070][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600071][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600073][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600074][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600076][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600077][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600079][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600080][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600081][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600083][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600085][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600086][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600087][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600091][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600092][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600094][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600095][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600096][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600098][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600099][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600101][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600102][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600104][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600105][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600106][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600108][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600109][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600111][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600112][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600113][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600115][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600116][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600117][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600119][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600120][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600122][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600123][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600124][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600127][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600129][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600130][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600132][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600133][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600134][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600136][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600137][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600139][warning][12497][MessengerLibusb.cpp:82] usb_request_cancel returned error, endpoint:129, error:Resource temporarily unavailable, number:11 
+[12/02 20:54:35.600140][debug][12497][OpenNIUSBLinux.cpp:379] Shutdown read thread end...
+[12/02 20:54:35.600142][debug][12497][OpenNISensorParams.cpp:110] set property Stream1Mode(0)
+[12/02 20:54:35.601192][debug][12497][OpenNISensorParams.cpp:121] Stream1Mode(0)was successfully set.
+[12/02 20:54:35.601194][error][12497][OpenNIVideoSensor.cpp:692] OpenNI Depth  stream stop failed!
+[12/02 20:54:35.601631][debug][12497][FrameProcessingBlock.cpp:74] Process thread stoped! N11libobsensor13FrameUnpackerE@0x719450035af0 
+[12/02 20:54:35.602135][debug][12497][FrameProcessingBlock.cpp:74] Process thread stoped! N11libobsensor15FrameSoftFilterE@0x719450031bf0 
+[12/02 20:54:35.603135][debug][12497][FrameProcessingBlock.cpp:74] Process thread stoped! N11libobsensor24Disparity2DepthConverterE@0x71945002dba0 
+[12/02 20:54:35.603328][debug][12497][FrameProcessingBlock.cpp:74] Process thread stoped! N11libobsensor9D2CFilterE@0x719450036350 
+[12/02 20:54:35.604357][debug][12497][FrameProcessingBlock.cpp:74] Process thread stoped! N11libobsensor17PostProcessFilterE@0x71945002def0 
+[12/02 20:54:35.604360][debug][12497][FrameProcessor.cpp:165] FrameProcessor stoped!
+[12/02 20:54:35.604391][debug][12497][OpenNISensorStreams.cpp:114] Erase FW Stream Depth
+[12/02 20:54:35.604394][debug][12497][OpenNISensorStreams.cpp:124] released FW Stream strType
+[12/02 20:54:35.604397][error][12497][OpenNIVideoSensor.cpp:708] OpenNI Depth stream stop completed.
+[12/02 20:54:35.604404][info][12497][Pipeline.cpp:396] Sensor stream stopped, sensorType=OB_SENSOR_DEPTH
+[12/02 20:54:35.604421][debug][12497][VideoSensor.cpp:678] VideoSensor::stop, @OB_SENSOR_COLOR
+[12/02 20:54:35.604423][debug][12497][VideoSensor.cpp:701] Stream state changed to STREAM_STATE_STOPPING. @OB_SENSOR_COLOR
+[12/02 20:54:35.604427][debug][12497][ObLibuvcDevicePort.cpp:148] ObLibuvcDevicePort::stopStream()...
+[12/02 20:54:35.679859][debug][12497][ObLibuvcDevicePort.cpp:172] ObLibuvcDevicePort::stopStream() done
+[12/02 20:54:35.679927][debug][12497][VideoSensor.cpp:727] stream stoped! @OB_SENSOR_COLOR
+[12/02 20:54:35.680440][debug][12497][FrameProcessingBlock.cpp:74] Process thread stoped! N11libobsensor15FormatConverterE@0x71945002efe0 
+[12/02 20:54:35.680447][debug][12497][FrameProcessor.cpp:165] FrameProcessor stoped!
+[12/02 20:54:35.680456][debug][12497][VideoSensor.cpp:716] Stream state changed to STREAM_STATE_STOPED. @OB_SENSOR_COLOR
+[12/02 20:54:35.680458][info][12497][VideoSensor.cpp:734] Video sensor stopped, @OB_SENSOR_COLOR
+[12/02 20:54:35.680467][info][12497][Pipeline.cpp:396] Sensor stream stopped, sensorType=OB_SENSOR_COLOR
+[12/02 20:54:35.680468][info][12497][Pipeline.cpp:402] Stop streams done!
+[12/02 20:54:35.680476][debug][12497][OpenNISensorParams.cpp:110] set property Registration(0)
+[12/02 20:54:35.680827][debug][12497][OpenNISensorParams.cpp:121] Registration(0)was successfully set.
+[12/02 20:54:35.680840][debug][12497][PropertyAccessor.cpp:17] set property value success! propertyId: 42, value: {intValue: 0, floatValue: 0}
+[12/02 20:54:35.680849][debug][12497][FrameProcessingBlockManager.cpp:84] FrameProcessingBlockManager stoped!
+[12/02 20:54:35.680850][debug][12497][FrameProcessingBlockManager.cpp:20] Processing block list cleared!
+[12/02 20:54:35.680852][info][12497][Pipeline.cpp:443] Stop pipeline done!
+[12/02 20:54:35.682933][debug][12497][Pipeline.cpp:68] Pipeline deInit start!
+[12/02 20:54:35.682939][info][12497][Pipeline.cpp:75] Pipeline destroyed! @0x7194500E0C20
+[12/02 20:54:35.683329][info][12497][OpenNIDevice.cpp:44] OpenNI device destroyed! PID: 0x0614, SN: AY2T1120232
+[12/02 20:54:35.683334][info][12497][OpenNIVideoSensor.cpp:1020] OpenNIVideoSensor destroyed! sensorType=OB_SENSOR_IR
+[12/02 20:54:35.683338][debug][12497][VideoSensor.cpp:282] VideoSensor::~VideoSensor(), @OB_SENSOR_COLOR
+[12/02 20:54:35.683339][info][12497][VideoSensor.cpp:303] VideoSensor destroyed, @OB_SENSOR_COLOR
+[12/02 20:54:35.683343][info][12497][OpenNIVideoSensor.cpp:1020] OpenNIVideoSensor destroyed! sensorType=OB_SENSOR_DEPTH
+[12/02 20:54:35.683352][debug][12497][FrameProcessor.cpp:807] try remove eventId: PropertyValueUpdate
+[12/02 20:54:35.683355][debug][12497][FrameProcessor.cpp:807] try remove eventId: DepthStreamProfileChanged
+[12/02 20:54:35.683356][debug][12497][FrameProcessor.cpp:111] FrameProcessor destroyed! @124881811495328
+[12/02 20:54:35.683415][debug][12497][FrameProcessor.cpp:111] FrameProcessor destroyed! @124881811481840
+[12/02 20:54:35.683418][debug][12497][ObLibuvcDevicePort.cpp:63] ~ObLibuvcDevicePort
+[12/02 20:54:35.691436][info][12497][ObLibuvcDevicePort.cpp:70] uvc_close done.
+[12/02 20:54:35.691441][info][12497][ObLibuvcDevicePort.cpp:71] ~ObLibuvcDevicePort done
+[12/02 20:54:35.691466][debug][12497][FrameProcessor.cpp:111] FrameProcessor destroyed! @124881811302800
+[12/02 20:54:35.691471][debug][12497][VendorCommand.cpp:213] destructor 7194500062d0
+[12/02 20:54:35.691475][debug][12497][VendorCommand.cpp:467] disableHeartBeat heartBeatHelper_: 0
+[12/02 20:54:35.691477][debug][12497][HostProtocol.cpp:139] ~HostProtocol()
+[12/02 20:54:35.691571][debug][12512][HostProtocol.cpp:167] emitTranDataFutureSignalThread_ finish
+[12/02 20:54:35.691710][debug][12497][Context.cpp:81] Context destroying ...
+[12/02 20:54:35.691713][debug][12497][DeviceManager.cpp:56] DeviceManager destroy ...
+[12/02 20:54:35.691714][debug][12497][DeviceManager.cpp:64] DeviceManager Destructors done
+[12/02 20:54:35.692153][debug][12497][FrameBufferManager.hpp:72] FrameBufferManager destroying...! frame type: N11libobsensor8FrameSetE,  obj addr:0x71945062a7b0
+[12/02 20:54:35.692160][debug][12497][FrameBufferManager.cpp:54] Frame buffer released=0.000MB, total usage: allocated=6.438MB, max limit=2048.000MB
+[12/02 20:54:35.692162][debug][12497][FrameBufferManager.cpp:69] AbstractFrameBufferManager destroyed! manager type:N11libobsensor26AbstractFrameBufferManagerE,  obj addr:0x71945062a7b0
+[12/02 20:54:35.692163][debug][12497][FrameBufferManager.hpp:72] FrameBufferManager destroying...! frame type: N11libobsensor10DepthFrameE,  obj addr:0x71942c000d30
+[12/02 20:54:35.692193][debug][12497][FrameBufferManager.cpp:54] Frame buffer released=0.586MB, total usage: allocated=5.852MB, max limit=2048.000MB
+[12/02 20:54:35.692225][debug][12497][FrameBufferManager.cpp:54] Frame buffer released=0.586MB, total usage: allocated=5.266MB, max limit=2048.000MB
+[12/02 20:54:35.692248][debug][12497][FrameBufferManager.cpp:54] Frame buffer released=0.586MB, total usage: allocated=4.679MB, max limit=2048.000MB
+[12/02 20:54:35.692250][debug][12497][FrameBufferManager.cpp:69] AbstractFrameBufferManager destroyed! manager type:N11libobsensor26AbstractFrameBufferManagerE,  obj addr:0x71942c000d30
+[12/02 20:54:35.692256][debug][12497][FrameBufferManager.hpp:72] FrameBufferManager destroying...! frame type: N11libobsensor10DepthFrameE,  obj addr:0x719444000b70
+[12/02 20:54:35.692297][debug][12497][FrameBufferManager.cpp:54] Frame buffer released=0.489MB, total usage: allocated=4.191MB, max limit=2048.000MB
+[12/02 20:54:35.692299][debug][12497][FrameBufferManager.cpp:69] AbstractFrameBufferManager destroyed! manager type:N11libobsensor26AbstractFrameBufferManagerE,  obj addr:0x719444000b70
+[12/02 20:54:35.692300][debug][12497][FrameBufferManager.hpp:72] FrameBufferManager destroying...! frame type: N11libobsensor10DepthFrameE,  obj addr:0x71945010c640
+[12/02 20:54:35.692321][debug][12497][FrameBufferManager.cpp:54] Frame buffer released=0.367MB, total usage: allocated=3.824MB, max limit=2048.000MB
+[12/02 20:54:35.692323][debug][12497][FrameBufferManager.cpp:69] AbstractFrameBufferManager destroyed! manager type:N11libobsensor26AbstractFrameBufferManagerE,  obj addr:0x71945010c640
+[12/02 20:54:35.692325][debug][12497][FrameBufferManager.hpp:72] FrameBufferManager destroying...! frame type: N11libobsensor10ColorFrameE,  obj addr:0x719420000b70
+[12/02 20:54:35.692363][debug][12497][FrameBufferManager.cpp:54] Frame buffer released=0.879MB, total usage: allocated=2.945MB, max limit=2048.000MB
+[12/02 20:54:35.692398][debug][12497][FrameBufferManager.cpp:54] Frame buffer released=0.879MB, total usage: allocated=2.065MB, max limit=2048.000MB
+[12/02 20:54:35.692400][debug][12497][FrameBufferManager.cpp:69] AbstractFrameBufferManager destroyed! manager type:N11libobsensor26AbstractFrameBufferManagerE,  obj addr:0x719420000b70
+[12/02 20:54:35.692401][debug][12497][FrameBufferManager.hpp:72] FrameBufferManager destroying...! frame type: N11libobsensor10ColorFrameE,  obj addr:0x719450109d40
+[12/02 20:54:35.692406][debug][12497][FrameBufferManager.cpp:54] Frame buffer released=0.293MB, total usage: allocated=1.772MB, max limit=2048.000MB
+[12/02 20:54:35.692408][debug][12497][FrameBufferManager.cpp:69] AbstractFrameBufferManager destroyed! manager type:N11libobsensor26AbstractFrameBufferManagerE,  obj addr:0x719450109d40
+[12/02 20:54:35.692409][debug][12497][FrameBufferManager.hpp:72] FrameBufferManager destroying...! frame type: N11libobsensor7IRFrameE,  obj addr:0x71945010c850
+[12/02 20:54:35.692431][debug][12497][FrameBufferManager.cpp:54] Frame buffer released=0.489MB, total usage: allocated=1.283MB, max limit=2048.000MB
+[12/02 20:54:35.692460][debug][12497][FrameBufferManager.cpp:54] Frame buffer released=0.489MB, total usage: allocated=0.794MB, max limit=2048.000MB
+[12/02 20:54:35.692493][debug][12497][FrameBufferManager.cpp:54] Frame buffer released=0.489MB, total usage: allocated=0.306MB, max limit=2048.000MB
+[12/02 20:54:35.692494][debug][12497][FrameBufferManager.cpp:69] AbstractFrameBufferManager destroyed! manager type:N11libobsensor26AbstractFrameBufferManagerE,  obj addr:0x71945010c850
+[12/02 20:54:35.692496][debug][12497][FrameBufferManager.hpp:72] FrameBufferManager destroying...! frame type: N11libobsensor7IRFrameE,  obj addr:0x7194503cf000
+[12/02 20:54:35.692510][debug][12497][FrameBufferManager.cpp:54] Frame buffer released=0.306MB, total usage: allocated=0.000MB, max limit=2048.000MB
+[12/02 20:54:35.692512][debug][12497][FrameBufferManager.cpp:69] AbstractFrameBufferManager destroyed! manager type:N11libobsensor26AbstractFrameBufferManagerE,  obj addr:0x7194503cf000
+[12/02 20:54:35.692513][info][12497][Context.cpp:84] Context destroyed
+[12/02 20:54:35.692604][debug][12622][Pipeline.cpp:319] Frame received on pipeline! type=OB_FRAME_IR [**102 logs in 4103ms, last: 20:54:34.984661**]
+[12/02 20:54:35.692663][debug][12624][Pipeline.cpp:319] Frame received on pipeline! type=OB_FRAME_COLOR [**114 logs in 3905ms, last: 20:54:35.575752**]
+[12/02 20:54:35.692714][debug][12623][Pipeline.cpp:319] Frame received on pipeline! type=OB_FRAME_DEPTH [**111 logs in 4095ms, last: 20:54:35.289401**]

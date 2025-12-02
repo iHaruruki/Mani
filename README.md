@@ -139,7 +139,7 @@ ros2 launch orbbec_camera astra_stereo_u3.launch.py
 ```
 rviz2
 ```bash
-
+rviz2
 ```
 
 ## References
