@@ -142,7 +142,7 @@ rviz2
 rviz2
 ```
 - Displaysパネル下部の`Add`ボタンをクリックし  
-`By topic`タブ`/epth_registered`:arrow_right:`/points`:arrow_right:`PointCloud2`と選択し，`OK`をクリック  
+`By topic`タブ`/depth_registered`:arrow_right:`/points`:arrow_right:`PointCloud2`と選択し，`OK`をクリック  
 - Displaysパネルに表示されたを開き，次の項目を設定する
 
 | 設定項目 | ドロップダウンリスト | 値 |
