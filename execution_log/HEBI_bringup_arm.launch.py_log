@@ -1,0 +1,101 @@
+robot@nuc38:~$ ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
+[INFO] [launch]: All log files can be found below /home/robot/.ros/log/2025-12-06-17-41-30-094023-nuc38-4162
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: Using default controllers_file: A-2085-06G_controllers.yaml
+[INFO] [launch.user]: Using default description_file: A-2085-06G.urdf.xacro
+[INFO] [launch.user]: Using default config_file_path: config/arms/A-2085-06G.cfg.yaml
+[INFO] [ros2_control_node-1]: process started with pid [4165]
+[INFO] [robot_state_publisher-2]: process started with pid [4167]
+[INFO] [rviz2-3]: process started with pid [4169]
+[rviz2-3] Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+[ros2_control_node-1] [WARN] [1765010490.468849241] [controller_manager]: [Deprecated] Passing the robot description parameter directly to the control_manager node is deprecated. Use '~/robot_description' topic from 'robot_state_publisher' instead.
+[ros2_control_node-1] [INFO] [1765010490.469264774] [resource_manager]: Loading hardware 'A-2085-06G' 
+[ros2_control_node-1] [INFO] [1765010490.470905243] [resource_manager]: Initialize hardware 'A-2085-06G' 
+[ros2_control_node-1] [hebi_hardware] [INFO] Config package: hebi_description
+[ros2_control_node-1] [hebi_hardware] [INFO] Config file: config/arms/A-2085-06G.cfg.yaml
+[ros2_control_node-1] [INFO] [1765010490.471141614] [resource_manager]: Successful initialization of hardware 'A-2085-06G'
+[ros2_control_node-1] [INFO] [1765010490.471287415] [resource_manager]: 'configure' hardware 'A-2085-06G' 
+[ros2_control_node-1] [INFO] [1765010490.472683588] [resource_manager]: Successful 'configure' of hardware 'A-2085-06G'
+[ros2_control_node-1] [INFO] [1765010490.472700295] [resource_manager]: 'activate' hardware 'A-2085-06G' 
+[robot_state_publisher-2] [INFO] [1765010490.486013977] [robot_state_publisher]: got segment J1_base/body
+[robot_state_publisher-2] [INFO] [1765010490.486102882] [robot_state_publisher]: got segment J2_shoulder/body
+[robot_state_publisher-2] [INFO] [1765010490.486109601] [robot_state_publisher]: got segment J3_elbow/body
+[robot_state_publisher-2] [INFO] [1765010490.486113013] [robot_state_publisher]: got segment J4_wrist1/body
+[robot_state_publisher-2] [INFO] [1765010490.486116074] [robot_state_publisher]: got segment J5_wrist2/body
+[robot_state_publisher-2] [INFO] [1765010490.486118988] [robot_state_publisher]: got segment J6_wrist3/body
+[robot_state_publisher-2] [INFO] [1765010490.486121910] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-2] [INFO] [1765010490.486124942] [robot_state_publisher]: got segment bracket_1
+[robot_state_publisher-2] [INFO] [1765010490.486127926] [robot_state_publisher]: got segment bracket_2
+[robot_state_publisher-2] [INFO] [1765010490.486130920] [robot_state_publisher]: got segment bracket_3
+[robot_state_publisher-2] [INFO] [1765010490.486134118] [robot_state_publisher]: got segment end_effector_1
+[robot_state_publisher-2] [INFO] [1765010490.486137160] [robot_state_publisher]: got segment end_effector_1/center_hub
+[robot_state_publisher-2] [INFO] [1765010490.486140417] [robot_state_publisher]: got segment end_effector_1/center_pinion
+[robot_state_publisher-2] [INFO] [1765010490.486143439] [robot_state_publisher]: got segment end_effector_1/l_finger
+[robot_state_publisher-2] [INFO] [1765010490.486146381] [robot_state_publisher]: got segment end_effector_1/l_gripper
+[robot_state_publisher-2] [INFO] [1765010490.486149325] [robot_state_publisher]: got segment end_effector_1/l_gripper_bend
+[robot_state_publisher-2] [INFO] [1765010490.486152273] [robot_state_publisher]: got segment end_effector_1/l_inner_linkage
+[robot_state_publisher-2] [INFO] [1765010490.486155270] [robot_state_publisher]: got segment end_effector_1/l_outer_linkage
+[robot_state_publisher-2] [INFO] [1765010490.486158272] [robot_state_publisher]: got segment end_effector_1/output
+[robot_state_publisher-2] [INFO] [1765010490.486161221] [robot_state_publisher]: got segment end_effector_1/r_finger
+[robot_state_publisher-2] [INFO] [1765010490.486164197] [robot_state_publisher]: got segment end_effector_1/r_gripper
+[robot_state_publisher-2] [INFO] [1765010490.486167140] [robot_state_publisher]: got segment end_effector_1/r_gripper_bend
+[robot_state_publisher-2] [INFO] [1765010490.486170132] [robot_state_publisher]: got segment end_effector_1/r_inner_linkage
+[robot_state_publisher-2] [INFO] [1765010490.486173073] [robot_state_publisher]: got segment end_effector_1/r_outer_linkage
+[robot_state_publisher-2] [INFO] [1765010490.486176004] [robot_state_publisher]: got segment link_1
+[robot_state_publisher-2] [INFO] [1765010490.486179167] [robot_state_publisher]: got segment link_2
+[robot_state_publisher-2] [INFO] [1765010490.486182270] [robot_state_publisher]: got segment world
+[rviz2-3] [INFO] [1765010490.625943082] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-3] [INFO] [1765010490.626032020] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-3] [INFO] [1765010490.636107260] [rviz2]: Stereo is NOT SUPPORTED
+[ros2_control_node-1] [hebi_hardware] [INFO] Arm connected.
+[ros2_control_node-1] [hebi_hardware] [INFO] Gripper connected.
+[ros2_control_node-1] [hebi_hardware] [INFO] Loading gripper gains from: /home/robot/hebi_ws/install/hebi_description/share/hebi_description/config/arms/gains/A-2080-01.xml
+[ros2_control_node-1] [hebi_hardware] [INFO] Gripper gains loaded successfully.
+[ros2_control_node-1] [INFO] [1765010490.901721818] [resource_manager]: Successful 'activate' of hardware 'A-2085-06G'
+[ros2_control_node-1] [INFO] [1765010490.904100514] [controller_manager]: update rate is 100 Hz
+[ros2_control_node-1] [INFO] [1765010490.904121770] [controller_manager]: Spawning controller_manager RT thread with scheduler priority: 50
+[ros2_control_node-1] [WARN] [1765010490.904177220] [controller_manager]: No real-time kernel detected on this system. See [https://control.ros.org/master/doc/ros2_control/controller_manager/doc/userdoc.html] for details on how to enable realtime scheduling.
+[INFO] [spawner-4]: process started with pid [4287]
+[ros2_control_node-1] [INFO] [1765010491.693823606] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[spawner-4] [INFO] [1765010491.716377652] [spawner_joint_state_broadcaster]: Loaded joint_state_broadcaster
+[ros2_control_node-1] [INFO] [1765010491.727540251] [controller_manager]: Configuring controller 'joint_state_broadcaster'
+[ros2_control_node-1] [INFO] [1765010491.727650711] [joint_state_broadcaster]: 'joints' or 'interfaces' parameter is empty. All available state interfaces will be published
+[spawner-4] [INFO] [1765010491.757521464] [spawner_joint_state_broadcaster]: Configured and activated joint_state_broadcaster
+[INFO] [spawner-4]: process has finished cleanly [pid 4287]
+[INFO] [spawner-5]: process started with pid [4315]
+[ros2_control_node-1] [INFO] [1765010492.220556505] [controller_manager]: Loading controller 'hebi_arm_with_gripper_controller'
+[ros2_control_node-1] [WARN] [1765010492.225698729] [hebi_arm_with_gripper_controller]: [Deprecated]: "allow_nonzero_velocity_at_trajectory_end" is set to true. The default behavior will change to false.
+[spawner-5] [INFO] [1765010492.236602609] [spawner_hebi_arm_with_gripper_controller]: Loaded hebi_arm_with_gripper_controller
+[ros2_control_node-1] [INFO] [1765010492.237513713] [controller_manager]: Configuring controller 'hebi_arm_with_gripper_controller'
+[ros2_control_node-1] [INFO] [1765010492.237683218] [hebi_arm_with_gripper_controller]: No specific joint names are used for command interfaces. Using 'joints' parameter.
+[ros2_control_node-1] [INFO] [1765010492.237698206] [hebi_arm_with_gripper_controller]: Command interfaces are [position velocity] and state interfaces are [position velocity].
+[ros2_control_node-1] [INFO] [1765010492.237721954] [hebi_arm_with_gripper_controller]: Using 'splines' interpolation method.
+[ros2_control_node-1] [INFO] [1765010492.238014448] [hebi_arm_with_gripper_controller]: Controller state will be published at 50.00 Hz.
+[ros2_control_node-1] [INFO] [1765010492.239245154] [hebi_arm_with_gripper_controller]: Action status changes will be monitored at 20.00 Hz.
+[spawner-5] [INFO] [1765010492.267646851] [spawner_hebi_arm_with_gripper_controller]: Configured and activated hebi_arm_with_gripper_controller
+[INFO] [spawner-5]: process has finished cleanly [pid 4315]
+[ros2_control_node-1] [INFO] [1765010571.039613132] [controller_manager]: Loading controller 'joint_state_broadcaster'
+[ros2_control_node-1] [ERROR] [1765010571.039691586] [controller_manager]: A controller named 'joint_state_broadcaster' was already loaded inside the controller manager
+[ros2_control_node-1] [INFO] [1765010571.497035624] [controller_manager]: Loading controller 'hebi_arm_with_gripper_controller'
+[ros2_control_node-1] [ERROR] [1765010571.497129322] [controller_manager]: A controller named 'hebi_arm_with_gripper_controller' was already loaded inside the controller manager
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[robot_state_publisher-2] [INFO] [1765010925.087772569] [rclcpp]: signal_handler(signum=2)
+[rviz2-3] [INFO] [1765010925.087771980] [rclcpp]: signal_handler(signum=2)
+[ros2_control_node-1] [INFO] [1765010925.087778194] [rclcpp]: signal_handler(signum=2)
+[ros2_control_node-1] [INFO] [1765010925.087915750] [controller_manager]: Shutdown request received....
+[ros2_control_node-1] [INFO] [1765010925.088016015] [controller_manager]: Shutting down all controllers in the controller manager.
+[ros2_control_node-1] [INFO] [1765010925.088042049] [controller_manager]: Deactivating controller 'joint_state_broadcaster'
+[ros2_control_node-1] [INFO] [1765010925.088089455] [controller_manager]: Shutting down controller 'joint_state_broadcaster'
+[ros2_control_node-1] [INFO] [1765010925.088126700] [controller_manager]: Deactivating controller 'hebi_arm_with_gripper_controller'
+[ros2_control_node-1] [INFO] [1765010925.088161968] [controller_manager]: Shutting down controller 'hebi_arm_with_gripper_controller'
+[ros2_control_node-1] [INFO] [1765010925.093314634] [resource_manager]: 'deactivate' hardware 'A-2085-06G' 
+[ros2_control_node-1] [INFO] [1765010925.093357352] [resource_manager]: Successful 'deactivate' of hardware 'A-2085-06G'
+[ros2_control_node-1] [INFO] [1765010925.093360093] [resource_manager]: 'shutdown' hardware 'A-2085-06G' 
+[ros2_control_node-1] [INFO] [1765010925.093406432] [resource_manager]: Successful 'shutdown' of hardware 'A-2085-06G'
+[ros2_control_node-1] [INFO] [1765010925.093410879] [controller_manager]: Shutting down the controller manager.
+[ros2_control_node-1] [hebi_hardware] [INFO] Arm object released during shutdown.
+[ros2_control_node-1] [hebi_hardware] [INFO] Gripper object released during shutdown.
+[INFO] [ros2_control_node-1]: process has finished cleanly [pid 4165]
+[INFO] [robot_state_publisher-2]: process has finished cleanly [pid 4167]
+[INFO] [rviz2-3]: process has finished cleanly [pid 4169]
+

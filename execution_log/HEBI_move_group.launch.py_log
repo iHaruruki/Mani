@@ -1,0 +1,543 @@
+robot@nuc38:~$ ros2 launch hebi_bringup move_group.launch.py hebi_arm:=A-2085-06G use_sim_time:=false
+[INFO] [launch]: All log files can be found below /home/robot/.ros/log/2025-12-06-17-43-07-747631-nuc38-4889
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: Using default description_file: A-2085-06G.urdf.xacro
+[INFO] [move_group-1]: process started with pid [4890]
+[INFO] [rviz2-2]: process started with pid [4892]
+[rviz2-2] Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+[move_group-1] [INFO] [1765010588.097771641] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0248321 seconds
+[move_group-1] [INFO] [1765010588.097829374] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[rviz2-2] [INFO] [1765010588.259146568] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1765010588.259199171] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-2] [INFO] [1765010588.274054002] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] Warning: class_loader.impl: SEVERE WARNING!!! A namespace collision has occurred with plugin factory for class rviz_default_plugins::displays::InteractiveMarkerDisplay. New factory will OVERWRITE existing one. This situation occurs when libraries containing plugins are directly linked against an executable (the one running right now generating this message). Please separate plugins out into their own library or just don't link against the library and use either class_loader::ClassLoader/MultiLibraryClassLoader to open.
+[rviz2-2]          at line 253 in /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp
+[move_group-1] [WARN] [1765010588.626229571] [moveit_robot_model.robot_model]: Link end_effector_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[move_group-1] [WARN] [1765010588.626258123] [moveit_robot_model.robot_model]: Link end_effector_1/center_hub has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[move_group-1] [WARN] [1765010588.626262614] [moveit_robot_model.robot_model]: Link end_effector_1/l_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[move_group-1] [WARN] [1765010588.628628049] [moveit_robot_model.robot_model]: Link end_effector_1/r_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[move_group-1] [WARN] [1765010588.629705532] [moveit_robot_model.robot_model]: Link end_effector_1/l_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[move_group-1] [WARN] [1765010588.630491470] [moveit_robot_model.robot_model]: Link end_effector_1/l_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[move_group-1] [WARN] [1765010588.631542728] [moveit_robot_model.robot_model]: Link end_effector_1/r_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[move_group-1] [WARN] [1765010588.632338870] [moveit_robot_model.robot_model]: Link end_effector_1/r_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[move_group-1] [ERROR] [1765010588.647318337] [moveit_kinematics_base.kinematics_base]: Group 'hebi_arm_with_gripper' is not a chain
+[move_group-1] [ERROR] [1765010588.647336907] [kinematics_plugin_loader]: Kinematics solver of type 'kdl_kinematics_plugin/KDLKinematicsPlugin' could not be initialized for group 'hebi_arm_with_gripper'
+[move_group-1] [ERROR] [1765010588.647343911] [moveit_ros.robot_model_loader]: Kinematics solver could not be instantiated for joint group hebi_arm_with_gripper.
+[move_group-1] [INFO] [1765010589.963665015] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-1] [INFO] [1765010589.963820120] [moveit.ros_planning_interface.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-1] [INFO] [1765010589.964114399] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-1] [INFO] [1765010589.964331465] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-1] [INFO] [1765010589.964341147] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[move_group-1] [INFO] [1765010589.964728757] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-1] [INFO] [1765010589.964734845] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-1] [INFO] [1765010589.964899825] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-1] [INFO] [1765010589.965256366] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-1] [WARN] [1765010589.966015039] [moveit.ros.occupancy_map_monitor.middleware_handle]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-1] [ERROR] [1765010589.966030335] [moveit.ros.occupancy_map_monitor.middleware_handle]: No 3D sensor plugin(s) defined for octomap updates
+[rviz2-2] [ERROR] [1765010591.413582481] [moveit_ros_visualization.motion_planning_frame]: Action server: /recognize_objects not available
+[rviz2-2] [INFO] [1765010591.422860350] [moveit_ros_visualization.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[rviz2-2] [INFO] [1765010591.484166793] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0245626 seconds
+[rviz2-2] [INFO] [1765010591.484201451] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[rviz2-2] [WARN] [1765010592.009211557] [moveit_robot_model.robot_model]: Link end_effector_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010592.009258762] [moveit_robot_model.robot_model]: Link end_effector_1/center_hub has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010592.009266729] [moveit_robot_model.robot_model]: Link end_effector_1/l_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010592.012190821] [moveit_robot_model.robot_model]: Link end_effector_1/r_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010592.013587540] [moveit_robot_model.robot_model]: Link end_effector_1/l_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010592.014506482] [moveit_robot_model.robot_model]: Link end_effector_1/l_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010592.015751858] [moveit_robot_model.robot_model]: Link end_effector_1/r_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010592.016650527] [moveit_robot_model.robot_model]: Link end_effector_1/r_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [ERROR] [1765010592.021289680] [moveit_kinematics_base.kinematics_base]: Group 'hebi_arm_with_gripper' is not a chain
+[rviz2-2] [ERROR] [1765010592.021300340] [kinematics_plugin_loader]: Kinematics solver of type 'kdl_kinematics_plugin/KDLKinematicsPlugin' could not be initialized for group 'hebi_arm_with_gripper'
+[rviz2-2] [ERROR] [1765010592.021309941] [moveit_ros.robot_model_loader]: Kinematics solver could not be instantiated for joint group hebi_arm_with_gripper.
+[move_group-1] [INFO] [1765010592.535855320] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'chomp'
+[move_group-1] [INFO] [1765010592.540232772] [moveit.ros_planning.planning_pipeline]: Using planning interface 'CHOMP'
+[move_group-1] [INFO] [1765010592.542650691] [moveit_ros.add_time_optimal_parameterization]: Param 'chomp.path_tolerance' was not set. Using default value: 0.100000
+[move_group-1] [INFO] [1765010592.542658192] [moveit_ros.add_time_optimal_parameterization]: Param 'chomp.resample_dt' was not set. Using default value: 0.100000
+[move_group-1] [INFO] [1765010592.542660718] [moveit_ros.add_time_optimal_parameterization]: Param 'chomp.min_angle_change' was not set. Using default value: 0.001000
+[move_group-1] [INFO] [1765010592.542671252] [moveit_ros.fix_workspace_bounds]: Param 'chomp.default_workspace_bounds' was not set. Using default value: 10.000000
+[move_group-1] [INFO] [1765010592.542678145] [moveit_ros.fix_start_state_bounds]: Param 'chomp.start_state_max_bounds_error' was set to 0.100000
+[move_group-1] [INFO] [1765010592.542680866] [moveit_ros.fix_start_state_bounds]: Param 'chomp.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-1] [INFO] [1765010592.542687372] [moveit_ros.fix_start_state_collision]: Param 'chomp.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-1] [INFO] [1765010592.542690278] [moveit_ros.fix_start_state_collision]: Param 'chomp.jiggle_fraction' was set to 0.050000
+[move_group-1] [INFO] [1765010592.542692988] [moveit_ros.fix_start_state_collision]: Param 'chomp.max_sampling_attempts' was not set. Using default value: 100
+[move_group-1] [INFO] [1765010592.542699103] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[move_group-1] [INFO] [1765010592.542701851] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Resolve constraint frames to robot links'
+[move_group-1] [INFO] [1765010592.542703642] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[move_group-1] [INFO] [1765010592.542705458] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[move_group-1] [INFO] [1765010592.542707125] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[move_group-1] [INFO] [1765010592.542708668] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
+[move_group-1] [INFO] [1765010592.543873907] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'ompl'
+[move_group-1] [INFO] [1765010592.557093079] [moveit.ros_planning.planning_pipeline]: Using planning interface 'OMPL'
+[move_group-1] [INFO] [1765010592.559039651] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.path_tolerance' was not set. Using default value: 0.100000
+[move_group-1] [INFO] [1765010592.559047903] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.resample_dt' was not set. Using default value: 0.100000
+[move_group-1] [INFO] [1765010592.559050658] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.min_angle_change' was not set. Using default value: 0.001000
+[move_group-1] [INFO] [1765010592.559063619] [moveit_ros.fix_workspace_bounds]: Param 'ompl.default_workspace_bounds' was not set. Using default value: 10.000000
+[move_group-1] [INFO] [1765010592.559073212] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_bounds_error' was set to 0.100000
+[move_group-1] [INFO] [1765010592.559076024] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-1] [INFO] [1765010592.559082573] [moveit_ros.fix_start_state_collision]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-1] [INFO] [1765010592.559085254] [moveit_ros.fix_start_state_collision]: Param 'ompl.jiggle_fraction' was set to 0.050000
+[move_group-1] [INFO] [1765010592.559087482] [moveit_ros.fix_start_state_collision]: Param 'ompl.max_sampling_attempts' was not set. Using default value: 100
+[move_group-1] [INFO] [1765010592.559093578] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[move_group-1] [INFO] [1765010592.559096116] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Resolve constraint frames to robot links'
+[move_group-1] [INFO] [1765010592.559116253] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[move_group-1] [INFO] [1765010592.559118311] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[move_group-1] [INFO] [1765010592.559119960] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[move_group-1] [INFO] [1765010592.559121538] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
+[move_group-1] [INFO] [1765010592.559673535] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'pilz_industrial_motion_planner'
+[move_group-1] [INFO] [1765010592.562920844] [moveit.pilz_industrial_motion_planner.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-1] [INFO] [1765010592.565173259] [moveit.pilz_industrial_motion_planner]: Available plugins: pilz_industrial_motion_planner/PlanningContextLoaderCIRC pilz_industrial_motion_planner/PlanningContextLoaderLIN pilz_industrial_motion_planner/PlanningContextLoaderPTP 
+[move_group-1] [INFO] [1765010592.565183684] [moveit.pilz_industrial_motion_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderCIRC
+[move_group-1] [INFO] [1765010592.566860773] [moveit.pilz_industrial_motion_planner]: Registered Algorithm [CIRC]
+[move_group-1] [INFO] [1765010592.566870081] [moveit.pilz_industrial_motion_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderLIN
+[move_group-1] [INFO] [1765010592.567765044] [moveit.pilz_industrial_motion_planner]: Registered Algorithm [LIN]
+[move_group-1] [INFO] [1765010592.567770743] [moveit.pilz_industrial_motion_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderPTP
+[move_group-1] [INFO] [1765010592.568633952] [moveit.pilz_industrial_motion_planner]: Registered Algorithm [PTP]
+[move_group-1] [INFO] [1765010592.568643135] [moveit.ros_planning.planning_pipeline]: Using planning interface 'Pilz Industrial Motion Planner'
+[move_group-1] [INFO] [1765010592.581804623] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for hebi_arm_controller
+[move_group-1] [INFO] [1765010592.581833286] [moveit.plugins.moveit_simple_controller_manager]: Max effort set to 0.0
+[move_group-1] [INFO] [1765010592.582349853] [moveit.plugins.moveit_simple_controller_manager]: Added GripperCommand controller for gripper_controller
+[move_group-1] [INFO] [1765010592.582445330] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010592.582458792] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010592.582626935] [moveit_ros.trajectory_execution_manager]: Trajectory execution is managing controllers
+[move_group-1] [INFO] [1765010592.582636434] [move_group.move_group]: MoveGroup debug mode is ON
+[move_group-1] [INFO] [1765010592.594824392] [move_group.move_group]: 
+[move_group-1] 
+[move_group-1] ********************************************************
+[move_group-1] * MoveGroup using: 
+[move_group-1] *     - ApplyPlanningSceneService
+[move_group-1] *     - ClearOctomapService
+[move_group-1] *     - CartesianPathService
+[move_group-1] *     - ExecuteTrajectoryAction
+[move_group-1] *     - GetPlanningSceneService
+[move_group-1] *     - KinematicsService
+[move_group-1] *     - MoveAction
+[move_group-1] *     - MotionPlanService
+[move_group-1] *     - QueryPlannersService
+[move_group-1] *     - StateValidationService
+[move_group-1] ********************************************************
+[move_group-1] 
+[move_group-1] [INFO] [1765010592.594875713] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner
+[move_group-1] [INFO] [1765010592.594888324] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context initialization complete
+[move_group-1] Loading 'move_group/ApplyPlanningSceneService'...
+[move_group-1] Loading 'move_group/ClearOctomapService'...
+[move_group-1] Loading 'move_group/MoveGroupCartesianPathService'...
+[move_group-1] Loading 'move_group/MoveGroupExecuteTrajectoryAction'...
+[move_group-1] Loading 'move_group/MoveGroupGetPlanningSceneService'...
+[move_group-1] Loading 'move_group/MoveGroupKinematicsService'...
+[move_group-1] Loading 'move_group/MoveGroupMoveAction'...
+[move_group-1] Loading 'move_group/MoveGroupPlanService'...
+[move_group-1] Loading 'move_group/MoveGroupQueryPlannersService'...
+[move_group-1] Loading 'move_group/MoveGroupStateValidationService'...
+[move_group-1] 
+[move_group-1] You can start planning now!
+[move_group-1] 
+[rviz2-2] [INFO] [1765010593.380108345] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-2] [INFO] [1765010593.380946428] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[rviz2-2] [INFO] [1765010593.685130395] [interactive_marker_display_108006291818640]: Connected on namespace: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic
+[rviz2-2] [INFO] [1765010593.704595095] [moveit_ros_robot_interaction.robot_interaction]: No active joints or end effectors found for group 'gripper'. Make sure that kinematics.yaml is loaded in this node's namespace.
+[rviz2-2] [INFO] [1765010593.705575353] [moveit_ros_robot_interaction.robot_interaction]: No active joints or end effectors found for group 'gripper'. Make sure that kinematics.yaml is loaded in this node's namespace.
+[rviz2-2] [INFO] [1765010593.711826087] [moveit_ros_visualization.motion_planning_frame]: group gripper
+[rviz2-2] [INFO] [1765010593.711845523] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'gripper' in namespace ''
+[rviz2-2] [INFO] [1765010593.717292764] [move_group_interface]: Ready to take commands for planning group gripper.
+[rviz2-2] [INFO] [1765010593.717682099] [moveit_ros_visualization.motion_planning_frame]: group gripper
+[rviz2-2] [INFO] [1765010593.726438635] [interactive_marker_display_108006291818640]: Sending request for interactive markers
+[rviz2-2] [INFO] [1765010593.759817298] [interactive_marker_display_108006291818640]: Service response received for initialization
+[rviz2-2] [INFO] [1765010700.504724224] [moveit_ros_visualization.motion_planning_frame]: group hebi_arm_with_gripper
+[rviz2-2] [INFO] [1765010700.504768889] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'hebi_arm_with_gripper' in namespace ''
+[rviz2-2] [INFO] [1765010700.513300840] [move_group_interface]: Ready to take commands for planning group hebi_arm_with_gripper.
+[rviz2-2] [INFO] [1765010720.567177613] [move_group_interface]: MoveGroup action client/server ready
+[move_group-1] [INFO] [1765010720.567571175] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-1] [INFO] [1765010720.567708454] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[rviz2-2] [INFO] [1765010720.567808245] [move_group_interface]: Planning request accepted
+[move_group-1] [INFO] [1765010720.574661031] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-1] [INFO] [1765010720.574703659] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-1] [INFO] [1765010720.586518711] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'hebi_arm_with_gripper' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-1] [WARN] [1765010720.607230946] [moveit_trajectory_processing.time_optimal_trajectory_generation]: Joint velocity limits are not defined. Using the default 1 rad/s. You can define velocity limits in the URDF or joint_limits.yaml.
+[move_group-1] [INFO] [1765010720.610144994] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[rviz2-2] [INFO] [1765010720.610746309] [move_group_interface]: Planning request complete!
+[rviz2-2] [INFO] [1765010720.611161122] [move_group_interface]: time taken to generate plan: 0.0201918 seconds
+[move_group-1] [INFO] [1765010724.157071195] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-1] [INFO] [1765010724.157198133] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-1] [INFO] [1765010724.157226745] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010724.157250320] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010724.157333375] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[rviz2-2] [INFO] [1765010724.157556122] [move_group_interface]: Execute request accepted
+[move_group-1] [INFO] [1765010724.164294997] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-1] [INFO] [1765010724.164356961] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010724.164373512] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [ERROR] [1765010724.164480387] [moveit.simple_controller_manager.gripper_controller_handle]: Action client not connected to action server: gripper_controller/gripper_cmd
+[move_group-1] [ERROR] [1765010724.164485922] [moveit_ros.trajectory_execution_manager]: Failed to send trajectory part 1 of 2 to controller gripper_controller
+[move_group-1] [INFO] [1765010724.164491066] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status ABORTED ...
+[move_group-1] [INFO] [1765010724.164567511] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: ABORTED
+[rviz2-2] [INFO] [1765010724.164758986] [move_group_interface]: Execute request aborted
+[rviz2-2] [ERROR] [1765010724.164940801] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[rviz2-2] [INFO] [1765010732.255191661] [moveit_ros_visualization.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[rviz2-2] [INFO] [1765010732.283100592] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[rviz2-2] [WARN] [1765010732.312383540] [interactive_marker_display_108006291818640]: Server not available while running, resetting
+[rviz2-2] [INFO] [1765010732.325102293] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.024788 seconds
+[rviz2-2] [INFO] [1765010732.325134437] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[rviz2-2] [WARN] [1765010733.110859056] [moveit_robot_model.robot_model]: Link end_effector_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010733.110895572] [moveit_robot_model.robot_model]: Link end_effector_1/center_hub has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010733.110902752] [moveit_robot_model.robot_model]: Link end_effector_1/l_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010733.114247818] [moveit_robot_model.robot_model]: Link end_effector_1/r_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010733.115750014] [moveit_robot_model.robot_model]: Link end_effector_1/l_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010733.116844701] [moveit_robot_model.robot_model]: Link end_effector_1/l_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010733.118322983] [moveit_robot_model.robot_model]: Link end_effector_1/r_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010733.119401331] [moveit_robot_model.robot_model]: Link end_effector_1/r_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [ERROR] [1765010733.122890162] [moveit_kinematics_base.kinematics_base]: Group 'hebi_arm_with_gripper' is not a chain
+[rviz2-2] [ERROR] [1765010733.122903200] [kinematics_plugin_loader]: Kinematics solver of type 'kdl_kinematics_plugin/KDLKinematicsPlugin' could not be initialized for group 'hebi_arm_with_gripper'
+[rviz2-2] [ERROR] [1765010733.122913639] [moveit_ros.robot_model_loader]: Kinematics solver could not be instantiated for joint group hebi_arm_with_gripper.
+[rviz2-2] [INFO] [1765010735.143139290] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-2] [INFO] [1765010735.144713239] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[rviz2-2] [INFO] [1765010735.689992207] [moveit_ros_visualization.motion_planning_frame]: group hebi_arm_with_gripper
+[rviz2-2] [INFO] [1765010735.690047431] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'hebi_arm_with_gripper' in namespace ''
+[rviz2-2] [INFO] [1765010735.702575693] [interactive_marker_display_108006291818640]: Sending request for interactive markers
+[rviz2-2] [INFO] [1765010735.702762828] [move_group_interface]: Ready to take commands for planning group hebi_arm_with_gripper.
+[rviz2-2] [INFO] [1765010735.735496434] [interactive_marker_display_108006291818640]: Service response received for initialization
+[rviz2-2] [INFO] [1765010747.147130039] [move_group_interface]: MoveGroup action client/server ready
+[move_group-1] [INFO] [1765010747.149176188] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-1] [INFO] [1765010747.149278511] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[rviz2-2] [INFO] [1765010747.149293172] [move_group_interface]: Planning request accepted
+[move_group-1] [INFO] [1765010747.154421144] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-1] [INFO] [1765010747.154464395] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-1] [INFO] [1765010747.155225912] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'hebi_arm_with_gripper' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-1] [INFO] [1765010747.195925674] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[rviz2-2] [INFO] [1765010747.197715996] [move_group_interface]: Planning request complete!
+[rviz2-2] [INFO] [1765010747.198483035] [move_group_interface]: time taken to generate plan: 0.0337851 seconds
+[move_group-1] [INFO] [1765010750.474939043] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-1] [INFO] [1765010750.475038383] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-1] [INFO] [1765010750.475061824] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010750.475077736] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010750.475130744] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[rviz2-2] [INFO] [1765010750.476612034] [move_group_interface]: Execute request accepted
+[move_group-1] [INFO] [1765010750.486666449] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-1] [INFO] [1765010750.486735495] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010750.486758360] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [ERROR] [1765010750.486818427] [moveit.simple_controller_manager.gripper_controller_handle]: Action client not connected to action server: gripper_controller/gripper_cmd
+[move_group-1] [ERROR] [1765010750.486857475] [moveit_ros.trajectory_execution_manager]: Failed to send trajectory part 1 of 2 to controller gripper_controller
+[move_group-1] [INFO] [1765010750.486863297] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status ABORTED ...
+[move_group-1] [INFO] [1765010750.486926416] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: ABORTED
+[rviz2-2] [INFO] [1765010750.487169617] [move_group_interface]: Execute request aborted
+[rviz2-2] [ERROR] [1765010750.487636717] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[rviz2-2] [INFO] [1765010756.465050233] [moveit_ros_visualization.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[rviz2-2] [WARN] [1765010756.480474475] [rviz2]: Link [J1_base/body] does not exist
+[rviz2-2] [WARN] [1765010756.480948846] [rviz2]: Link [bracket_1] does not exist
+[rviz2-2] [WARN] [1765010756.480956588] [rviz2]: Link [J2_shoulder/body] does not exist
+[rviz2-2] [WARN] [1765010756.480959720] [rviz2]: Link [link_1] does not exist
+[rviz2-2] [WARN] [1765010756.480962211] [rviz2]: Link [J3_elbow/body] does not exist
+[rviz2-2] [WARN] [1765010756.480964703] [rviz2]: Link [link_2] does not exist
+[rviz2-2] [WARN] [1765010756.480967216] [rviz2]: Link [J4_wrist1/body] does not exist
+[rviz2-2] [WARN] [1765010756.480969616] [rviz2]: Link [bracket_2] does not exist
+[rviz2-2] [WARN] [1765010756.480971984] [rviz2]: Link [J5_wrist2/body] does not exist
+[rviz2-2] [WARN] [1765010756.480974418] [rviz2]: Link [bracket_3] does not exist
+[rviz2-2] [WARN] [1765010756.480976780] [rviz2]: Link [J6_wrist3/body] does not exist
+[rviz2-2] [WARN] [1765010756.480979261] [rviz2]: Link [end_effector_1/center_pinion] does not exist
+[rviz2-2] [WARN] [1765010756.480981822] [rviz2]: Link [end_effector_1/l_finger] does not exist
+[rviz2-2] [WARN] [1765010756.480984337] [rviz2]: Link [end_effector_1/l_gripper] does not exist
+[rviz2-2] [WARN] [1765010756.480986787] [rviz2]: Link [end_effector_1/r_finger] does not exist
+[rviz2-2] [WARN] [1765010756.480989186] [rviz2]: Link [end_effector_1/r_gripper] does not exist
+[rviz2-2] [WARN] [1765010756.480992141] [rviz2]: Link [J1_base/body] does not exist
+[rviz2-2] [WARN] [1765010756.480994591] [rviz2]: Link [bracket_1] does not exist
+[rviz2-2] [WARN] [1765010756.480996993] [rviz2]: Link [J2_shoulder/body] does not exist
+[rviz2-2] [WARN] [1765010756.480999378] [rviz2]: Link [link_1] does not exist
+[rviz2-2] [WARN] [1765010756.481001741] [rviz2]: Link [J3_elbow/body] does not exist
+[rviz2-2] [WARN] [1765010756.481004131] [rviz2]: Link [link_2] does not exist
+[rviz2-2] [WARN] [1765010756.481006509] [rviz2]: Link [J4_wrist1/body] does not exist
+[rviz2-2] [WARN] [1765010756.481008829] [rviz2]: Link [bracket_2] does not exist
+[rviz2-2] [WARN] [1765010756.481011160] [rviz2]: Link [J5_wrist2/body] does not exist
+[rviz2-2] [WARN] [1765010756.481013454] [rviz2]: Link [bracket_3] does not exist
+[rviz2-2] [WARN] [1765010756.481015816] [rviz2]: Link [J6_wrist3/body] does not exist
+[rviz2-2] [WARN] [1765010756.481043189] [rviz2]: Link [end_effector_1/center_pinion] does not exist
+[rviz2-2] [WARN] [1765010756.481045799] [rviz2]: Link [end_effector_1/l_finger] does not exist
+[rviz2-2] [WARN] [1765010756.481048188] [rviz2]: Link [end_effector_1/l_gripper] does not exist
+[rviz2-2] [WARN] [1765010756.481050568] [rviz2]: Link [end_effector_1/r_finger] does not exist
+[rviz2-2] [WARN] [1765010756.481052838] [rviz2]: Link [end_effector_1/r_gripper] does not exist
+[rviz2-2] [WARN] [1765010756.481057913] [rviz2]: Link [J1_base/body] does not exist
+[rviz2-2] [WARN] [1765010756.481060560] [rviz2]: Link [bracket_1] does not exist
+[rviz2-2] [WARN] [1765010756.481063222] [rviz2]: Link [J2_shoulder/body] does not exist
+[rviz2-2] [WARN] [1765010756.481065715] [rviz2]: Link [link_1] does not exist
+[rviz2-2] [WARN] [1765010756.481068084] [rviz2]: Link [J3_elbow/body] does not exist
+[rviz2-2] [WARN] [1765010756.481070503] [rviz2]: Link [link_2] does not exist
+[rviz2-2] [WARN] [1765010756.481072883] [rviz2]: Link [J4_wrist1/body] does not exist
+[rviz2-2] [WARN] [1765010756.481075208] [rviz2]: Link [bracket_2] does not exist
+[rviz2-2] [WARN] [1765010756.481077629] [rviz2]: Link [J5_wrist2/body] does not exist
+[rviz2-2] [WARN] [1765010756.481079963] [rviz2]: Link [bracket_3] does not exist
+[rviz2-2] [WARN] [1765010756.481082325] [rviz2]: Link [J6_wrist3/body] does not exist
+[rviz2-2] [WARN] [1765010756.481084728] [rviz2]: Link [end_effector_1/center_pinion] does not exist
+[rviz2-2] [WARN] [1765010756.481087118] [rviz2]: Link [end_effector_1/l_finger] does not exist
+[rviz2-2] [WARN] [1765010756.481089516] [rviz2]: Link [end_effector_1/l_gripper] does not exist
+[rviz2-2] [WARN] [1765010756.481091945] [rviz2]: Link [end_effector_1/r_finger] does not exist
+[rviz2-2] [WARN] [1765010756.481094275] [rviz2]: Link [end_effector_1/r_gripper] does not exist
+[rviz2-2] [WARN] [1765010756.481096820] [rviz2]: Link [J1_base/body] does not exist
+[rviz2-2] [WARN] [1765010756.481100633] [rviz2]: Link [bracket_1] does not exist
+[rviz2-2] [WARN] [1765010756.481103069] [rviz2]: Link [J2_shoulder/body] does not exist
+[rviz2-2] [WARN] [1765010756.481105446] [rviz2]: Link [link_1] does not exist
+[rviz2-2] [WARN] [1765010756.481107822] [rviz2]: Link [J3_elbow/body] does not exist
+[rviz2-2] [WARN] [1765010756.481110200] [rviz2]: Link [link_2] does not exist
+[rviz2-2] [WARN] [1765010756.481112559] [rviz2]: Link [J4_wrist1/body] does not exist
+[rviz2-2] [WARN] [1765010756.481114882] [rviz2]: Link [bracket_2] does not exist
+[rviz2-2] [WARN] [1765010756.481117239] [rviz2]: Link [J5_wrist2/body] does not exist
+[rviz2-2] [WARN] [1765010756.481119570] [rviz2]: Link [bracket_3] does not exist
+[rviz2-2] [WARN] [1765010756.481121929] [rviz2]: Link [J6_wrist3/body] does not exist
+[rviz2-2] [WARN] [1765010756.481124265] [rviz2]: Link [end_effector_1/center_pinion] does not exist
+[rviz2-2] [WARN] [1765010756.481126650] [rviz2]: Link [end_effector_1/l_finger] does not exist
+[rviz2-2] [WARN] [1765010756.481128961] [rviz2]: Link [end_effector_1/l_gripper] does not exist
+[rviz2-2] [WARN] [1765010756.481131319] [rviz2]: Link [end_effector_1/r_finger] does not exist
+[rviz2-2] [WARN] [1765010756.481133650] [rviz2]: Link [end_effector_1/r_gripper] does not exist
+[rviz2-2] [INFO] [1765010756.511914976] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[rviz2-2] [WARN] [1765010756.541294240] [interactive_marker_display_108006291818640]: Server not available while running, resetting
+[rviz2-2] [INFO] [1765010756.558618695] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0255998 seconds
+[rviz2-2] [INFO] [1765010756.558647319] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[rviz2-2] [WARN] [1765010757.334238055] [moveit_robot_model.robot_model]: Link end_effector_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010757.334278227] [moveit_robot_model.robot_model]: Link end_effector_1/center_hub has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010757.334285313] [moveit_robot_model.robot_model]: Link end_effector_1/l_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010757.337616453] [moveit_robot_model.robot_model]: Link end_effector_1/r_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010757.339633542] [moveit_robot_model.robot_model]: Link end_effector_1/l_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010757.341058359] [moveit_robot_model.robot_model]: Link end_effector_1/l_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010757.342966522] [moveit_robot_model.robot_model]: Link end_effector_1/r_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010757.344069544] [moveit_robot_model.robot_model]: Link end_effector_1/r_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [ERROR] [1765010757.348033295] [moveit_kinematics_base.kinematics_base]: Group 'hebi_arm_with_gripper' is not a chain
+[rviz2-2] [ERROR] [1765010757.348048612] [kinematics_plugin_loader]: Kinematics solver of type 'kdl_kinematics_plugin/KDLKinematicsPlugin' could not be initialized for group 'hebi_arm_with_gripper'
+[rviz2-2] [ERROR] [1765010757.348065292] [moveit_ros.robot_model_loader]: Kinematics solver could not be instantiated for joint group hebi_arm_with_gripper.
+[rviz2-2] [INFO] [1765010759.108073492] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-2] [INFO] [1765010759.109659207] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[rviz2-2] [INFO] [1765010759.753292713] [moveit_ros_visualization.motion_planning_frame]: group hebi_arm_with_gripper
+[rviz2-2] [INFO] [1765010759.753315463] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'hebi_arm_with_gripper' in namespace ''
+[rviz2-2] [INFO] [1765010759.761761929] [move_group_interface]: Ready to take commands for planning group hebi_arm_with_gripper.
+[rviz2-2] [INFO] [1765010759.767571507] [interactive_marker_display_108006291818640]: Sending request for interactive markers
+[rviz2-2] [INFO] [1765010759.800047499] [interactive_marker_display_108006291818640]: Service response received for initialization
+[rviz2-2] [INFO] [1765010761.968944911] [moveit_ros_visualization.motion_planning_frame]: group hebi_arm
+[rviz2-2] [INFO] [1765010761.969049534] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'hebi_arm' in namespace ''
+[rviz2-2] [INFO] [1765010761.979710049] [move_group_interface]: Ready to take commands for planning group hebi_arm.
+[rviz2-2] [INFO] [1765010778.882048609] [move_group_interface]: MoveGroup action client/server ready
+[move_group-1] [INFO] [1765010778.882409351] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-1] [INFO] [1765010778.882537357] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[rviz2-2] [INFO] [1765010778.882549885] [move_group_interface]: Planning request accepted
+[move_group-1] [INFO] [1765010778.894649268] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-1] [INFO] [1765010778.894713095] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-1] [INFO] [1765010778.895872279] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'hebi_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-1] [INFO] [1765010778.927346265] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[rviz2-2] [INFO] [1765010778.928720863] [move_group_interface]: Planning request complete!
+[rviz2-2] [INFO] [1765010778.929025539] [move_group_interface]: time taken to generate plan: 0.0270363 seconds
+[move_group-1] [INFO] [1765010782.415071474] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-1] [INFO] [1765010782.415404626] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-1] [INFO] [1765010782.415460119] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010782.415493553] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010782.415572896] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[rviz2-2] [INFO] [1765010782.415709389] [move_group_interface]: Execute request accepted
+[move_group-1] [INFO] [1765010782.418462736] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-1] [INFO] [1765010782.418524231] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010782.418547003] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [ERROR] [1765010782.418604224] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Action client not connected to action server: hebi_arm_controller/follow_joint_trajectory
+[move_group-1] [ERROR] [1765010782.418611889] [moveit_ros.trajectory_execution_manager]: Failed to send trajectory part 1 of 1 to controller hebi_arm_controller
+[move_group-1] [INFO] [1765010782.418618217] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status ABORTED ...
+[move_group-1] [INFO] [1765010782.418684505] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: ABORTED
+[rviz2-2] [INFO] [1765010782.419073006] [move_group_interface]: Execute request aborted
+[rviz2-2] [ERROR] [1765010782.419126129] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[rviz2-2] [INFO] [1765010787.869351442] [moveit_ros_visualization.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[rviz2-2] [INFO] [1765010787.896233984] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[rviz2-2] [WARN] [1765010787.917566102] [interactive_marker_display_108006291818640]: Server not available while running, resetting
+[rviz2-2] [INFO] [1765010787.939249353] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0316937 seconds
+[rviz2-2] [INFO] [1765010787.939277516] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[rviz2-2] [WARN] [1765010788.770164514] [moveit_robot_model.robot_model]: Link end_effector_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010788.770588602] [moveit_robot_model.robot_model]: Link end_effector_1/center_hub has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010788.770600095] [moveit_robot_model.robot_model]: Link end_effector_1/l_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010788.773436728] [moveit_robot_model.robot_model]: Link end_effector_1/r_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010788.775031814] [moveit_robot_model.robot_model]: Link end_effector_1/l_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010788.776263711] [moveit_robot_model.robot_model]: Link end_effector_1/l_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010788.778223777] [moveit_robot_model.robot_model]: Link end_effector_1/r_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010788.779576140] [moveit_robot_model.robot_model]: Link end_effector_1/r_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [ERROR] [1765010788.783297456] [moveit_kinematics_base.kinematics_base]: Group 'hebi_arm_with_gripper' is not a chain
+[rviz2-2] [ERROR] [1765010788.783316797] [kinematics_plugin_loader]: Kinematics solver of type 'kdl_kinematics_plugin/KDLKinematicsPlugin' could not be initialized for group 'hebi_arm_with_gripper'
+[rviz2-2] [ERROR] [1765010788.783330599] [moveit_ros.robot_model_loader]: Kinematics solver could not be instantiated for joint group hebi_arm_with_gripper.
+[rviz2-2] [INFO] [1765010790.864055147] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-2] [INFO] [1765010790.866431085] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[rviz2-2] [INFO] [1765010791.492494728] [moveit_ros_visualization.motion_planning_frame]: group hebi_arm
+[rviz2-2] [INFO] [1765010791.492738538] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'hebi_arm' in namespace ''
+[rviz2-2] [INFO] [1765010791.504278056] [move_group_interface]: Ready to take commands for planning group hebi_arm.
+[rviz2-2] [INFO] [1765010791.517849337] [interactive_marker_display_108006291818640]: Sending request for interactive markers
+[rviz2-2] [INFO] [1765010791.551325596] [interactive_marker_display_108006291818640]: Service response received for initialization
+[rviz2-2] [INFO] [1765010806.390743072] [move_group_interface]: MoveGroup action client/server ready
+[move_group-1] [INFO] [1765010806.396924020] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-1] [INFO] [1765010806.397086546] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[move_group-1] [INFO] [1765010806.399812734] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-1] [INFO] [1765010806.399885620] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[rviz2-2] [INFO] [1765010806.399937477] [move_group_interface]: Planning request accepted
+[move_group-1] [INFO] [1765010806.400964622] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'hebi_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-1] [INFO] [1765010806.429824901] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[rviz2-2] [INFO] [1765010806.431057088] [move_group_interface]: Planning request complete!
+[rviz2-2] [INFO] [1765010806.432054707] [move_group_interface]: time taken to generate plan: 0.0242343 seconds
+[move_group-1] [INFO] [1765010810.050249915] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-1] [INFO] [1765010810.050348074] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-1] [INFO] [1765010810.050370867] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010810.050411075] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010810.050452242] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[rviz2-2] [INFO] [1765010810.050363169] [move_group_interface]: Execute request accepted
+[move_group-1] [INFO] [1765010810.057365658] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-1] [INFO] [1765010810.057451235] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010810.057471557] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [ERROR] [1765010810.057550820] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Action client not connected to action server: hebi_arm_controller/follow_joint_trajectory
+[move_group-1] [ERROR] [1765010810.057556225] [moveit_ros.trajectory_execution_manager]: Failed to send trajectory part 1 of 1 to controller hebi_arm_controller
+[move_group-1] [INFO] [1765010810.057561212] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status ABORTED ...
+[move_group-1] [INFO] [1765010810.058938570] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: ABORTED
+[rviz2-2] [INFO] [1765010810.061920226] [move_group_interface]: Execute request aborted
+[rviz2-2] [ERROR] [1765010810.062860907] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[rviz2-2] [INFO] [1765010816.349285154] [moveit_ros_visualization.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[rviz2-2] [INFO] [1765010816.398463183] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[rviz2-2] [WARN] [1765010816.422422192] [interactive_marker_display_108006291818640]: Server not available while running, resetting
+[rviz2-2] [INFO] [1765010816.444604765] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0313933 seconds
+[rviz2-2] [INFO] [1765010816.444651587] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[rviz2-2] [WARN] [1765010817.291204058] [moveit_robot_model.robot_model]: Link end_effector_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010817.291251302] [moveit_robot_model.robot_model]: Link end_effector_1/center_hub has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010817.291259869] [moveit_robot_model.robot_model]: Link end_effector_1/l_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010817.295251689] [moveit_robot_model.robot_model]: Link end_effector_1/r_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010817.298129306] [moveit_robot_model.robot_model]: Link end_effector_1/l_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010817.300447904] [moveit_robot_model.robot_model]: Link end_effector_1/l_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010817.303485649] [moveit_robot_model.robot_model]: Link end_effector_1/r_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010817.305182136] [moveit_robot_model.robot_model]: Link end_effector_1/r_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [ERROR] [1765010817.309935568] [moveit_kinematics_base.kinematics_base]: Group 'hebi_arm_with_gripper' is not a chain
+[rviz2-2] [ERROR] [1765010817.309964504] [kinematics_plugin_loader]: Kinematics solver of type 'kdl_kinematics_plugin/KDLKinematicsPlugin' could not be initialized for group 'hebi_arm_with_gripper'
+[rviz2-2] [ERROR] [1765010817.309977809] [moveit_ros.robot_model_loader]: Kinematics solver could not be instantiated for joint group hebi_arm_with_gripper.
+[rviz2-2] [INFO] [1765010819.423550392] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-2] [INFO] [1765010819.425652979] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[rviz2-2] [INFO] [1765010820.129423878] [moveit_ros_visualization.motion_planning_frame]: group hebi_arm
+[rviz2-2] [INFO] [1765010820.129455957] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'hebi_arm' in namespace ''
+[rviz2-2] [INFO] [1765010820.137623273] [move_group_interface]: Ready to take commands for planning group hebi_arm.
+[rviz2-2] [INFO] [1765010820.151581457] [interactive_marker_display_108006291818640]: Sending request for interactive markers
+[rviz2-2] [INFO] [1765010820.184099943] [interactive_marker_display_108006291818640]: Service response received for initialization
+[rviz2-2] [INFO] [1765010823.094336960] [moveit_ros_robot_interaction.robot_interaction]: No active joints or end effectors found for group 'gripper'. Make sure that kinematics.yaml is loaded in this node's namespace.
+[rviz2-2] [INFO] [1765010823.095508898] [moveit_ros_visualization.motion_planning_frame]: group gripper
+[rviz2-2] [INFO] [1765010823.095530525] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'gripper' in namespace ''
+[rviz2-2] [INFO] [1765010823.102564258] [move_group_interface]: Ready to take commands for planning group gripper.
+[rviz2-2] [INFO] [1765010837.574086447] [move_group_interface]: MoveGroup action client/server ready
+[move_group-1] [INFO] [1765010837.574465024] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-1] [INFO] [1765010837.574746883] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[rviz2-2] [INFO] [1765010837.576920380] [move_group_interface]: Planning request accepted
+[move_group-1] [INFO] [1765010837.585521882] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-1] [INFO] [1765010837.586040439] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-1] [INFO] [1765010837.586516820] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'gripper' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-1] [INFO] [1765010837.636384753] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[rviz2-2] [INFO] [1765010837.636835958] [move_group_interface]: Planning request complete!
+[rviz2-2] [INFO] [1765010837.637134390] [move_group_interface]: time taken to generate plan: 0.0419463 seconds
+[move_group-1] [INFO] [1765010842.280439228] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-1] [INFO] [1765010842.280531890] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-1] [INFO] [1765010842.280550135] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010842.280563706] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010842.280644012] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[rviz2-2] [INFO] [1765010842.280590398] [move_group_interface]: Execute request accepted
+[move_group-1] [INFO] [1765010842.282551728] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-1] [INFO] [1765010842.282613244] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010842.282636267] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [ERROR] [1765010842.282751596] [moveit.simple_controller_manager.gripper_controller_handle]: Action client not connected to action server: gripper_controller/gripper_cmd
+[move_group-1] [ERROR] [1765010842.282757303] [moveit_ros.trajectory_execution_manager]: Failed to send trajectory part 1 of 1 to controller gripper_controller
+[move_group-1] [INFO] [1765010842.282762905] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status ABORTED ...
+[move_group-1] [INFO] [1765010842.282878047] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: ABORTED
+[rviz2-2] [INFO] [1765010842.283933979] [move_group_interface]: Execute request aborted
+[rviz2-2] [ERROR] [1765010842.284826179] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[rviz2-2] [INFO] [1765010846.665891909] [moveit_ros_visualization.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[rviz2-2] [INFO] [1765010846.696343058] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[rviz2-2] [WARN] [1765010846.721059751] [interactive_marker_display_108006291818640]: Server not available while running, resetting
+[rviz2-2] [INFO] [1765010846.739406959] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0272299 seconds
+[rviz2-2] [INFO] [1765010846.739455476] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[rviz2-2] [WARN] [1765010847.598158350] [moveit_robot_model.robot_model]: Link end_effector_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010847.598196638] [moveit_robot_model.robot_model]: Link end_effector_1/center_hub has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010847.598202228] [moveit_robot_model.robot_model]: Link end_effector_1/l_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010847.601601048] [moveit_robot_model.robot_model]: Link end_effector_1/r_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010847.604167063] [moveit_robot_model.robot_model]: Link end_effector_1/l_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010847.605790867] [moveit_robot_model.robot_model]: Link end_effector_1/l_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010847.607975166] [moveit_robot_model.robot_model]: Link end_effector_1/r_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010847.609404144] [moveit_robot_model.robot_model]: Link end_effector_1/r_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [ERROR] [1765010847.612733694] [moveit_kinematics_base.kinematics_base]: Group 'hebi_arm_with_gripper' is not a chain
+[rviz2-2] [ERROR] [1765010847.612746067] [kinematics_plugin_loader]: Kinematics solver of type 'kdl_kinematics_plugin/KDLKinematicsPlugin' could not be initialized for group 'hebi_arm_with_gripper'
+[rviz2-2] [ERROR] [1765010847.612760251] [moveit_ros.robot_model_loader]: Kinematics solver could not be instantiated for joint group hebi_arm_with_gripper.
+[rviz2-2] [INFO] [1765010849.796260380] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-2] [INFO] [1765010849.797935125] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[rviz2-2] [INFO] [1765010850.531235764] [moveit_ros_robot_interaction.robot_interaction]: No active joints or end effectors found for group 'gripper'. Make sure that kinematics.yaml is loaded in this node's namespace.
+[rviz2-2] [INFO] [1765010850.538153824] [moveit_ros_visualization.motion_planning_frame]: group gripper
+[rviz2-2] [INFO] [1765010850.538181885] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'gripper' in namespace ''
+[rviz2-2] [INFO] [1765010850.548822333] [move_group_interface]: Ready to take commands for planning group gripper.
+[rviz2-2] [INFO] [1765010850.579198880] [interactive_marker_display_108006291818640]: Sending request for interactive markers
+[rviz2-2] [INFO] [1765010850.623408438] [interactive_marker_display_108006291818640]: Service response received for initialization
+[rviz2-2] [INFO] [1765010861.909466379] [move_group_interface]: MoveGroup action client/server ready
+[move_group-1] [INFO] [1765010861.912979658] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-1] [INFO] [1765010861.913124177] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[rviz2-2] [INFO] [1765010861.913136686] [move_group_interface]: Planning request accepted
+[move_group-1] [INFO] [1765010861.918768741] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-1] [INFO] [1765010861.918786112] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-1] [INFO] [1765010861.919239872] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'gripper' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-1] [INFO] [1765010861.950139408] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[rviz2-2] [INFO] [1765010861.950590378] [move_group_interface]: Planning request complete!
+[rviz2-2] [INFO] [1765010861.951548467] [move_group_interface]: time taken to generate plan: 0.0259492 seconds
+[move_group-1] [INFO] [1765010864.868711422] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-1] [INFO] [1765010864.868888252] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-1] [INFO] [1765010864.868921216] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010864.868940993] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010864.868985632] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[rviz2-2] [INFO] [1765010864.869226028] [move_group_interface]: Execute request accepted
+[move_group-1] [INFO] [1765010864.870096179] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-1] [INFO] [1765010864.870137660] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1765010864.870155232] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [ERROR] [1765010864.870218474] [moveit.simple_controller_manager.gripper_controller_handle]: Action client not connected to action server: gripper_controller/gripper_cmd
+[move_group-1] [ERROR] [1765010864.870223409] [moveit_ros.trajectory_execution_manager]: Failed to send trajectory part 1 of 1 to controller gripper_controller
+[move_group-1] [INFO] [1765010864.870228288] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status ABORTED ...
+[move_group-1] [INFO] [1765010864.870294188] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: ABORTED
+[rviz2-2] [INFO] [1765010864.870505870] [move_group_interface]: Execute request aborted
+[rviz2-2] [ERROR] [1765010864.871156595] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[rviz2-2] [INFO] [1765010871.244110085] [moveit_ros_visualization.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[rviz2-2] [INFO] [1765010871.284936121] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[rviz2-2] [WARN] [1765010871.310838920] [interactive_marker_display_108006291818640]: Server not available while running, resetting
+[rviz2-2] [INFO] [1765010871.328512889] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0208556 seconds
+[rviz2-2] [INFO] [1765010871.328540129] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[rviz2-2] [WARN] [1765010871.966023086] [moveit_robot_model.robot_model]: Link end_effector_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010871.966089339] [moveit_robot_model.robot_model]: Link end_effector_1/center_hub has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010871.966099786] [moveit_robot_model.robot_model]: Link end_effector_1/l_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010871.969063337] [moveit_robot_model.robot_model]: Link end_effector_1/r_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010871.970384959] [moveit_robot_model.robot_model]: Link end_effector_1/l_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010871.971255344] [moveit_robot_model.robot_model]: Link end_effector_1/l_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010871.972347551] [moveit_robot_model.robot_model]: Link end_effector_1/r_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [WARN] [1765010871.973210432] [moveit_robot_model.robot_model]: Link end_effector_1/r_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz2-2] [ERROR] [1765010871.975735277] [moveit_kinematics_base.kinematics_base]: Group 'hebi_arm_with_gripper' is not a chain
+[rviz2-2] [ERROR] [1765010871.975741531] [kinematics_plugin_loader]: Kinematics solver of type 'kdl_kinematics_plugin/KDLKinematicsPlugin' could not be initialized for group 'hebi_arm_with_gripper'
+[rviz2-2] [ERROR] [1765010871.975765078] [moveit_ros.robot_model_loader]: Kinematics solver could not be instantiated for joint group hebi_arm_with_gripper.
+[rviz2-2] [INFO] [1765010873.935701241] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-2] [INFO] [1765010873.936895936] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[rviz2-2] [INFO] [1765010874.327301608] [moveit_ros_robot_interaction.robot_interaction]: No active joints or end effectors found for group 'gripper'. Make sure that kinematics.yaml is loaded in this node's namespace.
+[rviz2-2] [INFO] [1765010874.340629866] [moveit_ros_visualization.motion_planning_frame]: group gripper
+[rviz2-2] [INFO] [1765010874.340651613] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'gripper' in namespace ''
+[rviz2-2] [INFO] [1765010874.345823908] [move_group_interface]: Ready to take commands for planning group gripper.
+[rviz2-2] [INFO] [1765010874.348167672] [interactive_marker_display_108006291818640]: Sending request for interactive markers
+[rviz2-2] [INFO] [1765010874.381438795] [interactive_marker_display_108006291818640]: Service response received for initialization
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[rviz2-2] [INFO] [1765010917.376265516] [rclcpp]: signal_handler(signum=2)
+[move_group-1] [INFO] [1765010917.376265719] [rclcpp]: signal_handler(signum=2)
+[rviz2-2] [WARN] [1765010917.391539217] [interactive_marker_display_108006291818640]: Server not available while running, resetting
+[move_group-1] [INFO] [1765010917.412110466] [moveit.ros_planning_interface.moveit_cpp]: Deleting MoveItCpp
+[move_group-1] [INFO] [1765010917.412958527] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[move_group-1] [INFO] [1765010917.415175800] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping world geometry monitor
+[move_group-1] [INFO] [1765010917.416282504] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[move_group-1] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[move_group-1]          at line 127 in ./src/class_loader.cpp
+[move_group-1] Stack trace (most recent call last):
+[move_group-1] #16   Object "", at 0xffffffffffffffff, in 
+[move_group-1] #15   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x58f4a11d0724, in 
+[move_group-1] #14   Source "../csu/libc-start.c", line 392, in __libc_start_main_impl [0x71758b229e3f]
+[move_group-1] #13   Source "../sysdeps/nptl/libc_start_call_main.h", line 58, in __libc_start_call_main [0x71758b229d8f]
+[move_group-1] #12   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x58f4a11cf65b, in 
+[move_group-1] #11   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x58f4a11d1709, in 
+[move_group-1] #10   Object "/opt/ros/humble/lib/libmoveit_cpp.so.2.5.9", at 0x71758bee0876, in moveit_cpp::MoveItCpp::~MoveItCpp()
+[move_group-1] #9    Object "/opt/ros/humble/lib/libmoveit_cpp.so.2.5.9", at 0x71758bedeba9, in 
+[move_group-1] #8    Object "/opt/ros/humble/lib/libmoveit_trajectory_execution_manager.so.2.5.9", at 0x71758b478495, in trajectory_execution_manager::TrajectoryExecutionManager::~TrajectoryExecutionManager()
+[move_group-1] #7    Object "/opt/ros/humble/lib/libmoveit_trajectory_execution_manager.so.2.5.9", at 0x71758b48b3a9, in 
+[move_group-1] #6    Object "/opt/ros/humble/lib/librclcpp.so", at 0x71758bb40eec, in rclcpp::Node::~Node()
+[move_group-1] #5    Object "/opt/ros/humble/lib/librclcpp.so", at 0x71758bb40e8e, in rclcpp::Node::~Node()
+[move_group-1] #4    Object "/opt/ros/humble/lib/librclcpp.so", at 0x71758bb1bee9, in 
+[move_group-1] #3    Object "/opt/ros/humble/lib/librclcpp.so", at 0x71758bb4a539, in 
+[move_group-1] #2    Object "/opt/ros/humble/lib/librclcpp.so", at 0x71758bb4a480, in rclcpp::node_interfaces::NodeBase::~NodeBase()
+[move_group-1] #1    Object "/opt/ros/humble/lib/librclcpp.so", at 0x71758bb1bee9, in 
+[move_group-1] #0    Object "/opt/ros/humble/lib/librclcpp.so", at 0x71758bb20da1, in rclcpp::CallbackGroup::~CallbackGroup()
+[move_group-1] Segmentation fault (Address not mapped to object [0x71756c17b798])
+[rviz2-2] [INFO] [1765010917.543390476] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[ERROR] [move_group-1]: process has died [pid 4890, exit code -11, cmd '/opt/ros/humble/lib/moveit_ros_move_group/move_group --ros-args --params-file /tmp/launch_params_3uhxjwfu --params-file /tmp/launch_params_1zm2jb9j'].
+[move_group-1] 
+[ERROR] [rviz2-2]: process has died [pid 4892, exit code -11, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/robot/hebi_ws/install/hebi_a-2085-06g_moveit_config/share/hebi_a-2085-06g_moveit_config/config/moveit.rviz --ros-args --params-file /tmp/launch_params_mlq3ai_l --params-file /tmp/launch_params_jr2c5o9x --params-file /tmp/launch_params_eknc0dky --params-file /tmp/launch_params_9g488ch3 --params-file /tmp/launch_params_kcw6kg6g --params-file /tmp/launch_params_1s6k5dgo'].
+
