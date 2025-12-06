@@ -7,7 +7,7 @@ Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.
 * [hebi_description](https://github.com/HebiRobotics/hebi_description.git)
 * [hebi_msgs](https://github.com/HebiRobotics/hebi_msgs.git)
 * [hebi_ros2_examples](https://github.com/HebiRobotics/hebi_ros2_examples.git)
-* [hebi_hardware](hhttps://github.com/HebiRobotics/hebi_hardware.git)
+* [hebi_hardware](https://github.com/HebiRobotics/hebi_hardware.git)
 * [hebi_bringup](https://github.com/HebiRobotics/hebi_bringup.git)
 * [hebi_moveit_configs](https://github.com/HebiRobotics/hebi_moveit_configs.git)
 
@@ -128,6 +128,29 @@ ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_har
 ```bash
 ros2 launch hebi_bringup move_group.launch.py hebi_arm:=A-2085-06G use_sim_time:=false
 ```
+> [!NOTE]
+> Gripper opening and closing
+> Movable range: 0 degrees to -90 degrees (0 [rad] to -1.570 [rad])  
+> 可動範囲：0度 ～ -90度(0 [rad] ~ -1.570 [rad])
+
+#### Run camera
+```bash
+ros2 launch orbbec_camera astra_stereo_u3.launch.py
+```
+rviz2
+```bash
+rviz2
+```
+- Displaysパネル下部の`Add`ボタンをクリックし  
+`By topic`タブ`/depth_registered`:arrow_right:`/points`:arrow_right:`PointCloud2`と選択し，`OK`をクリック  
+- Displaysパネルに表示されたを開き，次の項目を設定する
+
+| 設定項目 | ドロップダウンリスト | 値 |
+| --- | --- | --- |
+| Global Options | Fixed Frame:camera_link | camera_link |
+
+カラー付きポイントクラウドのデータが表示される．
+![sunsun](/meida/sunsun.png)
 
 ## References
 HEBI Robotics
