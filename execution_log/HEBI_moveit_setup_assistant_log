@@ -1,0 +1,137 @@
+robot@nuc38:~$ LIBGL_ALWAYS_SOFTWARE=1 ros2 run moveit_setup_assistant moveit_setup_assistant
+Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+[INFO] [1765353901.988081904] [moveit_setup_assistant.urdf]: Loaded A-2085-06G robot model.
+[INFO] [1765353901.988365233] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[WARN] [1765353902.458017467] [moveit_robot_model.robot_model]: Link end_effector_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353902.458074153] [moveit_robot_model.robot_model]: Link end_effector_1/center_hub has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353902.458078931] [moveit_robot_model.robot_model]: Link end_effector_1/l_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353902.460331078] [moveit_robot_model.robot_model]: Link end_effector_1/r_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353902.461423855] [moveit_robot_model.robot_model]: Link end_effector_1/l_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353902.462210173] [moveit_robot_model.robot_model]: Link end_effector_1/l_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353902.463261643] [moveit_robot_model.robot_model]: Link end_effector_1/r_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353902.464035808] [moveit_robot_model.robot_model]: Link end_effector_1/r_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[INFO] [1765353902.464263637] [moveit_setup_assistant.srdf]: Robot semantic model successfully loaded.
+[INFO] [1765353904.651485476] [moveit_setup_assistant.urdf]: Loaded A-2085-06G robot model.
+[INFO] [1765353904.651769347] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[WARN] [1765353905.113029082] [moveit_robot_model.robot_model]: Link end_effector_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353905.113059607] [moveit_robot_model.robot_model]: Link end_effector_1/center_hub has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353905.113064993] [moveit_robot_model.robot_model]: Link end_effector_1/l_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353905.115325492] [moveit_robot_model.robot_model]: Link end_effector_1/r_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353905.116368633] [moveit_robot_model.robot_model]: Link end_effector_1/l_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353905.117132669] [moveit_robot_model.robot_model]: Link end_effector_1/l_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353905.118183719] [moveit_robot_model.robot_model]: Link end_effector_1/r_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353905.118986634] [moveit_robot_model.robot_model]: Link end_effector_1/r_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[INFO] [1765353905.119269548] [moveit_setup_assistant.srdf]: Robot semantic model successfully loaded.
+[rviz_rendering:debug] Available Renderers(1): OpenGL Rendering Subsystem, at ./src/rviz_rendering/render_system.cpp:301
+[rviz_rendering:info] Stereo is NOT SUPPORTED, at ./src/rviz_rendering/render_system.cpp:543
+[rviz_rendering:info] OpenGl version: 4.5 (GLSL 4.5), at ./src/rviz_rendering/render_system.cpp:284
+[rviz_rendering:info] Stereo is NOT SUPPORTED, at ./src/rviz_rendering/render_system.cpp:543
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/TF.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/TF.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/TF.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/TF.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/classes/Identity.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_common/icons/classes/Identity.svg]: Couldn't open file /opt/ros/humble/share/rviz_common/icons/classes/Identity.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/classes/Identity.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_common/icons/classes/Identity.png]: Couldn't open file /opt/ros/humble/share/rviz_common/icons/classes/Identity.png, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/default_class_icon.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/options.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/ok.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/warning.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/error.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Orbit.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/Orbit.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/Orbit.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Orbit.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/Orbit.png]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/Orbit.png, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/rotate.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/cursor.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/rotate_cam.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/move2d.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/move_z.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/zoom.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_common/icons/crosshair.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://nav2_rviz_plugins/icons/classes/GoalTool.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/nav2_rviz_plugins/icons/classes/GoalTool.svg]: Couldn't open file /opt/ros/humble/share/nav2_rviz_plugins/icons/classes/GoalTool.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://nav2_rviz_plugins/icons/classes/GoalTool.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/nav2_rviz_plugins/icons/classes/GoalTool.png]: Couldn't open file /opt/ros/humble/share/nav2_rviz_plugins/icons/classes/GoalTool.png, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/FocusCamera.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Interact.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/Interact.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/Interact.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Interact.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Measure.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/MoveCamera.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/MoveCamera.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/MoveCamera.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/MoveCamera.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/PublishPoint.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Select.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/Select.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/Select.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/Select.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/SetGoal.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/SetGoal.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/SetGoal.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/SetGoal.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/SetInitialPose.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_default_plugins/icons/classes/SetInitialPose.svg]: Couldn't open file /opt/ros/humble/share/rviz_default_plugins/icons/classes/SetInitialPose.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/SetInitialPose.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_visual_tools/icons/classes/KeyTool.svg, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_visual_tools/icons/classes/KeyTool.svg]: Couldn't open file /opt/ros/humble/share/rviz_visual_tools/icons/classes/KeyTool.svg, at ./src/rviz_common/load_resource.cpp:55
+[rviz_common:debug] Load pixmap at package://rviz_visual_tools/icons/classes/KeyTool.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Error retrieving file [file:///opt/ros/humble/share/rviz_visual_tools/icons/classes/KeyTool.png]: Couldn't open file /opt/ros/humble/share/rviz_visual_tools/icons/classes/KeyTool.png, at ./src/rviz_common/load_resource.cpp:55
+[INFO] [1765353905.251644855] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.00264423 seconds
+[INFO] [1765353905.251662289] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[WARN] [1765353905.717045897] [moveit_robot_model.robot_model]: Link end_effector_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353905.717071260] [moveit_robot_model.robot_model]: Link end_effector_1/center_hub has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353905.717076450] [moveit_robot_model.robot_model]: Link end_effector_1/l_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353905.719322892] [moveit_robot_model.robot_model]: Link end_effector_1/r_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353905.720386591] [moveit_robot_model.robot_model]: Link end_effector_1/l_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353905.721150327] [moveit_robot_model.robot_model]: Link end_effector_1/l_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353905.722171748] [moveit_robot_model.robot_model]: Link end_effector_1/r_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353905.722914976] [moveit_robot_model.robot_model]: Link end_effector_1/r_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/RobotLink.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/RobotLinkNoGeom.png, at ./src/rviz_common/load_resource.cpp:71
+[rviz_common:debug] Load pixmap at package://rviz_default_plugins/icons/classes/RobotJoint.png, at ./src/rviz_common/load_resource.cpp:71
+[INFO] [1765353905.996956676] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.00234931 seconds
+[INFO] [1765353905.996973989] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[WARN] [1765353906.464696835] [moveit_robot_model.robot_model]: Link end_effector_1 has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353906.464724790] [moveit_robot_model.robot_model]: Link end_effector_1/center_hub has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353906.464729771] [moveit_robot_model.robot_model]: Link end_effector_1/l_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353906.467151178] [moveit_robot_model.robot_model]: Link end_effector_1/r_inner_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353906.468390692] [moveit_robot_model.robot_model]: Link end_effector_1/l_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353906.469217851] [moveit_robot_model.robot_model]: Link end_effector_1/l_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353906.470332623] [moveit_robot_model.robot_model]: Link end_effector_1/r_outer_linkage has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[WARN] [1765353906.471117926] [moveit_robot_model.robot_model]: Link end_effector_1/r_gripper_bend has visual geometry but no collision geometry. Collision geometry will be left empty. Fix your URDF file by explicitly specifying collision geometry.
+[INFO] [1765353906.481133305] [moveit_setup_assistant.Start Screen]: Loading Setup Assistant Complete
+Stack trace (most recent call last):
+#31   Object "/usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3", at 0x758b3f916a2b, in QWindowSystemInterface::sendWindowSystemEvents(QFlags<QEventLoop::ProcessEventsFlag>)
+#30   Object "/usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.3", at 0x758b3f941306, in QGuiApplicationPrivate::processMouseEvent(QWindowSystemInterfacePrivate::MouseEvent*)
+#29   Object "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3", at 0x758b3f4b9e39, in QCoreApplication::notifyInternal2(QObject*, QEvent*)
+#28   Object "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3", at 0x758b4016c712, in QApplicationPrivate::notify_helper(QObject*, QEvent*)
+#27   Object "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3", at 0x758b401cbfd4, in 
+#26   Object "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3", at 0x758b401c8d3f, in 
+#25   Object "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3", at 0x758b40172e46, in QApplicationPrivate::sendMouseEvent(QWidget*, QMouseEvent*, QWidget*, QWidget*, QWidget**, QPointer<QWidget>&, bool, bool)
+#24   Object "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3", at 0x758b3f4b9e39, in QCoreApplication::notifyInternal2(QObject*, QEvent*)
+#23   Object "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3", at 0x758b40174363, in QApplication::notify(QObject*, QEvent*)
+#22   Object "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3", at 0x758b4016c712, in QApplicationPrivate::notify_helper(QObject*, QEvent*)
+#21   Object "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3", at 0x758b401af4ed, in QWidget::event(QEvent*)
+#20   Object "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3", at 0x758b402641e6, in QAbstractButton::mouseReleaseEvent(QMouseEvent*)
+#19   Object "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3", at 0x758b40263fc3, in 
+#18   Object "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3", at 0x758b4026239d, in 
+#17   Object "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3", at 0x758b40262115, in QAbstractButton::clicked(bool)
+#16   Object "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3", at 0x758b3f4f17c7, in 
+#15   Object "/opt/ros/humble/lib/libmoveit_setup_core_plugins.so", at 0x758b226bdbcc, in moveit_setup::core::StartScreenWidget::loadFilesClick()
+#14   Object "/opt/ros/humble/lib/libmoveit_setup_core_plugins.so", at 0x758b226bd585, in moveit_setup::core::StartScreenWidget::loadExistingFiles()
+#13   Object "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3", at 0x758b3f4f17c7, in 
+#12   Object "/opt/ros/humble/lib/moveit_setup_assistant/moveit_setup_assistant", at 0x588ad058921b, in 
+#11   Object "/opt/ros/humble/lib/libmoveit_setup_srdf_plugins.so", at 0x758b21a59165, in moveit_setup::srdf_setup::DefaultCollisionsWidget::focusGiven()
+#10   Object "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3", at 0x758b3f513111, in QEventDispatcherGlib::processEvents(QFlags<QEventLoop::ProcessEventsFlag>)
+#9    Object "/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7200.4", at 0x758b3dc4f3e2, in g_main_context_iteration
+#8    Object "/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7200.4", at 0x758b3dca72b7, in 
+#7    Object "/usr/lib/x86_64-linux-gnu/libglib-2.0.so.0.7200.4", at 0x758b3dc51d3a, in g_main_context_dispatch
+#6    Object "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3", at 0x758b3f513a66, in 
+#5    Object "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3", at 0x758b3f4bcf26, in QCoreApplicationPrivate::sendPostedEvents(QObject*, int, QThreadData*)
+#4    Object "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3", at 0x758b3f4b9e39, in QCoreApplication::notifyInternal2(QObject*, QEvent*)
+#3    Object "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.3", at 0x758b4016c712, in QApplicationPrivate::notify_helper(QObject*, QEvent*)
+#2    Object "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3", at 0x758b3f4e741d, in QObject::event(QEvent*)
+#1    Object "/opt/ros/humble/lib/librviz_common.so", at 0x758b409b7b12, in rviz_common::properties::PropertyTreeModel::propertyHiddenChanged(rviz_common::properties::Property const*)
+#0    Object "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.3", at 0x758b3f4f128e, in 
+Segmentation fault (Signal sent by the kernel [(nil)])
+[ros2run]: Segmentation fault
+
