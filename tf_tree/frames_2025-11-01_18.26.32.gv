@@ -1,0 +1,32 @@
+digraph G {
+"base_link" -> "J1_base/body"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"world" -> "base_link"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"bracket_1" -> "J2_shoulder/body"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"J1_base/body" -> "bracket_1"[label=" Broadcaster: default_authority\nAverage rate: 18.2\nBuffer length: 5.0\nMost recent transform: 1761989192.817521\nOldest transform: 1761989187.817395\n"];
+"bracket_2" -> "J5_wrist2/body"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"J4_wrist1/body" -> "bracket_2"[label=" Broadcaster: default_authority\nAverage rate: 18.2\nBuffer length: 5.0\nMost recent transform: 1761989192.817521\nOldest transform: 1761989187.817395\n"];
+"bracket_3" -> "J6_wrist3/body"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"J5_wrist2/body" -> "bracket_3"[label=" Broadcaster: default_authority\nAverage rate: 18.2\nBuffer length: 5.0\nMost recent transform: 1761989192.817521\nOldest transform: 1761989187.817395\n"];
+"end_effector_1" -> "end_effector_1/center_hub"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"J6_wrist3/body" -> "end_effector_1"[label=" Broadcaster: default_authority\nAverage rate: 18.2\nBuffer length: 5.0\nMost recent transform: 1761989192.817521\nOldest transform: 1761989187.817395\n"];
+"end_effector_1/l_finger" -> "end_effector_1/l_outer_linkage"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"end_effector_1" -> "end_effector_1/l_finger"[label=" Broadcaster: default_authority\nAverage rate: 18.2\nBuffer length: 5.0\nMost recent transform: 1761989192.817521\nOldest transform: 1761989187.817395\n"];
+"end_effector_1/l_gripper" -> "end_effector_1/l_gripper_bend"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"end_effector_1/l_outer_linkage" -> "end_effector_1/l_gripper"[label=" Broadcaster: default_authority\nAverage rate: 18.2\nBuffer length: 5.0\nMost recent transform: 1761989192.817521\nOldest transform: 1761989187.817395\n"];
+"end_effector_1" -> "end_effector_1/output"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"end_effector_1/r_finger" -> "end_effector_1/r_outer_linkage"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"end_effector_1" -> "end_effector_1/r_finger"[label=" Broadcaster: default_authority\nAverage rate: 18.2\nBuffer length: 5.0\nMost recent transform: 1761989192.817521\nOldest transform: 1761989187.817395\n"];
+"end_effector_1/r_gripper" -> "end_effector_1/r_gripper_bend"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"end_effector_1/r_outer_linkage" -> "end_effector_1/r_gripper"[label=" Broadcaster: default_authority\nAverage rate: 18.2\nBuffer length: 5.0\nMost recent transform: 1761989192.817521\nOldest transform: 1761989187.817395\n"];
+"link_1" -> "J3_elbow/body"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"J2_shoulder/body" -> "link_1"[label=" Broadcaster: default_authority\nAverage rate: 18.2\nBuffer length: 5.0\nMost recent transform: 1761989192.817521\nOldest transform: 1761989187.817395\n"];
+"link_2" -> "J4_wrist1/body"[label=" Broadcaster: default_authority\nAverage rate: 10000.0\nBuffer length: 0.0\nMost recent transform: 0.0\nOldest transform: 0.0\n"];
+"J3_elbow/body" -> "link_2"[label=" Broadcaster: default_authority\nAverage rate: 18.2\nBuffer length: 5.0\nMost recent transform: 1761989192.817521\nOldest transform: 1761989187.817395\n"];
+"end_effector_1/center_hub" -> "end_effector_1/l_inner_linkage"[label=" Broadcaster: default_authority\nAverage rate: 18.2\nBuffer length: 5.0\nMost recent transform: 1761989192.817521\nOldest transform: 1761989187.817395\n"];
+"end_effector_1/center_hub" -> "end_effector_1/center_pinion"[label=" Broadcaster: default_authority\nAverage rate: 18.2\nBuffer length: 5.0\nMost recent transform: 1761989192.817521\nOldest transform: 1761989187.817395\n"];
+"end_effector_1/center_hub" -> "end_effector_1/r_inner_linkage"[label=" Broadcaster: default_authority\nAverage rate: 18.2\nBuffer length: 5.0\nMost recent transform: 1761989192.817521\nOldest transform: 1761989187.817395\n"];
+edge [style=invis];
+ subgraph cluster_legend { style=bold; color=black; label ="view_frames Result";
+"Recorded at time: 1761989192.8286486"[ shape=plaintext ] ;
+}->"world";
+}
