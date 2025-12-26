@@ -1,0 +1,226 @@
+robot@nuc38:~$ ros2 launch hebi_bringup move_group.launch.py hebi_arm:=A-2085-06G use_sim_time:=false
+[INFO] [launch]: All log files can be found below /home/robot/.ros/log/2025-12-26-16-16-14-755636-nuc38-19619
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: Using default description_file: A-2085-06G.urdf.xacro
+[INFO] [move_group-1]: process started with pid [19620]
+[INFO] [rviz2-2]: process started with pid [19622]
+[move_group-1] [INFO] [1766733375.139478874] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0250564 seconds
+[move_group-1] [INFO] [1766733375.139573041] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[rviz2-2] [INFO] [1766733375.383569183] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1766733375.383626543] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-2] [INFO] [1766733375.400918976] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] Warning: class_loader.impl: SEVERE WARNING!!! A namespace collision has occurred with plugin factory for class rviz_default_plugins::displays::InteractiveMarkerDisplay. New factory will OVERWRITE existing one. This situation occurs when libraries containing plugins are directly linked against an executable (the one running right now generating this message). Please separate plugins out into their own library or just don't link against the library and use either class_loader::ClassLoader/MultiLibraryClassLoader to open.
+[rviz2-2]          at line 253 in /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp
+[move_group-1] [INFO] [1766733375.723336846] [moveit_kinematics_base.kinematics_base]: IK Using joint bracket_1 -3.40282e+38 3.40282e+38
+[move_group-1] [INFO] [1766733375.723355674] [moveit_kinematics_base.kinematics_base]: IK Using joint link_1 -3.40282e+38 3.40282e+38
+[move_group-1] [INFO] [1766733375.723360518] [moveit_kinematics_base.kinematics_base]: IK Using joint link_2 -3.40282e+38 3.40282e+38
+[move_group-1] [INFO] [1766733375.723363881] [moveit_kinematics_base.kinematics_base]: IK Using joint bracket_2 -3.40282e+38 3.40282e+38
+[move_group-1] [INFO] [1766733375.723367215] [moveit_kinematics_base.kinematics_base]: IK Using joint bracket_3 -3.40282e+38 3.40282e+38
+[move_group-1] [INFO] [1766733375.723371557] [moveit_kinematics_base.kinematics_base]: IK Using joint end_effector_1 -3.40282e+38 3.40282e+38
+[move_group-1] [INFO] [1766733375.723375498] [moveit_kinematics_base.kinematics_base]: Using solve type Distance
+[move_group-1] [INFO] [1766733375.723617749] [moveit_kinematics_base.kinematics_base]: IK Using joint bracket_1 -3.40282e+38 3.40282e+38
+[move_group-1] [INFO] [1766733375.723623278] [moveit_kinematics_base.kinematics_base]: IK Using joint link_1 -3.40282e+38 3.40282e+38
+[move_group-1] [INFO] [1766733375.723627471] [moveit_kinematics_base.kinematics_base]: IK Using joint link_2 -3.40282e+38 3.40282e+38
+[move_group-1] [INFO] [1766733375.723631116] [moveit_kinematics_base.kinematics_base]: IK Using joint bracket_2 -3.40282e+38 3.40282e+38
+[move_group-1] [INFO] [1766733375.723634668] [moveit_kinematics_base.kinematics_base]: IK Using joint bracket_3 -3.40282e+38 3.40282e+38
+[move_group-1] [INFO] [1766733375.723638176] [moveit_kinematics_base.kinematics_base]: IK Using joint end_effector_1 -3.40282e+38 3.40282e+38
+[move_group-1] [INFO] [1766733375.723640569] [moveit_kinematics_base.kinematics_base]: Using solve type Distance
+[move_group-1] [ERROR] [1766733375.723650035] [moveit_ros.robot_model_loader]: Kinematics solver N25trac_ik_kinematics_plugin23TRAC_IKKinematicsPluginE does not support joint group hebi_arm_with_gripper.  Error: This plugin only supports joint groups which are chains
+[move_group-1] [INFO] [1766733377.105713112] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-1] [INFO] [1766733377.105866388] [moveit.ros_planning_interface.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-1] [INFO] [1766733377.106153531] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-1] [INFO] [1766733377.106482109] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-1] [INFO] [1766733377.106494519] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[move_group-1] [INFO] [1766733377.107032241] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-1] [INFO] [1766733377.107042582] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-1] [INFO] [1766733377.107257067] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-1] [INFO] [1766733377.107464255] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-1] [WARN] [1766733377.107959569] [moveit.ros.occupancy_map_monitor.middleware_handle]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-1] [ERROR] [1766733377.107968539] [moveit.ros.occupancy_map_monitor.middleware_handle]: No 3D sensor plugin(s) defined for octomap updates
+[rviz2-2] [ERROR] [1766733378.489587959] [moveit_ros_visualization.motion_planning_frame]: Action server: /recognize_objects not available
+[rviz2-2] [INFO] [1766733378.503159067] [moveit_ros_visualization.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[rviz2-2] [INFO] [1766733378.572977862] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.029762 seconds
+[rviz2-2] [INFO] [1766733378.573019186] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[rviz2-2] [INFO] [1766733379.208806387] [moveit_kinematics_base.kinematics_base]: IK Using joint bracket_1 -3.40282e+38 3.40282e+38
+[rviz2-2] [INFO] [1766733379.208839001] [moveit_kinematics_base.kinematics_base]: IK Using joint link_1 -3.40282e+38 3.40282e+38
+[rviz2-2] [INFO] [1766733379.208846082] [moveit_kinematics_base.kinematics_base]: IK Using joint link_2 -3.40282e+38 3.40282e+38
+[rviz2-2] [INFO] [1766733379.208851049] [moveit_kinematics_base.kinematics_base]: IK Using joint bracket_2 -3.40282e+38 3.40282e+38
+[rviz2-2] [INFO] [1766733379.208855817] [moveit_kinematics_base.kinematics_base]: IK Using joint bracket_3 -3.40282e+38 3.40282e+38
+[rviz2-2] [INFO] [1766733379.208860974] [moveit_kinematics_base.kinematics_base]: IK Using joint end_effector_1 -3.40282e+38 3.40282e+38
+[rviz2-2] [INFO] [1766733379.208867708] [moveit_kinematics_base.kinematics_base]: Using solve type Distance
+[rviz2-2] [INFO] [1766733379.209258886] [moveit_kinematics_base.kinematics_base]: IK Using joint bracket_1 -3.40282e+38 3.40282e+38
+[rviz2-2] [INFO] [1766733379.209269100] [moveit_kinematics_base.kinematics_base]: IK Using joint link_1 -3.40282e+38 3.40282e+38
+[rviz2-2] [INFO] [1766733379.209274986] [moveit_kinematics_base.kinematics_base]: IK Using joint link_2 -3.40282e+38 3.40282e+38
+[rviz2-2] [INFO] [1766733379.209280676] [moveit_kinematics_base.kinematics_base]: IK Using joint bracket_2 -3.40282e+38 3.40282e+38
+[rviz2-2] [INFO] [1766733379.209286367] [moveit_kinematics_base.kinematics_base]: IK Using joint bracket_3 -3.40282e+38 3.40282e+38
+[rviz2-2] [INFO] [1766733379.209292675] [moveit_kinematics_base.kinematics_base]: IK Using joint end_effector_1 -3.40282e+38 3.40282e+38
+[rviz2-2] [INFO] [1766733379.209297000] [moveit_kinematics_base.kinematics_base]: Using solve type Distance
+[rviz2-2] [ERROR] [1766733379.209311866] [moveit_ros.robot_model_loader]: Kinematics solver N25trac_ik_kinematics_plugin23TRAC_IKKinematicsPluginE does not support joint group hebi_arm_with_gripper.  Error: This plugin only supports joint groups which are chains
+[move_group-1] [INFO] [1766733379.895077698] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'chomp'
+[move_group-1] [INFO] [1766733379.898486306] [moveit.ros_planning.planning_pipeline]: Using planning interface 'CHOMP'
+[move_group-1] [INFO] [1766733379.900975427] [moveit_ros.add_time_optimal_parameterization]: Param 'chomp.path_tolerance' was not set. Using default value: 0.100000
+[move_group-1] [INFO] [1766733379.900983969] [moveit_ros.add_time_optimal_parameterization]: Param 'chomp.resample_dt' was not set. Using default value: 0.100000
+[move_group-1] [INFO] [1766733379.901022413] [moveit_ros.add_time_optimal_parameterization]: Param 'chomp.min_angle_change' was not set. Using default value: 0.001000
+[move_group-1] [INFO] [1766733379.901035196] [moveit_ros.fix_workspace_bounds]: Param 'chomp.default_workspace_bounds' was not set. Using default value: 10.000000
+[move_group-1] [INFO] [1766733379.901043495] [moveit_ros.fix_start_state_bounds]: Param 'chomp.start_state_max_bounds_error' was set to 0.100000
+[move_group-1] [INFO] [1766733379.901046563] [moveit_ros.fix_start_state_bounds]: Param 'chomp.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-1] [INFO] [1766733379.901053169] [moveit_ros.fix_start_state_collision]: Param 'chomp.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-1] [INFO] [1766733379.901056161] [moveit_ros.fix_start_state_collision]: Param 'chomp.jiggle_fraction' was set to 0.050000
+[move_group-1] [INFO] [1766733379.901059129] [moveit_ros.fix_start_state_collision]: Param 'chomp.max_sampling_attempts' was not set. Using default value: 100
+[move_group-1] [INFO] [1766733379.901065835] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[move_group-1] [INFO] [1766733379.901068069] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Resolve constraint frames to robot links'
+[move_group-1] [INFO] [1766733379.901069745] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[move_group-1] [INFO] [1766733379.901071421] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[move_group-1] [INFO] [1766733379.901073030] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[move_group-1] [INFO] [1766733379.901074597] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
+[move_group-1] [INFO] [1766733379.901941029] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'ompl'
+[move_group-1] [INFO] [1766733379.910879353] [moveit.ros_planning.planning_pipeline]: Using planning interface 'OMPL'
+[move_group-1] [INFO] [1766733379.913881664] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.path_tolerance' was not set. Using default value: 0.100000
+[move_group-1] [INFO] [1766733379.913900646] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.resample_dt' was not set. Using default value: 0.100000
+[move_group-1] [INFO] [1766733379.913904944] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.min_angle_change' was not set. Using default value: 0.001000
+[move_group-1] [INFO] [1766733379.913920651] [moveit_ros.fix_workspace_bounds]: Param 'ompl.default_workspace_bounds' was not set. Using default value: 10.000000
+[move_group-1] [INFO] [1766733379.913931125] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_bounds_error' was set to 0.100000
+[move_group-1] [INFO] [1766733379.913934257] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-1] [INFO] [1766733379.913941170] [moveit_ros.fix_start_state_collision]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-1] [INFO] [1766733379.913943840] [moveit_ros.fix_start_state_collision]: Param 'ompl.jiggle_fraction' was set to 0.050000
+[move_group-1] [INFO] [1766733379.913946364] [moveit_ros.fix_start_state_collision]: Param 'ompl.max_sampling_attempts' was not set. Using default value: 100
+[move_group-1] [INFO] [1766733379.913953868] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[move_group-1] [INFO] [1766733379.913956350] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Resolve constraint frames to robot links'
+[move_group-1] [INFO] [1766733379.913958025] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[move_group-1] [INFO] [1766733379.913959750] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[move_group-1] [INFO] [1766733379.913961347] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[move_group-1] [INFO] [1766733379.913962922] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
+[move_group-1] [INFO] [1766733379.914685756] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'pilz_industrial_motion_planner'
+[move_group-1] [INFO] [1766733379.918266566] [moveit.pilz_industrial_motion_planner.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-1] [INFO] [1766733379.921912777] [moveit.pilz_industrial_motion_planner]: Available plugins: pilz_industrial_motion_planner/PlanningContextLoaderCIRC pilz_industrial_motion_planner/PlanningContextLoaderLIN pilz_industrial_motion_planner/PlanningContextLoaderPTP 
+[move_group-1] [INFO] [1766733379.921925660] [moveit.pilz_industrial_motion_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderCIRC
+[move_group-1] [INFO] [1766733379.923041805] [moveit.pilz_industrial_motion_planner]: Registered Algorithm [CIRC]
+[move_group-1] [INFO] [1766733379.923051471] [moveit.pilz_industrial_motion_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderLIN
+[move_group-1] [INFO] [1766733379.923860427] [moveit.pilz_industrial_motion_planner]: Registered Algorithm [LIN]
+[move_group-1] [INFO] [1766733379.923868725] [moveit.pilz_industrial_motion_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderPTP
+[move_group-1] [INFO] [1766733379.924661519] [moveit.pilz_industrial_motion_planner]: Registered Algorithm [PTP]
+[move_group-1] [INFO] [1766733379.924674554] [moveit.ros_planning.planning_pipeline]: Using planning interface 'Pilz Industrial Motion Planner'
+[move_group-1] [INFO] [1766733379.945387325] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for hebi_arm_controller
+[move_group-1] [INFO] [1766733379.945436978] [moveit.plugins.moveit_simple_controller_manager]: Max effort set to 0.0
+[move_group-1] [INFO] [1766733379.946552699] [moveit.plugins.moveit_simple_controller_manager]: Added GripperCommand controller for gripper_controller
+[move_group-1] [INFO] [1766733379.946706542] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1766733379.946734565] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1766733379.947021867] [moveit_ros.trajectory_execution_manager]: Trajectory execution is managing controllers
+[move_group-1] [INFO] [1766733379.947039992] [move_group.move_group]: MoveGroup debug mode is ON
+[move_group-1] [INFO] [1766733379.960529529] [move_group.move_group]: 
+[move_group-1] 
+[move_group-1] ********************************************************
+[move_group-1] * MoveGroup using: 
+[move_group-1] *     - ApplyPlanningSceneService
+[move_group-1] *     - ClearOctomapService
+[move_group-1] *     - CartesianPathService
+[move_group-1] *     - ExecuteTrajectoryAction
+[move_group-1] *     - GetPlanningSceneService
+[move_group-1] *     - KinematicsService
+[move_group-1] *     - MoveAction
+[move_group-1] *     - MotionPlanService
+[move_group-1] *     - QueryPlannersService
+[move_group-1] *     - StateValidationService
+[move_group-1] ********************************************************
+[move_group-1] 
+[move_group-1] [INFO] [1766733379.960560261] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner
+[move_group-1] [INFO] [1766733379.960565629] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context initialization complete
+[move_group-1] Loading 'move_group/ApplyPlanningSceneService'...
+[move_group-1] Loading 'move_group/ClearOctomapService'...
+[move_group-1] Loading 'move_group/MoveGroupCartesianPathService'...
+[move_group-1] Loading 'move_group/MoveGroupExecuteTrajectoryAction'...
+[move_group-1] Loading 'move_group/MoveGroupGetPlanningSceneService'...
+[move_group-1] Loading 'move_group/MoveGroupKinematicsService'...
+[move_group-1] Loading 'move_group/MoveGroupMoveAction'...
+[move_group-1] Loading 'move_group/MoveGroupPlanService'...
+[move_group-1] Loading 'move_group/MoveGroupQueryPlannersService'...
+[move_group-1] Loading 'move_group/MoveGroupStateValidationService'...
+[move_group-1] 
+[move_group-1] You can start planning now!
+[move_group-1] 
+[rviz2-2] [INFO] [1766733380.685406691] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-2] [INFO] [1766733380.686326424] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[rviz2-2] [INFO] [1766733381.004436599] [interactive_marker_display_95142335425392]: Connected on namespace: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic
+[rviz2-2] [INFO] [1766733381.022745737] [moveit_ros_robot_interaction.robot_interaction]: No active joints or end effectors found for group 'gripper'. Make sure that kinematics.yaml is loaded in this node's namespace.
+[rviz2-2] [INFO] [1766733381.023468066] [moveit_ros_robot_interaction.robot_interaction]: No active joints or end effectors found for group 'gripper'. Make sure that kinematics.yaml is loaded in this node's namespace.
+[rviz2-2] [INFO] [1766733381.028569743] [moveit_ros_visualization.motion_planning_frame]: group gripper
+[rviz2-2] [INFO] [1766733381.028599291] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'gripper' in namespace ''
+[rviz2-2] [INFO] [1766733381.033813959] [move_group_interface]: Ready to take commands for planning group gripper.
+[rviz2-2] [INFO] [1766733381.034229657] [moveit_ros_visualization.motion_planning_frame]: group gripper
+[rviz2-2] [INFO] [1766733381.045779532] [interactive_marker_display_95142335425392]: Sending request for interactive markers
+[rviz2-2] [INFO] [1766733381.077434058] [interactive_marker_display_95142335425392]: Service response received for initialization
+[rviz2-2] [INFO] [1766733383.458159717] [moveit_ros_visualization.motion_planning_frame]: group hebi_arm
+[rviz2-2] [INFO] [1766733383.458194735] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'hebi_arm' in namespace ''
+[rviz2-2] [INFO] [1766733383.463618991] [move_group_interface]: Ready to take commands for planning group hebi_arm.
+[rviz2-2] [INFO] [1766733403.456704838] [move_group_interface]: MoveGroup action client/server ready
+[move_group-1] [INFO] [1766733403.457087477] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[rviz2-2] [INFO] [1766733403.457227227] [move_group_interface]: Planning request accepted
+[move_group-1] [INFO] [1766733403.457258577] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[move_group-1] [INFO] [1766733403.465209158] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-1] [INFO] [1766733403.465234988] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-1] [INFO] [1766733403.466105804] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'hebi_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-1] [INFO] [1766733403.492221093] [moveit_move_group_default_capabilities.move_action_capability]: Motion plan was computed successfully.
+[rviz2-2] [INFO] [1766733403.492943262] [move_group_interface]: Planning request complete!
+[rviz2-2] [INFO] [1766733403.493076775] [move_group_interface]: time taken to generate plan: 0.0222343 seconds
+[move_group-1] [INFO] [1766733407.305354959] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Received goal request
+[move_group-1] [INFO] [1766733407.305478628] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution request received
+[move_group-1] [INFO] [1766733407.305539447] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1766733407.305569337] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1766733407.305651762] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[rviz2-2] [INFO] [1766733407.305534635] [move_group_interface]: Execute request accepted
+[move_group-1] [INFO] [1766733407.315131114] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-1] [INFO] [1766733407.315165323] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1766733407.315183488] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1766733407.315324834] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to hebi_arm_controller
+[move_group-1] [INFO] [1766733407.315823604] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: hebi_arm_controller started execution
+[move_group-1] [INFO] [1766733407.315839452] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request accepted!
+[move_group-1] [INFO] [1766733413.116404396] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Controller 'hebi_arm_controller' successfully finished
+[move_group-1] [INFO] [1766733413.145178698] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status SUCCEEDED ...
+[move_group-1] [INFO] [1766733413.145308292] [moveit_move_group_default_capabilities.execute_trajectory_action_capability]: Execution completed: SUCCEEDED
+[rviz2-2] [INFO] [1766733413.145517434] [move_group_interface]: Execute request success!
+ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[rviz2-2] [INFO] [1766733811.265447561] [rclcpp]: signal_handler(signum=2)
+[move_group-1] [INFO] [1766733811.265511416] [rclcpp]: signal_handler(signum=2)
+[rviz2-2] [WARN] [1766733811.285671865] [interactive_marker_display_95142335425392]: Server not available while running, resetting
+[move_group-1] [INFO] [1766733811.295508790] [moveit.ros_planning_interface.moveit_cpp]: Deleting MoveItCpp
+[rviz2-2] 
+[rviz2-2] >>> [rcutils|error_handling.c:108] rcutils_set_error_state()
+[rviz2-2] This error state is being overwritten:
+[rviz2-2] 
+[rviz2-2]   'rcl node's context is invalid, at ./src/rcl/node.c:428'
+[rviz2-2] 
+[rviz2-2] with this new error message:
+[rviz2-2] 
+[rviz2-2]   'publisher's context is invalid, at ./src/rcl/publisher.c:389'
+[rviz2-2] 
+[rviz2-2] rcutils_reset_error() should be called after error handling to avoid this.
+[rviz2-2] <<<
+[rviz2-2] [INFO] [1766733811.347146768] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[move_group-1] [INFO] [1766733811.516307519] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[move_group-1] [INFO] [1766733811.517628666] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping world geometry monitor
+[move_group-1] [INFO] [1766733811.517755710] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[move_group-1] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[move_group-1]          at line 127 in ./src/class_loader.cpp
+[move_group-1] Stack trace (most recent call last):
+[move_group-1] #16   Object "", at 0xffffffffffffffff, in 
+[move_group-1] #15   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x640204d8e724, in 
+[INFO] [rviz2-2]: process has finished cleanly [pid 19622]
+[move_group-1] #14   Source "../csu/libc-start.c", line 392, in __libc_start_main_impl [0x733339a29e3f]
+[move_group-1] #13   Source "../sysdeps/nptl/libc_start_call_main.h", line 58, in __libc_start_call_main [0x733339a29d8f]
+[move_group-1] #12   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x640204d8d65b, in 
+[move_group-1] #11   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x640204d8f709, in 
+[move_group-1] #10   Object "/opt/ros/humble/lib/libmoveit_cpp.so.2.5.9", at 0x73333a59c876, in moveit_cpp::MoveItCpp::~MoveItCpp()
+[move_group-1] #9    Object "/opt/ros/humble/lib/libmoveit_cpp.so.2.5.9", at 0x73333a59aba9, in 
+[move_group-1] #8    Object "/opt/ros/humble/lib/libmoveit_trajectory_execution_manager.so.2.5.9", at 0x7333398d1495, in trajectory_execution_manager::TrajectoryExecutionManager::~TrajectoryExecutionManager()
+[move_group-1] #7    Object "/opt/ros/humble/lib/libmoveit_trajectory_execution_manager.so.2.5.9", at 0x7333398e43a9, in 
+[move_group-1] #6    Object "/opt/ros/humble/lib/librclcpp.so", at 0x73333a1fceec, in rclcpp::Node::~Node()
+[move_group-1] #5    Object "/opt/ros/humble/lib/librclcpp.so", at 0x73333a1fce8e, in rclcpp::Node::~Node()
+[move_group-1] #4    Object "/opt/ros/humble/lib/librclcpp.so", at 0x73333a1d7ee9, in 
+[move_group-1] #3    Object "/opt/ros/humble/lib/librclcpp.so", at 0x73333a206539, in 
+[move_group-1] #2    Object "/opt/ros/humble/lib/librclcpp.so", at 0x73333a206480, in rclcpp::node_interfaces::NodeBase::~NodeBase()
+[move_group-1] #1    Object "/opt/ros/humble/lib/librclcpp.so", at 0x73333a1d7ee9, in 
+[move_group-1] #0    Object "/opt/ros/humble/lib/librclcpp.so", at 0x73333a1dcda1, in rclcpp::CallbackGroup::~CallbackGroup()
+[move_group-1] Segmentation fault (Address not mapped to object [0x73333049f798])
+[ERROR] [move_group-1]: process has died [pid 19620, exit code -11, cmd '/opt/ros/humble/lib/moveit_ros_move_group/move_group --ros-args --params-file /tmp/launch_params_9s8m8r2n --params-file /tmp/launch_params_17edec16'].
+[move_group-1] 
+
