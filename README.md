@@ -10,6 +10,7 @@ Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.
 * [hebi_hardware](https://github.com/HebiRobotics/hebi_hardware.git)
 * [hebi_bringup](https://github.com/HebiRobotics/hebi_bringup.git)
 * [hebi_moveit_configs](https://github.com/HebiRobotics/hebi_moveit_configs.git)
+* [mani_description](https://github.com/iHaruruki/mani_description.git)
 
 ## Setting up your Workspace
 Run the following commands to set up and download the HEBI ROS 2 packages:
@@ -41,6 +42,9 @@ sudo apt install ros-$ROS_DISTRO-ros2-control ros-$ROS_DISTRO-ros2-controllers -
 
 # Moveit2 package
 git clone -b ros2 https://github.com/HebiRobotics/hebi_moveit_configs.git
+
+# Mani description
+git clone https://github.com/iHaruruki/mani_description.git
 ```
 
 Install the necessary dependencies using `rosdep`:
@@ -120,6 +124,14 @@ ros2 action send_goal /gripper_controller/gripper_cmd control_msgs/action/Grippe
 ```
 
 ### Moveit
+#### Run camera
+```bash
+ros2 launch orbbec_camera astra_stereo_u3.launch.py
+```
+#### Run mani_description
+```bash
+ros2 launch mani_description robot.launch.py
+```
 #### Launch Robot Control(Use real hardware)
 ```bash
 ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
@@ -133,11 +145,7 @@ ros2 launch hebi_bringup move_group.launch.py hebi_arm:=A-2085-06G use_sim_time:
 > Movable range: 0 degrees to -90 degrees (0 [rad] to -1.570 [rad])  
 > 可動範囲：0度 ～ -90度(0 [rad] ~ -1.570 [rad])
 
-#### Run camera
-```bash
-ros2 launch orbbec_camera astra_stereo_u3.launch.py
-```
-rviz2
+##### rviz2
 ```bash
 rviz2
 ```
