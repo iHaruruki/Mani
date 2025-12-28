@@ -2,7 +2,7 @@
 This is a package for Mani.  
 Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.hebirobotics.com/).
 
-## Packages List
+## 📦 Packages List
 * [hebi_cpp_api_ros](https://github.com/HebiRobotics/hebi_cpp_api_ros.git)
 * [hebi_description](https://github.com/HebiRobotics/hebi_description.git)
 * [hebi_msgs](https://github.com/HebiRobotics/hebi_msgs.git)
@@ -12,7 +12,7 @@ Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.
 * [hebi_moveit_configs](https://github.com/HebiRobotics/hebi_moveit_configs.git)
 * [mani_description](https://github.com/iHaruruki/mani_description.git)
 
-## Setting up your Workspace
+## 🛠️ Setting up your Workspace
 Run the following commands to set up and download the HEBI ROS 2 packages:
 ```bash
 # Create the workspace directory
@@ -65,7 +65,7 @@ source install/setup.bash
 ```bash
 pip install -r src/hebi_ros2_examples/requirements.txt
 ```
-## How to use
+## 🎮 Usage
 HEBI arms can be controlled with ROS 2 in three ways:
 
 - [Standalone HEBI API](#standalone-hebi-ros2-api)
@@ -160,7 +160,7 @@ rviz2
 カラー付きポイントクラウドのデータが表示される．
 ![sunsun](/meida/sunsun.png)
 
-## References
+## 📚 References
 HEBI Robotics
 * [HEBI Documentation](https://docs.hebi.us/)
 
