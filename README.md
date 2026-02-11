@@ -47,13 +47,13 @@ git clone -b ros2 https://github.com/HebiRobotics/hebi_moveit_configs.git
 git clone https://github.com/iHaruruki/mani_description.git
 ```
 
+### Installing dependent packages and building
 Install the necessary dependencies using `rosdep`:
 ```bash
 cd ~/hebi_ws/
 rosdep update
 rosdep install --from-paths src --ignore-src -r -y
 ```
-
 Build the workspace and source it:
 ```bash
 cd ~/hebi_ws
@@ -65,6 +65,9 @@ source install/setup.bash
 ```bash
 pip install -r src/hebi_ros2_examples/requirements.txt
 ```
+### Setup Depth Camera
+Please check: [OrbbecSDK_ROS2_setup](https://github.com/iHaruruki/OrbbecSDK_ROS2_setup.git)
+
 ## 🎮 Usage
 HEBI arms can be controlled with ROS 2 in three ways:
 
@@ -149,6 +152,13 @@ ros2 launch hebi_bringup move_group.launch.py hebi_arm:=A-2085-06G use_sim_time:
 ```bash
 rviz2
 ```
+- Click the Add button at the bottom of the Displays panel.
+Select the `By topic` tab, then `/depth_registered`:arrow_right:`/points`:arrow_right:`PointCloud2`, and click `OK`.  
+- Open the displayed item in the Displays panel and configure the following settings:
+| Setting Item | Dropdown List | Value |
+| --- | --- | --- |
+| Global Options | Fixed Frame:camera_link | camera_link |
+
 - Displaysパネル下部の`Add`ボタンをクリックし  
 `By topic`タブ`/depth_registered`:arrow_right:`/points`:arrow_right:`PointCloud2`と選択し，`OK`をクリック  
 - Displaysパネルに表示されたを開き，次の項目を設定する
@@ -157,8 +167,15 @@ rviz2
 | --- | --- | --- |
 | Global Options | Fixed Frame:camera_link | camera_link |
 
-カラー付きポイントクラウドのデータが表示される．
+Color-coded point cloud data is displayed.
 ![sunsun](/meida/sunsun.png)
+
+## 👤 Authors
+
+- **[iHaruruki](https://github.com/iHaruruki)**
+- **[SatoAsumu](https://github.com/SatoAsumu)**
+<!-- - **[]()** -->
+- **[bozznyskrtt](https://github.com/bozznyskrtt)**
 
 ## 📚 References
 HEBI Robotics
