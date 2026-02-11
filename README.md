@@ -127,14 +127,6 @@ ros2 action send_goal /gripper_controller/gripper_cmd control_msgs/action/Grippe
 ```
 
 ### Moveit
-#### Run camera
-```bash
-ros2 launch orbbec_camera astra_stereo_u3.launch.py
-```
-#### Run mani_description
-```bash
-ros2 launch mani_description robot.launch.py
-```
 #### Launch Robot Control(Use real hardware)
 ```bash
 ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
@@ -148,6 +140,19 @@ ros2 launch hebi_bringup move_group.launch.py hebi_arm:=A-2085-06G use_sim_time:
 > Movable range: 0 degrees to -90 degrees (0 [rad] to -1.570 [rad])  
 > 可動範囲：0度 ～ -90度(0 [rad] ~ -1.570 [rad])
 
+### Object Recognition
+#### Run Depth Camera
+```bash
+ros2 launch orbbec_camera astra_stereo_u3.launch.py
+```
+#### Run `mani_description`
+```bash
+ros2 launch mani_description robot.launch.py
+```
+#### Run `object_detection_tf_node`
+```bash
+ros2 run yolo_ros2 object_detection_tf_node
+```
 ##### rviz2
 ```bash
 rviz2
@@ -170,6 +175,10 @@ Select the `By topic` tab, then `/depth_registered`:arrow_right:`/points`:arrow_
 
 Color-coded point cloud data is displayed.
 ![sunsun](/meida/sunsun.png)
+
+> [!NOTE]
+> Here is the link for the **yolo_ros2** package  
+> [yolo_ros2](https://github.com/iHaruruki/yolo_ros2.git)
 
 ## 👤 Authors
 
