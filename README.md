@@ -11,6 +11,7 @@ Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.
 * [hebi_bringup](https://github.com/HebiRobotics/hebi_bringup.git)
 * [hebi_moveit_configs](https://github.com/HebiRobotics/hebi_moveit_configs.git)
 * [mani_description](https://github.com/iHaruruki/mani_description.git)
+* [yolo_ros2](https://github.com/iHaruruki/yolo_ros2.git)
 
 ## 🛠️ Setting up your Workspace
 Run the following commands to set up and download the HEBI ROS 2 packages:
@@ -45,6 +46,9 @@ git clone -b ros2 https://github.com/HebiRobotics/hebi_moveit_configs.git
 
 # Mani description
 git clone https://github.com/iHaruruki/mani_description.git
+
+# yolo_ros2
+git clone https://github.com/iHaruruki/yolo_ros2.git
 ```
 
 ### Installing dependent packages and building
