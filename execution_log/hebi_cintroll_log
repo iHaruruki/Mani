@@ -1,0 +1,122 @@
+robot@nuc38:~$ ros2 launch hebi_control hebi_movers.launch.py 
+[INFO] [launch]: All log files can be found below /home/robot/.ros/log/2026-02-16-09-55-31-934930-nuc38-5525
+[INFO] [launch]: Default logging verbosity is set to INFO
+hebi_a-2085-06g_moveit_config
+[INFO] [hebi_mover-5]: process started with pid [5534]
+[INFO] [hebi_arm_mover1-1]: process started with pid [5526]
+[INFO] [hebi_arm_mover2-2]: process started with pid [5528]
+[INFO] [hebi_arm_mover3-3]: process started with pid [5530]
+[INFO] [hebi_j6_rotator-4]: process started with pid [5532]
+[hebi_arm_mover1-1] [INFO] [1771203332.842163166] [hebi_arm_mover1]: Hebi Arm Mover (Hardcoded Offsets) started.
+[hebi_arm_mover1-1] [INFO] [1771203332.842254445] [hebi_arm_mover1]: Publish to /exec_move to start motion to 'detected_object'.
+[hebi_arm_mover2-2] [INFO] [1771203332.847993227] [hebi_arm_mover2]: Hebi Arm Mover (Hardcoded Offsets) started.
+[hebi_arm_mover2-2] [INFO] [1771203332.848311883] [hebi_arm_mover2]: Publish to /exec_move to start motion to 'detected_object'.
+[hebi_arm_mover3-3] [INFO] [1771203332.849893048] [hebi_arm_mover3]: Hebi Arm Mover (Hardcoded Offsets) started.
+[hebi_arm_mover3-3] [INFO] [1771203332.850569794] [hebi_arm_mover3]: Publish to /exec_move to start motion to 'detected_object'.
+[hebi_j6_rotator-4] [INFO] [1771203332.891484698] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0510306 seconds
+[hebi_j6_rotator-4] [INFO] [1771203332.891581001] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[hebi_mover-5] [INFO] [1771203333.385507116] [hebi_sequence_manager]: Start to autosequence.
+[hebi_j6_rotator-4] [ERROR] [1771203333.907654776] [moveit_kinematics_base.kinematics_base]: Group 'hebi_arm_with_gripper' is not a chain
+[hebi_j6_rotator-4] [ERROR] [1771203333.907689845] [kinematics_plugin_loader]: Kinematics solver of type 'kdl_kinematics_plugin/KDLKinematicsPlugin' could not be initialized for group 'hebi_arm_with_gripper'
+[hebi_j6_rotator-4] [ERROR] [1771203333.907703083] [moveit_ros.robot_model_loader]: Kinematics solver could not be instantiated for joint group hebi_arm_with_gripper.
+[hebi_j6_rotator-4] [INFO] [1771203333.919322186] [move_group_interface]: Ready to take commands for planning group hebi_arm.
+[hebi_j6_rotator-4] [INFO] [1771203333.919556274] [hebi_j6_rotator]: ==============================
+[hebi_j6_rotator-4] [INFO] [1771203333.919622239] [hebi_j6_rotator]: Planning Group: hebi_arm
+[hebi_j6_rotator-4] [INFO] [1771203333.919633496] [hebi_j6_rotator]: Planning Frame: base_link
+[hebi_j6_rotator-4] [INFO] [1771203333.919641681] [hebi_j6_rotator]: Joints count: 6
+[hebi_j6_rotator-4] [INFO] [1771203333.919650201] [hebi_j6_rotator]:  - Joint [0]: J1_base
+[hebi_j6_rotator-4] [INFO] [1771203333.919658126] [hebi_j6_rotator]:  - Joint [1]: J2_shoulder
+[hebi_j6_rotator-4] [INFO] [1771203333.919665426] [hebi_j6_rotator]:  - Joint [2]: J3_elbow
+[hebi_j6_rotator-4] [INFO] [1771203333.919673129] [hebi_j6_rotator]:  - Joint [3]: J4_wrist1
+[hebi_j6_rotator-4] [INFO] [1771203333.919679896] [hebi_j6_rotator]:  - Joint [4]: J5_wrist2
+[hebi_j6_rotator-4] [INFO] [1771203333.919687605] [hebi_j6_rotator]:  - Joint [5]: J6_wrist3
+[hebi_j6_rotator-4] [INFO] [1771203333.919694494] [hebi_j6_rotator]: ==============================
+[hebi_j6_rotator-4] [INFO] [1771203333.919981993] [hebi_j6_rotator]: J6 Rotator Node Ready. Waiting for /exec_j6_only...
+[hebi_mover-5] [INFO] [1771203335.388455622] [hebi_sequence_manager]: Running Move 1
+[hebi_mover-5] [INFO] [1771203335.389281308] [hebi_sequence_manager]: Wait 15 seconds
+[hebi_arm_mover1-1] [INFO] [1771203335.438573737] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0493546 seconds
+[hebi_arm_mover1-1] [INFO] [1771203335.438641753] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[hebi_arm_mover1-1] [ERROR] [1771203336.462112646] [moveit_kinematics_base.kinematics_base]: Group 'hebi_arm_with_gripper' is not a chain
+[hebi_arm_mover1-1] [ERROR] [1771203336.462144332] [kinematics_plugin_loader]: Kinematics solver of type 'kdl_kinematics_plugin/KDLKinematicsPlugin' could not be initialized for group 'hebi_arm_with_gripper'
+[hebi_arm_mover1-1] [ERROR] [1771203336.462154488] [moveit_ros.robot_model_loader]: Kinematics solver could not be instantiated for joint group hebi_arm_with_gripper.
+[hebi_arm_mover1-1] [INFO] [1771203336.473757729] [move_group_interface]: Ready to take commands for planning group hebi_arm.
+[hebi_arm_mover1-1] [INFO] [1771203336.473835245] [hebi_arm_mover1]: Goal with offse: x=0.331, y=-0.102, z=-0.190
+[hebi_arm_mover1-1] [INFO] [1771203336.474003183] [move_group_interface]: MoveGroup action client/server ready
+[hebi_arm_mover1-1] [INFO] [1771203336.476318977] [move_group_interface]: Planning request accepted
+[hebi_arm_mover1-1] [ERROR] [1771203336.476534743] [hebi_arm_mover1.rclcpp_action]: unknown goal response, ignoring...
+[hebi_arm_mover1-1] [INFO] [1771203336.525622264] [move_group_interface]: Planning request complete!
+[hebi_arm_mover1-1] [INFO] [1771203336.526393292] [move_group_interface]: time taken to generate plan: 0.0345274 seconds
+[hebi_arm_mover1-1] [INFO] [1771203336.526441643] [hebi_arm_mover1]: Planning success. Executing move...
+[hebi_arm_mover1-1] [ERROR] [1771203336.527655899] [hebi_arm_mover1.rclcpp_action]: unknown result response, ignoring...
+[hebi_arm_mover1-1] [INFO] [1771203336.527958492] [move_group_interface]: Execute request accepted
+[hebi_arm_mover1-1] [ERROR] [1771203336.528748702] [hebi_arm_mover1.rclcpp_action]: unknown goal response, ignoring...
+[hebi_arm_mover1-1] [INFO] [1771203336.540485444] [move_group_interface]: Execute request aborted
+[hebi_arm_mover1-1] [ERROR] [1771203336.541490016] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[hebi_mover-5] [INFO] [1771203350.404343238] [hebi_sequence_manager]: Running Move 2
+[hebi_mover-5] [INFO] [1771203350.405342684] [hebi_sequence_manager]: Wait 10 seconds
+[hebi_arm_mover2-2] [INFO] [1771203350.438483243] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0333634 seconds
+[hebi_arm_mover2-2] [INFO] [1771203350.438528738] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[hebi_arm_mover2-2] [ERROR] [1771203351.436283639] [moveit_kinematics_base.kinematics_base]: Group 'hebi_arm_with_gripper' is not a chain
+[hebi_arm_mover2-2] [ERROR] [1771203351.436336600] [kinematics_plugin_loader]: Kinematics solver of type 'kdl_kinematics_plugin/KDLKinematicsPlugin' could not be initialized for group 'hebi_arm_with_gripper'
+[hebi_arm_mover2-2] [ERROR] [1771203351.436356490] [moveit_ros.robot_model_loader]: Kinematics solver could not be instantiated for joint group hebi_arm_with_gripper.
+[hebi_arm_mover2-2] [INFO] [1771203351.452974889] [move_group_interface]: Ready to take commands for planning group hebi_arm.
+[hebi_arm_mover2-2] [INFO] [1771203351.453042346] [hebi_arm_mover2]: Goal with offse: x=0.329, y=-0.002, z=-0.189
+[hebi_arm_mover2-2] [INFO] [1771203351.453217924] [move_group_interface]: MoveGroup action client/server ready
+[hebi_arm_mover2-2] [INFO] [1771203351.454427402] [move_group_interface]: Planning request accepted
+[hebi_arm_mover2-2] [ERROR] [1771203351.454624205] [hebi_arm_mover2.rclcpp_action]: unknown goal response, ignoring...
+[hebi_arm_mover2-2] [INFO] [1771203351.546597839] [move_group_interface]: Planning request complete!
+[hebi_arm_mover2-2] [INFO] [1771203351.547604642] [move_group_interface]: time taken to generate plan: 0.0450024 seconds
+[hebi_arm_mover2-2] [INFO] [1771203351.547693889] [hebi_arm_mover2]: Planning success. Executing move...
+[hebi_arm_mover2-2] [INFO] [1771203351.550192651] [move_group_interface]: Execute request accepted
+[hebi_arm_mover2-2] [ERROR] [1771203351.550715594] [hebi_arm_mover2.rclcpp_action]: unknown goal response, ignoring...
+[hebi_arm_mover2-2] [INFO] [1771203351.563534916] [move_group_interface]: Execute request aborted
+[hebi_arm_mover2-2] [ERROR] [1771203351.563623181] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[hebi_mover-5] [INFO] [1771203360.415179725] [hebi_sequence_manager]: Close Gripper
+[hebi_mover-5] [INFO] [1771203360.416411521] [hebi_sequence_manager]: Wait 5 seconds
+[hebi_mover-5] [INFO] [1771203365.421365412] [hebi_sequence_manager]: Running Move 3
+[hebi_mover-5] [INFO] [1771203365.422066825] [hebi_sequence_manager]: Wait 20 seconds
+[hebi_arm_mover3-3] [INFO] [1771203365.465190729] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0432501 seconds
+[hebi_arm_mover3-3] [INFO] [1771203365.465244484] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[hebi_arm_mover3-3] [ERROR] [1771203366.336467514] [moveit_kinematics_base.kinematics_base]: Group 'hebi_arm_with_gripper' is not a chain
+[hebi_arm_mover3-3] [ERROR] [1771203366.336515932] [kinematics_plugin_loader]: Kinematics solver of type 'kdl_kinematics_plugin/KDLKinematicsPlugin' could not be initialized for group 'hebi_arm_with_gripper'
+[hebi_arm_mover3-3] [ERROR] [1771203366.336557137] [moveit_ros.robot_model_loader]: Kinematics solver could not be instantiated for joint group hebi_arm_with_gripper.
+[hebi_arm_mover3-3] [INFO] [1771203366.351079648] [move_group_interface]: Ready to take commands for planning group hebi_arm.
+[hebi_arm_mover3-3] [INFO] [1771203366.351147250] [hebi_arm_mover3]: Goal with offse: x=0.335, y=-0.001, z=-0.100
+[hebi_arm_mover3-3] [INFO] [1771203366.351340081] [move_group_interface]: MoveGroup action client/server ready
+[hebi_arm_mover3-3] [INFO] [1771203366.351700936] [move_group_interface]: Planning request accepted
+[hebi_arm_mover3-3] [ERROR] [1771203366.351891588] [hebi_arm_mover3.rclcpp_action]: unknown goal response, ignoring...
+[hebi_arm_mover3-3] [INFO] [1771203366.408305041] [move_group_interface]: Planning request complete!
+[hebi_arm_mover3-3] [INFO] [1771203366.408909661] [move_group_interface]: time taken to generate plan: 0.0303447 seconds
+[hebi_arm_mover3-3] [INFO] [1771203366.408942006] [hebi_arm_mover3]: Planning success. Executing move...
+[hebi_arm_mover3-3] [INFO] [1771203366.409697317] [move_group_interface]: Execute request accepted
+[hebi_arm_mover3-3] [ERROR] [1771203366.417668786] [hebi_arm_mover3.rclcpp_action]: unknown result response, ignoring...
+[hebi_arm_mover3-3] [INFO] [1771203366.418388459] [move_group_interface]: Execute request aborted
+[hebi_arm_mover3-3] [ERROR] [1771203366.419021003] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[hebi_mover-5] [INFO] [1771203385.442278356] [hebi_sequence_manager]: Running Move j6
+[hebi_j6_rotator-4] [INFO] [1771203385.442549705] [hebi_j6_rotator]: get the signal.
+[hebi_mover-5] [INFO] [1771203385.442980136] [hebi_sequence_manager]: Sequence Finished.
+[hebi_j6_rotator-4] [INFO] [1771203385.443081144] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[hebi_j6_rotator-4] [INFO] [1771203385.447893859] [move_group_interface]: MoveGroup action client/server ready
+[hebi_j6_rotator-4] [INFO] [1771203385.448903980] [move_group_interface]: Planning request accepted
+[hebi_j6_rotator-4] [ERROR] [1771203385.449072889] [hebi_j6_rotator.rclcpp_action]: unknown goal response, ignoring...
+[hebi_j6_rotator-4] [INFO] [1771203385.475849491] [move_group_interface]: Planning request complete!
+[hebi_j6_rotator-4] [INFO] [1771203385.476838305] [move_group_interface]: time taken to generate plan: 0.0146838 seconds
+[hebi_j6_rotator-4] [INFO] [1771203385.476892241] [hebi_j6_rotator]: Planning success. Executing move...
+[hebi_j6_rotator-4] [INFO] [1771203385.479035796] [move_group_interface]: Execute request accepted
+[hebi_j6_rotator-4] [ERROR] [1771203385.479294052] [hebi_j6_rotator.rclcpp_action]: unknown goal response, ignoring...
+[hebi_j6_rotator-4] [ERROR] [1771203385.486549176] [hebi_j6_rotator.rclcpp_action]: unknown result response, ignoring...
+[hebi_j6_rotator-4] [INFO] [1771203385.491227135] [move_group_interface]: Execute request aborted
+[hebi_j6_rotator-4] [ERROR] [1771203385.491654528] [move_group_interface]: MoveGroupInterface::execute() failed or timeout reached
+[INFO] [hebi_mover-5]: process has finished cleanly [pid 5534]
+[hebi_j6_rotator-4] [ERROR] [1771203388.268301088] [hebi_j6_rotator.rclcpp_action]: unknown result response, ignoring...
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[hebi_j6_rotator-4] [INFO] [1771203416.821543986] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[hebi_arm_mover1-1] [INFO] [1771203416.821579788] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[hebi_arm_mover2-2] [INFO] [1771203416.821693798] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[hebi_arm_mover3-3] [INFO] [1771203416.821965293] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[INFO] [hebi_j6_rotator-4]: process has finished cleanly [pid 5532]
+[INFO] [hebi_arm_mover3-3]: process has finished cleanly [pid 5530]
+[INFO] [hebi_arm_mover2-2]: process has finished cleanly [pid 5528]
+[INFO] [hebi_arm_mover1-1]: process has finished cleanly [pid 5526]
+robot@nuc38:~$ 
+

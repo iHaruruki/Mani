@@ -144,7 +144,15 @@ ros2 launch hebi_bringup move_group.launch.py hebi_arm:=A-2085-06G use_sim_time:
 > Movable range: 0 degrees to -90 degrees (0 [rad] to -1.570 [rad])  
 > 可動範囲：0度 ～ -90度(0 [rad] ~ -1.570 [rad])
 
-### Object Recognition
+### Object Recognition and Automaic Approach
+#### Launch Robot Control(Use real hardware)
+```bash
+ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
+```
+#### Launch Moveit
+```bash
+ros2 launch hebi_bringup move_group.launch.py hebi_arm:=A-2085-06G use_sim_time:=false
+```
 #### Run Depth Camera
 ```bash
 ros2 launch orbbec_camera astra_stereo_u3.launch.py
@@ -157,10 +165,20 @@ ros2 launch mani_description robot.launch.py
 ```bash
 ros2 run yolo_ros2 object_detection_tf_node
 ```
-##### rviz2
+#### Publish robot description
+```bash
+ros2 launch hebi_a-2085-06g_moveit_config move_group.launch.py
+```
+![png](/meida/robotdescription.png)
+
+#### hebi_controll
+```bash
+ros2 launch hebi_control hebi_movers.launch.py
+```
+<!-- ##### rviz2
 ```bash
 rviz2
-```
+``` -->
 - Click the Add button at the bottom of the Displays panel.
 Select the `By topic` tab, then `/depth_registered`:arrow_right:`/points`:arrow_right:`PointCloud2`, and click `OK`.  
 - Open the displayed item in the Displays panel and configure the following settings:
