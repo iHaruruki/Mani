@@ -1,0 +1,249 @@
+robot@nuc38:~/hebi_ws$ ros2 launch hebi_bringup move_group.launch.py hebi_arm:=A-2085-06G use_sim_time:=false
+[INFO] [launch]: All log files can be found below /home/robot/.ros/log/2026-02-16-17-09-53-639323-nuc38-11865
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [launch.user]: Using default description_file: A-2085-06G.urdf.xacro
+[INFO] [move_group-1]: process started with pid [11866]
+[INFO] [rviz2-2]: process started with pid [11868]
+[rviz2-2] Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
+[move_group-1] [INFO] [1771229394.038255888] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0262239 seconds
+[move_group-1] [INFO] [1771229394.038318550] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[rviz2-2] [INFO] [1771229394.214769116] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1771229394.214845164] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-2] [INFO] [1771229394.231451917] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] Warning: class_loader.impl: SEVERE WARNING!!! A namespace collision has occurred with plugin factory for class rviz_default_plugins::displays::InteractiveMarkerDisplay. New factory will OVERWRITE existing one. This situation occurs when libraries containing plugins are directly linked against an executable (the one running right now generating this message). Please separate plugins out into their own library or just don't link against the library and use either class_loader::ClassLoader/MultiLibraryClassLoader to open.
+[rviz2-2]          at line 253 in /opt/ros/humble/include/class_loader/class_loader/class_loader_core.hpp
+[move_group-1] [ERROR] [1771229394.618311334] [moveit_kinematics_base.kinematics_base]: Group 'hebi_arm_with_gripper' is not a chain
+[move_group-1] [ERROR] [1771229394.618328533] [kinematics_plugin_loader]: Kinematics solver of type 'kdl_kinematics_plugin/KDLKinematicsPlugin' could not be initialized for group 'hebi_arm_with_gripper'
+[move_group-1] [ERROR] [1771229394.618334930] [moveit_ros.robot_model_loader]: Kinematics solver could not be instantiated for joint group hebi_arm_with_gripper.
+[move_group-1] [INFO] [1771229395.960187213] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[move_group-1] [INFO] [1771229395.960307288] [moveit.ros_planning_interface.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-1] [INFO] [1771229395.960617702] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-1] [INFO] [1771229395.960852558] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-1] [INFO] [1771229395.960863045] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[move_group-1] [INFO] [1771229395.961299498] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-1] [INFO] [1771229395.961307460] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-1] [INFO] [1771229395.961464030] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-1] [INFO] [1771229395.961636977] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-1] [WARN] [1771229395.962160022] [moveit.ros.occupancy_map_monitor.middleware_handle]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-1] [ERROR] [1771229395.962168294] [moveit.ros.occupancy_map_monitor.middleware_handle]: No 3D sensor plugin(s) defined for octomap updates
+[rviz2-2] [ERROR] [1771229397.338926874] [moveit_ros_visualization.motion_planning_frame]: Action server: /recognize_objects not available
+[rviz2-2] [INFO] [1771229397.349092055] [moveit_ros_visualization.motion_planning_frame]: MoveGroup namespace changed: / -> . Reloading params.
+[rviz2-2] [INFO] [1771229397.414872461] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.0214553 seconds
+[rviz2-2] [INFO] [1771229397.414902299] [moveit_robot_model.robot_model]: Loading robot model 'A-2085-06G'...
+[rviz2-2] [ERROR] [1771229397.982291913] [moveit_kinematics_base.kinematics_base]: Group 'hebi_arm_with_gripper' is not a chain
+[rviz2-2] [ERROR] [1771229397.982308694] [kinematics_plugin_loader]: Kinematics solver of type 'kdl_kinematics_plugin/KDLKinematicsPlugin' could not be initialized for group 'hebi_arm_with_gripper'
+[rviz2-2] [ERROR] [1771229397.982318117] [moveit_ros.robot_model_loader]: Kinematics solver could not be instantiated for joint group hebi_arm_with_gripper.
+[move_group-1] [INFO] [1771229398.624550133] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'chomp'
+[move_group-1] [INFO] [1771229398.627922858] [moveit.ros_planning.planning_pipeline]: Using planning interface 'CHOMP'
+[move_group-1] [INFO] [1771229398.630745975] [moveit_ros.add_time_optimal_parameterization]: Param 'chomp.path_tolerance' was not set. Using default value: 0.100000
+[move_group-1] [INFO] [1771229398.630752953] [moveit_ros.add_time_optimal_parameterization]: Param 'chomp.resample_dt' was not set. Using default value: 0.100000
+[move_group-1] [INFO] [1771229398.630755348] [moveit_ros.add_time_optimal_parameterization]: Param 'chomp.min_angle_change' was not set. Using default value: 0.001000
+[move_group-1] [INFO] [1771229398.630765687] [moveit_ros.fix_workspace_bounds]: Param 'chomp.default_workspace_bounds' was not set. Using default value: 10.000000
+[move_group-1] [INFO] [1771229398.630772706] [moveit_ros.fix_start_state_bounds]: Param 'chomp.start_state_max_bounds_error' was set to 0.100000
+[move_group-1] [INFO] [1771229398.630775272] [moveit_ros.fix_start_state_bounds]: Param 'chomp.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-1] [INFO] [1771229398.630780797] [moveit_ros.fix_start_state_collision]: Param 'chomp.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-1] [INFO] [1771229398.630783234] [moveit_ros.fix_start_state_collision]: Param 'chomp.jiggle_fraction' was set to 0.050000
+[move_group-1] [INFO] [1771229398.630785712] [moveit_ros.fix_start_state_collision]: Param 'chomp.max_sampling_attempts' was not set. Using default value: 100
+[move_group-1] [INFO] [1771229398.630790828] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[move_group-1] [INFO] [1771229398.630792464] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Resolve constraint frames to robot links'
+[move_group-1] [INFO] [1771229398.630793806] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[move_group-1] [INFO] [1771229398.630813379] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[move_group-1] [INFO] [1771229398.630814983] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[move_group-1] [INFO] [1771229398.630816337] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
+[move_group-1] [INFO] [1771229398.631629021] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'ompl'
+[move_group-1] [INFO] [1771229398.640115503] [moveit.ros_planning.planning_pipeline]: Using planning interface 'OMPL'
+[move_group-1] [INFO] [1771229398.643050073] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.path_tolerance' was not set. Using default value: 0.100000
+[move_group-1] [INFO] [1771229398.643070036] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.resample_dt' was not set. Using default value: 0.100000
+[move_group-1] [INFO] [1771229398.643073060] [moveit_ros.add_time_optimal_parameterization]: Param 'ompl.min_angle_change' was not set. Using default value: 0.001000
+[move_group-1] [INFO] [1771229398.643085589] [moveit_ros.fix_workspace_bounds]: Param 'ompl.default_workspace_bounds' was not set. Using default value: 10.000000
+[move_group-1] [INFO] [1771229398.643095414] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_bounds_error' was set to 0.100000
+[move_group-1] [INFO] [1771229398.643098558] [moveit_ros.fix_start_state_bounds]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-1] [INFO] [1771229398.643104668] [moveit_ros.fix_start_state_collision]: Param 'ompl.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-1] [INFO] [1771229398.643107563] [moveit_ros.fix_start_state_collision]: Param 'ompl.jiggle_fraction' was set to 0.050000
+[move_group-1] [INFO] [1771229398.643109829] [moveit_ros.fix_start_state_collision]: Param 'ompl.max_sampling_attempts' was not set. Using default value: 100
+[move_group-1] [INFO] [1771229398.643115643] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[move_group-1] [INFO] [1771229398.643117772] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Resolve constraint frames to robot links'
+[move_group-1] [INFO] [1771229398.643119231] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[move_group-1] [INFO] [1771229398.643120771] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[move_group-1] [INFO] [1771229398.643122188] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[move_group-1] [INFO] [1771229398.643123606] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
+[move_group-1] [INFO] [1771229398.643938916] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'pilz_industrial_motion_planner'
+[move_group-1] [INFO] [1771229398.647853229] [moveit.pilz_industrial_motion_planner.joint_limits_aggregator]: Reading limits from namespace robot_description_planning
+[move_group-1] [INFO] [1771229398.651440962] [moveit.pilz_industrial_motion_planner]: Available plugins: pilz_industrial_motion_planner/PlanningContextLoaderCIRC pilz_industrial_motion_planner/PlanningContextLoaderLIN pilz_industrial_motion_planner/PlanningContextLoaderPTP 
+[move_group-1] [INFO] [1771229398.651469580] [moveit.pilz_industrial_motion_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderCIRC
+[move_group-1] [INFO] [1771229398.652890761] [moveit.pilz_industrial_motion_planner]: Registered Algorithm [CIRC]
+[move_group-1] [INFO] [1771229398.652902700] [moveit.pilz_industrial_motion_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderLIN
+[move_group-1] [INFO] [1771229398.653624618] [moveit.pilz_industrial_motion_planner]: Registered Algorithm [LIN]
+[move_group-1] [INFO] [1771229398.653631207] [moveit.pilz_industrial_motion_planner]: About to load: pilz_industrial_motion_planner/PlanningContextLoaderPTP
+[move_group-1] [INFO] [1771229398.654249869] [moveit.pilz_industrial_motion_planner]: Registered Algorithm [PTP]
+[move_group-1] [INFO] [1771229398.654258292] [moveit.ros_planning.planning_pipeline]: Using planning interface 'Pilz Industrial Motion Planner'
+[move_group-1] [INFO] [1771229398.669381656] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for hebi_arm_controller
+[move_group-1] [INFO] [1771229398.669411575] [moveit.plugins.moveit_simple_controller_manager]: Max effort set to 0.0
+[move_group-1] [INFO] [1771229398.669983077] [moveit.plugins.moveit_simple_controller_manager]: Added GripperCommand controller for gripper_controller
+[move_group-1] [INFO] [1771229398.670089023] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1771229398.670103414] [moveit.plugins.moveit_simple_controller_manager]: Returned 2 controllers in list
+[move_group-1] [INFO] [1771229398.670270364] [moveit_ros.trajectory_execution_manager]: Trajectory execution is managing controllers
+[move_group-1] [INFO] [1771229398.670277706] [move_group.move_group]: MoveGroup debug mode is ON
+[move_group-1] [INFO] [1771229398.684732958] [move_group.move_group]: 
+[move_group-1] 
+[move_group-1] ********************************************************
+[move_group-1] * MoveGroup using: 
+[move_group-1] *     - ApplyPlanningSceneService
+[move_group-1] *     - ClearOctomapService
+[move_group-1] *     - CartesianPathService
+[move_group-1] *     - ExecuteTrajectoryAction
+[move_group-1] *     - GetPlanningSceneService
+[move_group-1] *     - KinematicsService
+[move_group-1] *     - MoveAction
+[move_group-1] *     - MotionPlanService
+[move_group-1] *     - QueryPlannersService
+[move_group-1] *     - StateValidationService
+[move_group-1] ********************************************************
+[move_group-1] 
+[move_group-1] [INFO] [1771229398.684783023] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner
+[move_group-1] [INFO] [1771229398.684792140] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context initialization complete
+[move_group-1] Loading 'move_group/ApplyPlanningSceneService'...
+[move_group-1] Loading 'move_group/ClearOctomapService'...
+[move_group-1] Loading 'move_group/MoveGroupCartesianPathService'...
+[move_group-1] Loading 'move_group/MoveGroupExecuteTrajectoryAction'...
+[move_group-1] Loading 'move_group/MoveGroupGetPlanningSceneService'...
+[move_group-1] Loading 'move_group/MoveGroupKinematicsService'...
+[move_group-1] Loading 'move_group/MoveGroupMoveAction'...
+[move_group-1] Loading 'move_group/MoveGroupPlanService'...
+[move_group-1] Loading 'move_group/MoveGroupQueryPlannersService'...
+[move_group-1] Loading 'move_group/MoveGroupStateValidationService'...
+[move_group-1] 
+[move_group-1] You can start planning now!
+[move_group-1] 
+[rviz2-2] [INFO] [1771229399.434566422] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-2] [INFO] [1771229399.435271578] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[rviz2-2] [INFO] [1771229399.741183857] [interactive_marker_display_102989761862768]: Connected on namespace: /rviz_moveit_motion_planning_display/robot_interaction_interactive_marker_topic
+[rviz2-2] [INFO] [1771229399.759462543] [moveit_ros_robot_interaction.robot_interaction]: No active joints or end effectors found for group 'gripper'. Make sure that kinematics.yaml is loaded in this node's namespace.
+[rviz2-2] [INFO] [1771229399.760242213] [moveit_ros_robot_interaction.robot_interaction]: No active joints or end effectors found for group 'gripper'. Make sure that kinematics.yaml is loaded in this node's namespace.
+[rviz2-2] [INFO] [1771229399.775915837] [moveit_ros_visualization.motion_planning_frame]: group gripper
+[rviz2-2] [INFO] [1771229399.775953545] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'gripper' in namespace ''
+[rviz2-2] [INFO] [1771229399.779594254] [interactive_marker_display_102989761862768]: Sending request for interactive markers
+[rviz2-2] [INFO] [1771229399.785424004] [move_group_interface]: Ready to take commands for planning group gripper.
+[rviz2-2] [INFO] [1771229399.785845964] [moveit_ros_visualization.motion_planning_frame]: group gripper
+[rviz2-2] [INFO] [1771229399.814097662] [interactive_marker_display_102989761862768]: Service response received for initialization
+[rviz2-2] [INFO] [1771229423.508813189] [moveit_ros_visualization.motion_planning_frame]: group hebi_arm
+[rviz2-2] [INFO] [1771229423.508848659] [moveit_ros_visualization.motion_planning_frame]: Constructing new MoveGroup connection for group 'hebi_arm' in namespace ''
+[rviz2-2] [INFO] [1771229423.514293535] [move_group_interface]: Ready to take commands for planning group hebi_arm.
+[rviz2-2] [INFO] [1771229429.763356504] [move_group_interface]: MoveGroup action client/server ready
+[move_group-1] [INFO] [1771229429.763783829] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[rviz2-2] [INFO] [1771229429.763954017] [move_group_interface]: Planning request accepted
+[move_group-1] [INFO] [1771229429.763972871] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[move_group-1] [INFO] [1771229429.773498651] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-1] [INFO] [1771229429.773530874] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-1] [INFO] [1771229429.773870580] [moveit_ros.fix_start_state_bounds]: Starting state is just outside bounds (joint 'J2_shoulder'). Assuming within bounds.
+[move_group-1] [WARN] [1771229429.773903768] [moveit_ros.fix_start_state_bounds]: Joint 'J6_wrist3' from the starting state is outside bounds by a significant margin: [-1.82654 ] should be in the range [-1.7 ], [5 ] but the error above the ~start_state_max_bounds_error parameter (currently set to 0.100000)
+[move_group-1] [INFO] [1771229429.775262517] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'hebi_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-1] [WARN] [1771229429.776018429] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229429.776144634] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229429.776160710] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [WARN] [1771229429.776201445] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229429.776229939] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229429.776245166] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229429.776270897] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [ERROR] [1771229429.776281182] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229429.776329558] [ompl]: ./src/ompl/tools/multiplan/src/ParallelPlan.cpp:138 - ParallelPlan::solve(): Unable to find solution by any of the threads in 0.000700 seconds
+[move_group-1] [WARN] [1771229429.776483148] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [WARN] [1771229429.776510811] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229429.776533601] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [ERROR] [1771229429.776552836] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229429.776609530] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229429.776638273] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229429.776690417] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229429.776718818] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229429.776743416] [ompl]: ./src/ompl/tools/multiplan/src/ParallelPlan.cpp:138 - ParallelPlan::solve(): Unable to find solution by any of the threads in 0.000318 seconds
+[move_group-1] [WARN] [1771229429.776822422] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229429.776842539] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229429.776856848] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229429.776876329] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229429.776896204] [ompl]: ./src/ompl/tools/multiplan/src/ParallelPlan.cpp:138 - ParallelPlan::solve(): Unable to find solution by any of the threads in 0.000119 seconds
+[move_group-1] [WARN] [1771229429.785383965] [ompl]: ./src/ompl/base/goals/src/GoalLazySamples.cpp:129 - Goal sampling thread never did any work.
+[move_group-1] [INFO] [1771229429.785472384] [moveit.ompl_planning.model_based_planning_context]: Unable to solve the planning problem
+[move_group-1] [INFO] [1771229429.785529636] [moveit_move_group_default_capabilities.move_action_capability]: Catastrophic failure
+[rviz2-2] [INFO] [1771229429.786112984] [move_group_interface]: Planning request aborted
+[rviz2-2] [ERROR] [1771229429.786258687] [move_group_interface]: MoveGroupInterface::plan() failed or timeout reached
+[rviz2-2] [INFO] [1771229430.650672566] [move_group_interface]: MoveGroup action client/server ready
+[move_group-1] [INFO] [1771229430.651044240] [moveit_move_group_default_capabilities.move_action_capability]: Received request
+[move_group-1] [INFO] [1771229430.651137143] [moveit_move_group_default_capabilities.move_action_capability]: executing..
+[rviz2-2] [INFO] [1771229430.651177955] [move_group_interface]: Planning request accepted
+[move_group-1] [INFO] [1771229430.653036033] [moveit_move_group_default_capabilities.move_action_capability]: Planning request received for MoveGroup action. Forwarding to planning pipeline.
+[move_group-1] [INFO] [1771229430.653048981] [moveit_move_group_capabilities_base.move_group_capability]: Using planning pipeline 'ompl'
+[move_group-1] [INFO] [1771229430.653248249] [moveit_ros.fix_start_state_bounds]: Starting state is just outside bounds (joint 'J2_shoulder'). Assuming within bounds.
+[move_group-1] [WARN] [1771229430.653267980] [moveit_ros.fix_start_state_bounds]: Joint 'J6_wrist3' from the starting state is outside bounds by a significant margin: [-1.82654 ] should be in the range [-1.7 ], [5 ] but the error above the ~start_state_max_bounds_error parameter (currently set to 0.100000)
+[move_group-1] [INFO] [1771229430.653894688] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'hebi_arm' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[move_group-1] [WARN] [1771229430.654106584] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229430.654132591] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229430.654175037] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229430.654194984] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229430.654287630] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229430.654328688] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229430.654336794] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229430.654367572] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229430.654397478] [ompl]: ./src/ompl/tools/multiplan/src/ParallelPlan.cpp:138 - ParallelPlan::solve(): Unable to find solution by any of the threads in 0.000376 seconds
+[move_group-1] [WARN] [1771229430.654499755] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229430.654529251] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229430.654601417] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229430.654624595] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229430.654636719] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229430.654660000] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229430.654676412] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229430.654691957] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229430.654707911] [ompl]: ./src/ompl/tools/multiplan/src/ParallelPlan.cpp:138 - ParallelPlan::solve(): Unable to find solution by any of the threads in 0.000277 seconds
+[move_group-1] [WARN] [1771229430.654793519] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229430.654816028] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229430.654825095] [ompl]: ./src/ompl/base/src/Planner.cpp:248 - hebi_arm/hebi_arm: Skipping invalid start state (invalid bounds)
+[move_group-1] [ERROR] [1771229430.654850863] [ompl]: ./src/ompl/geometric/planners/rrt/src/RRTConnect.cpp:219 - hebi_arm/hebi_arm: Motion planning start tree could not be initialized!
+[move_group-1] [WARN] [1771229430.654876042] [ompl]: ./src/ompl/tools/multiplan/src/ParallelPlan.cpp:138 - ParallelPlan::solve(): Unable to find solution by any of the threads in 0.000143 seconds
+[move_group-1] [INFO] [1771229430.654901131] [moveit.ompl_planning.model_based_planning_context]: Unable to solve the planning problem
+[move_group-1] [INFO] [1771229430.654916321] [moveit_move_group_default_capabilities.move_action_capability]: Catastrophic failure
+[rviz2-2] [INFO] [1771229430.655156757] [move_group_interface]: Planning request aborted
+[rviz2-2] [ERROR] [1771229430.656192453] [move_group_interface]: MoveGroupInterface::plan() failed or timeout reached
+^C[WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+[move_group-1] [INFO] [1771229527.882455380] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[rviz2-2] [INFO] [1771229527.882605443] [rclcpp]: signal_handler(SIGINT/SIGTERM)
+[rviz2-2] [WARN] [1771229527.910554117] [interactive_marker_display_102989761862768]: Server not available while running, resetting
+[move_group-1] [INFO] [1771229527.913393478] [moveit.ros_planning_interface.moveit_cpp]: Deleting MoveItCpp
+[rviz2-2] 
+[rviz2-2] >>> [rcutils|error_handling.c:108] rcutils_set_error_state()
+[rviz2-2] This error state is being overwritten:
+[rviz2-2] 
+[rviz2-2]   'rcl node's context is invalid, at ./src/rcl/node.c:428'
+[rviz2-2] 
+[rviz2-2] with this new error message:
+[rviz2-2] 
+[rviz2-2]   'publisher's context is invalid, at ./src/rcl/publisher.c:389'
+[rviz2-2] 
+[rviz2-2] rcutils_reset_error() should be called after error handling to avoid this.
+[rviz2-2] <<<
+[rviz2-2] [INFO] [1771229528.008862418] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[ERROR] [rviz2-2]: process has died [pid 11868, exit code -11, cmd '/opt/ros/humble/lib/rviz2/rviz2 -d /home/robot/hebi_ws/install/hebi_a-2085-06g_moveit_config/share/hebi_a-2085-06g_moveit_config/config/moveit.rviz --ros-args --params-file /tmp/launch_params_9neuls55 --params-file /tmp/launch_params_a1jh9udk --params-file /tmp/launch_params_0puwoyov --params-file /tmp/launch_params_nzvdj0l_ --params-file /tmp/launch_params_72r104mi --params-file /tmp/launch_params__89j6u8e'].
+[move_group-1] [INFO] [1771229528.133412000] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopped publishing maintained planning scene.
+[move_group-1] [INFO] [1771229528.135762106] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping world geometry monitor
+[move_group-1] [INFO] [1771229528.135873507] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Stopping planning scene monitor
+[move_group-1] Warning: class_loader.ClassLoader: SEVERE WARNING!!! Attempting to unload library while objects created by this loader exist in the heap! You should delete your objects before attempting to unload the library or destroying the ClassLoader. The library will NOT be unloaded.
+[move_group-1]          at line 127 in ./src/class_loader.cpp
+[move_group-1] Stack trace (most recent call last):
+[move_group-1] #16   Object "", at 0xffffffffffffffff, in 
+[move_group-1] #15   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x5e4e0515b724, in 
+[move_group-1] #14   Source "../csu/libc-start.c", line 392, in __libc_start_main_impl [0x7d136bc29e3f]
+[move_group-1] #13   Source "../sysdeps/nptl/libc_start_call_main.h", line 58, in __libc_start_call_main [0x7d136bc29d8f]
+[move_group-1] #12   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x5e4e0515a65b, in 
+[move_group-1] #11   Object "/opt/ros/humble/lib/moveit_ros_move_group/move_group", at 0x5e4e0515c709, in 
+[move_group-1] #10   Object "/opt/ros/humble/lib/libmoveit_cpp.so.2.5.9", at 0x7d136c8d6876, in moveit_cpp::MoveItCpp::~MoveItCpp()
+[move_group-1] #9    Object "/opt/ros/humble/lib/libmoveit_cpp.so.2.5.9", at 0x7d136c8d4ba9, in 
+[move_group-1] #8    Object "/opt/ros/humble/lib/libmoveit_trajectory_execution_manager.so.2.5.9", at 0x7d136be78495, in trajectory_execution_manager::TrajectoryExecutionManager::~TrajectoryExecutionManager()
+[move_group-1] #7    Object "/opt/ros/humble/lib/libmoveit_trajectory_execution_manager.so.2.5.9", at 0x7d136be8b3a9, in 
+[move_group-1] #6    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7d136c536ebc, in rclcpp::Node::~Node()
+[move_group-1] #5    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7d136c536e5e, in rclcpp::Node::~Node()
+[move_group-1] #4    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7d136c511f59, in 
+[move_group-1] #3    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7d136c540509, in 
+[move_group-1] #2    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7d136c540450, in rclcpp::node_interfaces::NodeBase::~NodeBase()
+[move_group-1] #1    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7d136c511f59, in 
+[move_group-1] #0    Object "/opt/ros/humble/lib/librclcpp.so", at 0x7d136c516dd1, in rclcpp::CallbackGroup::~CallbackGroup()
+[move_group-1] Segmentation fault (Address not mapped to object [0x7d135436d798])
+[ERROR] [move_group-1]: process has died [pid 11866, exit code -11, cmd '/opt/ros/humble/lib/moveit_ros_move_group/move_group --ros-args --params-file /tmp/launch_params_j6uqtk0g --params-file /tmp/launch_params_8zww5c12'].
+[move_group-1]
