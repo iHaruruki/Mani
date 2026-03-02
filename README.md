@@ -21,7 +21,8 @@ mkdir -p ~/hebi_ws/src
 cd ~/hebi_ws/src
 
 # Install HEBI C++ ROS API package
-git clone -b ros2 https://github.com/HebiRobotics/hebi_cpp_api_ros.git
+# git clone -b ros2 https://github.com/HebiRobotics/hebi_cpp_api_ros.git
+sudo apt install ros-$ROS_DISTRO-hebi-cpp-api
 
 # Clone the HEBI description package
 git clone -b ros2/humble https://github.com/HebiRobotics/hebi_description.git
@@ -160,6 +161,8 @@ ros2 launch orbbec_camera astra_stereo_u3.launch.py
 #### Run `mani_description`
 ```bash
 ros2 launch mani_description robot.launch.py
+# If TF fails to start.
+ros2 run tf2_ros static_transform_publisher 0.05 0.06 -0.065 0 0 0 base_link camera_link
 ```
 #### Run `object_detection_tf_node`
 ```bash
@@ -206,7 +209,7 @@ Color-coded point cloud data is displayed.
 
 - **[iHaruruki](https://github.com/iHaruruki)**
 - **[SatoAsumu](https://github.com/SatoAsumu)**
-<!-- - **[]()** -->
+- **[KaitKuma](https://github.com/KaitKuma)**
 - **[bozznyskrtt](https://github.com/bozznyskrtt)**
 
 ## 📚 References
