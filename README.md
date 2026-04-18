@@ -205,6 +205,21 @@ Color-coded point cloud data is displayed.
 > Here is the link for the **yolo_ros2** package  
 > [yolo_ros2](https://github.com/iHaruruki/yolo_ros2.git)
 
+## ros bsg 
+### ros2 bag play
+```bash
+rviz2 -d ~/hebi_ws/src/hebi_description/rviz/hebi.rviz
+```
+```bash
+rviz2 -d ~/hebi_ws/src/hebi_moveit_configs/hebi_a-2085-06g_moveit_config/config/moveit.rviz 
+```
+```bash
+ros2 run yolo_ros2 object_detection_tf_node
+```
+```bash
+ros2 bag play ~/ros2_ws/ros2_bag/rosbag2_xxxx_xx_xx-xx_xx_xx/
+```
+
 ## 👤 Authors
 
 - **[iHaruruki](https://github.com/iHaruruki)**
