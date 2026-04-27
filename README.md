@@ -3,6 +3,8 @@ This is a package for Mani.
 Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.hebirobotics.com/).
 
 ## 📦 Packages List
+HEBI robotics official packages.
+
 * [hebi_cpp_api_ros](https://github.com/HebiRobotics/hebi_cpp_api_ros.git)
 * [hebi_description](https://github.com/HebiRobotics/hebi_description.git)
 * [hebi_msgs](https://github.com/HebiRobotics/hebi_msgs.git)
@@ -10,8 +12,6 @@ Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.
 * [hebi_hardware](https://github.com/HebiRobotics/hebi_hardware.git)
 * [hebi_bringup](https://github.com/HebiRobotics/hebi_bringup.git)
 * [hebi_moveit_configs](https://github.com/HebiRobotics/hebi_moveit_configs.git)
-* [mani_description](https://github.com/iHaruruki/mani_description.git)
-* [yolo_ros2](https://github.com/iHaruruki/yolo_ros2.git)
 
 ## 🛠️ Setting up your Workspace
 Run the following commands to set up and download the HEBI ROS 2 packages:
@@ -25,25 +25,25 @@ cd ~/hebi_ws/src
 sudo apt install ros-$ROS_DISTRO-hebi-cpp-api
 
 # Clone the HEBI description package
-git clone -b ros2/humble https://github.com/HebiRobotics/hebi_description.git
+git clone -b ros2/humble https://github.com/iHaruruki/hebi_description.git
 
 # Clone the HEBI messages package
-git clone https://github.com/HebiRobotics/hebi_msgs.git
+git clone https://github.com/iHaruruki/hebi_msgs.git
 
 # Clone this examples repository
-git clone https://github.com/HebiRobotics/hebi_ros2_examples.git
+git clone https://github.com/iHaruruki/hebi_ros2_examples.git
 
 # Install hardware package
-git clone https://github.com/HebiRobotics/hebi_hardware.git
+git clone -b humble https://github.com/iHaruruki/hebi_hardware.git
 
 # Install bringup package
-git clone -b humble https://github.com/HebiRobotics/hebi_bringup.git
+git clone -b humble https://github.com/iHaruruki/hebi_bringup.git
 
 # Install ROS2 Control dependencies
 sudo apt install ros-$ROS_DISTRO-ros2-control ros-$ROS_DISTRO-ros2-controllers -y
 
 # Moveit2 package
-git clone -b ros2 https://github.com/HebiRobotics/hebi_moveit_configs.git
+git clone -b ros2 https://github.com/iHaruruki/hebi_moveit_configs.git
 
 # Mani description
 git clone https://github.com/iHaruruki/mani_description.git
