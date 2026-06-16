@@ -233,7 +233,7 @@ ros2 bag play ~/ros2_ws/ros2_bag/rosbag2_xxxx_xx_xx-xx_xx_xx/
 - **[SatoAsumu](https://github.com/SatoAsumu)**
 - **[KaitKuma](https://github.com/KaitKuma)**
 - **[bozznyskrtt](https://github.com/bozznyskrtt)**
-- **[KongkiatTen](https://github.com/KongkiatTen)
+- **[KongkiatTen](https://github.com/KongkiatTen)**
 
 ## 📚 References
 HEBI Robotics
