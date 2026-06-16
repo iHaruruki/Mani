@@ -33,7 +33,7 @@ cd ~/hebi_ws/src
 sudo apt install ros-$ROS_DISTRO-hebi-cpp-api
 
 # Clone the HEBI description package
-git clone -b ros2/humble https://github.com/iHaruruki/hebi_description.git
+git clone -b ros2/jazzy https://github.com/iHaruruki/hebi_description.git
 
 # Clone the HEBI messages package
 git clone https://github.com/iHaruruki/hebi_msgs.git
@@ -42,10 +42,10 @@ git clone https://github.com/iHaruruki/hebi_msgs.git
 git clone https://github.com/iHaruruki/hebi_ros2_examples.git
 
 # Install hardware package
-git clone -b humble https://github.com/iHaruruki/hebi_hardware.git
+git clone -b jazzy https://github.com/iHaruruki/hebi_hardware.git
 
 # Install bringup package
-git clone -b humble https://github.com/iHaruruki/hebi_bringup.git
+git clone -b jazzy https://github.com/iHaruruki/hebi_bringup.git
 
 # Install ROS2 Control dependencies
 sudo apt install ros-$ROS_DISTRO-ros2-control ros-$ROS_DISTRO-ros2-controllers -y
@@ -241,7 +241,7 @@ HEBI Robotics
 * [HEBI Documentation](https://docs.hebi.us/)
 
 ROS 2 Control
-* [ros2_control Documentation](https://control.ros.org/humble/index.html)
+* [ros2_control Documentation](https://control.ros.org/jazzy/index.html)
 
 Moveit2
 * [Moveit Documentation](https://moveit.ai/)
