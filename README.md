@@ -2,6 +2,12 @@
 This is a package for Mani.  
 Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.hebirobotics.com/).
 
+## GitHub Project
+[Mani project](https://github.com/users/iHaruruki/projects/10)  
+
+**What is GitHub project?**
+A project is an adaptable table, board, and roadmap that integrates with your issues and pull requests on GitHub to help you plan and track your work effectively at the user or organization level.
+
 ## 📦 Packages List
 HEBI robotics official packages.
 
@@ -12,6 +18,7 @@ HEBI robotics official packages.
 * [hebi_hardware](https://github.com/HebiRobotics/hebi_hardware.git)
 * [hebi_bringup](https://github.com/HebiRobotics/hebi_bringup.git)
 * [hebi_moveit_configs](https://github.com/HebiRobotics/hebi_moveit_configs.git)
+* [mani_capture](https://github.com/bozznyskrtt/mani_capture.git)
 
 ## 🛠️ Setting up your Workspace
 Run the following commands to set up and download the HEBI ROS 2 packages:
