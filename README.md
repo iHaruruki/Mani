@@ -3,7 +3,7 @@ This is a package for Mani.
 Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.hebirobotics.com/).
 
 ## GitHub Project
-[Mani project](https://github.com/users/iHaruruki/projects/10)  
+**[Mani project](https://github.com/users/iHaruruki/projects/10)**  
 
 > [!TIP] 
 > **What is GitHub project?**  
