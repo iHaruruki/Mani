@@ -78,6 +78,24 @@ source install/setup.bash
 ```bash
 pip install -r src/hebi_ros2_examples/requirements.txt
 ```
+
+### Setup Moveit2
+```bash
+sudo apt install ros-jazzy-moveit
+```
+
+### Setup CycloneDDS
+```bash
+sudo apt install ros-$ROS_DISTRO-rmw-cyclonedds-cpp
+```
+You may want to add `export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp` to your ~/.bashrc to source it automatically.
+```bash
+nano ~/.bashrc
+```
+```text
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+```
+
 ### Setup Depth Camera
 Please check: [OrbbecSDK_ROS2_setup](https://github.com/iHaruruki/OrbbecSDK_ROS2_setup.git)
 
