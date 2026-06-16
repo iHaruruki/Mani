@@ -5,8 +5,9 @@ Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.
 ## GitHub Project
 [Mani project](https://github.com/users/iHaruruki/projects/10)  
 
-**What is GitHub project?**
-A project is an adaptable table, board, and roadmap that integrates with your issues and pull requests on GitHub to help you plan and track your work effectively at the user or organization level.
+> [!TIP] 
+> **What is GitHub project?**  
+> A project is an adaptable table, board, and roadmap that integrates with your issues and pull requests on GitHub to help you plan and track your work effectively at the user or organization level.
 
 ## 📦 Packages List
 HEBI robotics official packages.
