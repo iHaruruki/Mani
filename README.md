@@ -78,6 +78,24 @@ source install/setup.bash
 ```bash
 pip install -r src/hebi_ros2_examples/requirements.txt
 ```
+
+### Setup Moveit2
+```bash
+sudo apt install ros-jazzy-moveit
+```
+
+### Setup CycloneDDS
+```bash
+sudo apt install ros-$ROS_DISTRO-rmw-cyclonedds-cpp
+```
+You may want to add `export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp` to your ~/.bashrc to source it automatically.
+```bash
+nano ~/.bashrc
+```
+```text
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+```
+
 ### Setup Depth Camera
 Please check: [OrbbecSDK_ROS2_setup](https://github.com/iHaruruki/OrbbecSDK_ROS2_setup.git)
 
@@ -172,9 +190,9 @@ ros2 launch mani_description robot.launch.py
 # If TF fails to start.
 ros2 run tf2_ros static_transform_publisher 0.05 0.06 -0.065 0 0 0 base_link camera_link
 ```
-#### Run `object_detection_tf_node`
+#### Run YOLO node
 ```bash
-ros2 run yolo_ros2 object_detection_tf_node
+ros2 launch yolo_bringup yolo.launch.py model:="/home/robot/camera_data/datasets_2/runs/detect/train/weights/best.pt" use_3d:=True
 ```
 #### Publish robot description
 ```bash
@@ -211,7 +229,7 @@ Color-coded point cloud data is displayed.
 
 > [!NOTE]
 > Here is the link for the **yolo_ros2** package  
-> [yolo_ros2](https://github.com/iHaruruki/yolo_ros2.git)
+> [yolo_ros](https://github.com/iHaruruki/yolo_ros.git)
 
 ## ros bsg 
 ### ros2 bag play
