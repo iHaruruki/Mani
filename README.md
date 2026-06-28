@@ -190,9 +190,9 @@ ros2 launch mani_description robot.launch.py
 # If TF fails to start.
 ros2 run tf2_ros static_transform_publisher 0.05 0.06 -0.065 0 0 0 base_link camera_link
 ```
-#### Run `object_detection_tf_node`
+#### Run YOLO node
 ```bash
-ros2 run yolo_ros2 object_detection_tf_node
+ros2 launch yolo_bringup yolo.launch.py model:="/home/robot/camera_data/datasets_2/runs/detect/train/weights/best.pt" use_3d:=True
 ```
 #### Publish robot description
 ```bash
@@ -229,7 +229,7 @@ Color-coded point cloud data is displayed.
 
 > [!NOTE]
 > Here is the link for the **yolo_ros2** package  
-> [yolo_ros2](https://github.com/iHaruruki/yolo_ros2.git)
+> [yolo_ros](https://github.com/iHaruruki/yolo_ros.git)
 
 ## ros bsg 
 ### ros2 bag play
