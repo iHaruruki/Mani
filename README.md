@@ -75,7 +75,7 @@ colcon build --symlink-install
 source install/setup.bash
 ```
 
-Creation of virtual environments
+<!-- Creation of virtual environments
 ```bash
 cd ~/hebi_ws
 uv venv
@@ -88,7 +88,7 @@ uv pip install hebi-py scipy numpy lxml
 > [!NOTE]
 > Install `uv`  
 > [Installing uv](https://docs.astral.sh/uv/getting-started/installation/)
-
+-->
 ### Setup Moveit2
 ```bash
 sudo apt install ros-jazzy-moveit
