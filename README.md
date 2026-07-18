@@ -206,7 +206,7 @@ ros2 run tf2_ros static_transform_publisher 0.05 0.06 -0.065 0 0 0 base_link cam
 ```
 #### Run YOLO node
 ```bash
-ros2 launch yolo_bringup yolo.launch.py model:="yolo26m.pt use_3d:=True
+ros2 launch yolo_bringup yolo.launch.py model:="yolo26m.pt" device:="cuda:0" use_3d:=True
 ```
 ##### `model`
 When using a teddy bear: `model:="/home/robot/camera_data/datasets_2/runs/detect/train/weights/best.pt"`  
