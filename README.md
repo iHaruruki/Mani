@@ -47,6 +47,9 @@ git clone -b jazzy https://github.com/iHaruruki/hebi_hardware.git
 # Install bringup package
 git clone -b jazzy https://github.com/iHaruruki/hebi_bringup.git
 
+# hebi_control
+git clone https://github.com/iHaruruki/hebi_control.git
+
 # Install ROS2 Control dependencies
 sudo apt install ros-$ROS_DISTRO-ros2-control ros-$ROS_DISTRO-ros2-controllers -y
 
