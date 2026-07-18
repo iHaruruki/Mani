@@ -18,6 +18,7 @@ HEBI robotics official packages.
 * [hebi_ros2_examples](https://github.com/HebiRobotics/hebi_ros2_examples.git)
 * [hebi_hardware](https://github.com/HebiRobotics/hebi_hardware.git)
 * [hebi_bringup](https://github.com/HebiRobotics/hebi_bringup.git)
+* [hebi_control](https://github.com/iHaruruki/hebi_control.git)
 * [hebi_moveit_configs](https://github.com/HebiRobotics/hebi_moveit_configs.git)
 * [mani_capture](https://github.com/bozznyskrtt/mani_capture.git)
 
