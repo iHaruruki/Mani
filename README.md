@@ -67,17 +67,27 @@ cd ~/hebi_ws/
 rosdep update
 rosdep install --from-paths src --ignore-src -r -y
 ```
+
 Build the workspace and source it:
 ```bash
 cd ~/hebi_ws
 colcon build --symlink-install
 source install/setup.bash
 ```
-(Optional) Install `pip` dependencies for HRDF to URDF conversion script:
 
+Creation of virtual environments
 ```bash
-pip install -r src/hebi_ros2_examples/requirements.txt
+cd ~/hebi_ws
+uv venv
+source .venv/bin/activate
+uv pip install hebi-py scipy numpy lxml
+
+# (Optional) Install `pip` dependencies for HRDF to URDF conversion script:
+# pip install -r src/hebi_ros2_examples/requirements.txt
 ```
+> [!NOTE]
+> Install `uv`  
+> [Installing uv](https://docs.astral.sh/uv/getting-started/installation/)
 
 ### Setup Moveit2
 ```bash
