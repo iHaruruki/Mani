@@ -209,8 +209,8 @@ ros2 run tf2_ros static_transform_publisher 0.05 0.06 -0.065 0 0 0 base_link cam
 ros2 launch yolo_bringup yolo.launch.py model:=yolo26m.pt device:="cuda:0" use_3d:=True
 ```
 ##### `model`
-When using a teddy bear: `model:="/home/robot/camera_data/datasets_2/runs/detect/train/weights/best.pt"`  
-When using a handbell: `model:="yolo26m.pt"`
+When using a teddy bear: `model:="yolo26m.pt"`
+When using a handbell: `model:="/home/robot/camera_data/datasets_2/runs/detect/train/weights/best.pt"`
 
 ##### `device`
 CPU mode: `device:="cpu"`  
