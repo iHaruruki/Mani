@@ -208,7 +208,7 @@ ros2 run tf2_ros static_transform_publisher 0.05 0.06 -0.065 0 0 0 base_link cam
 ```bash
 ros2 launch yolo_bringup yolo.launch.py model:=yolo26m.pt device:="cuda:0" use_3d:=True
 ```
-##### `model`
+##### model
 When using a teddy bear: `model:="yolo26m.pt"`
 When using a handbell: `model:="/home/robot/camera_data/datasets_2/runs/detect/train/weights/best.pt"`
 
@@ -226,32 +226,6 @@ ros2 launch hebi_a-2085-06g_moveit_config move_group.launch.py
 ```bash
 ros2 launch hebi_control hebi_movers.launch.py
 ```
-<!-- ##### rviz2
-```bash
-rviz2
-``` -->
-- Click the Add button at the bottom of the Displays panel.
-Select the `By topic` tab, then `/depth_registered`:arrow_right:`/points`:arrow_right:`PointCloud2`, and click `OK`.  
-- Open the displayed item in the Displays panel and configure the following settings:
-
-| Setting Item | Dropdown List | Value |
-| --- | --- | --- |
-| Global Options | Fixed Frame:camera_link | camera_link |
-
-- Displaysパネル下部の`Add`ボタンをクリックし  
-`By topic`タブ`/depth_registered`:arrow_right:`/points`:arrow_right:`PointCloud2`と選択し，`OK`をクリック  
-- Displaysパネルに表示されたを開き，次の項目を設定する
-
-| 設定項目 | ドロップダウンリスト | 値 |
-| --- | --- | --- |
-| Global Options | Fixed Frame:camera_link | camera_link |
-
-Color-coded point cloud data is displayed.
-![sunsun](/meida/sunsun.png)
-
-> [!NOTE]
-> Here is the link for the **yolo_ros2** package  
-> [yolo_ros](https://github.com/iHaruruki/yolo_ros.git)
 
 ## ros bsg 
 ### ros2 bag play
