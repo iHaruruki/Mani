@@ -227,6 +227,32 @@ ros2 launch hebi_a-2085-06g_moveit_config move_group.launch.py
 ros2 launch hebi_control hebi_movers.launch.py
 ```
 
+## :bell: Hand Bell
+```bash
+ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
+```
+```bash
+ros2 launch orbbec_camera astra_stereo_u3.launch.py
+```
+```bash
+ros2 run tf2_ros static_transform_publisher 0.05 0.06 -0.065 0 0 0 base_link camera_link
+```
+```bash
+ros2 launch yolo_bringup yolo.launch.py model:=/home/robot/camera_data/datasets_2/runs/detect/train/weights/best.pt device:="cuda:0" use_3d:=True
+```
+```bash
+ros2 launch hebi_a-2085-06g_moveit_config move_group.launch.py
+```
+```bash
+source ~/hebi_ws/src/auduio_data/.venv/bin/activate
+ros2 run audio_data bell_ai.py check
+```
+```bash
+source ~/hebi_ws/src/auduio_data/.venv/bin/activate
+ros2 run audio_data bell_fsm.py
+```
+
+
 ## ros bsg 
 ### ros2 bag play
 ```bash
