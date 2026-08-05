@@ -244,6 +244,9 @@ ros2 launch yolo_bringup yolo.launch.py model:=/home/robot/camera_data/datasets_
 ros2 launch hebi_a-2085-06g_moveit_config move_group.launch.py
 ```
 ```bash
+ros2 launch hebi_control hebi_moversBell.launch.py
+```
+```bash
 source ~/hebi_ws/src/auduio_data/.venv/bin/activate
 ros2 run audio_data bell_ai.py check
 ```
