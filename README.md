@@ -21,6 +21,7 @@ HEBI robotics official packages.
 * [hebi_control](https://github.com/iHaruruki/hebi_control.git)
 * [hebi_moveit_configs](https://github.com/HebiRobotics/hebi_moveit_configs.git)
 * [mani_capture](https://github.com/bozznyskrtt/mani_capture.git)
+* [auduio_data](https://github.com/iHaruruki/auduio_data.git)
 
 ## 🛠️ Setting up your Workspace
 Run the following commands to set up and download the HEBI ROS 2 packages:
@@ -253,6 +254,10 @@ ros2 run audio_data bell_ai.py check
 ```bash
 source ~/hebi_ws/src/auduio_data/.venv/bin/activate
 ros2 run audio_data bell_fsm.py
+```
+```bash
+source ~/hebi_ws/src/auduio_data/.venv/bin/activate
+ros2 run audio_data display_note.py
 ```
 
 
