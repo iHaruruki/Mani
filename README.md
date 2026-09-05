@@ -22,6 +22,7 @@ HEBI robotics official packages.
 * [hebi_moveit_configs](https://github.com/HebiRobotics/hebi_moveit_configs.git)
 * [mani_capture](https://github.com/bozznyskrtt/mani_capture.git)
 * [auduio_data](https://github.com/iHaruruki/auduio_data.git)
+* [egpu-ubuntu](https://github.com/iHaruruki/egpu-ubuntu.git)
 
 ## 🛠️ Setting up your Workspace
 Run the following commands to set up and download the HEBI ROS 2 packages:
