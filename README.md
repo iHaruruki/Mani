@@ -126,6 +126,10 @@ HEBI arms can be controlled with ROS 2 in three ways:
 
 The standalone HEBI API provides direct control via the HEBI C++ API, ROS 2 Control offers standardized interfaces, and MoveIt provides advanced motion planning capabilities.
 
+<details>
+
+<summary>Standalone HEBI ROS2 API</summary>
+
 ### Standalone HEBI ROS2 API
 **There are two ways to send angles:**    
 #### Example1 : Using ros2 topic pub
@@ -153,6 +157,13 @@ ros2 topic pub /joint_trajectory trajectory_msgs/JointTrajectory "{
 ```bash
 ros2 launch hebi_ros2_examples arm_joystick_teleop.launch.py hebi_arm:=A-2085-06G generate_urdf:=false
 ```
+
+</details>
+
+<details>
+
+<summary>ROS2 Control</summary>
+
 ### ROS2 Control
 For ROS 2 control integration, you'll need the following three types of files:
 
@@ -174,6 +185,8 @@ ros2 topic echo /joint_states
 ```bash
 ros2 action send_goal /gripper_controller/gripper_cmd control_msgs/action/GripperCommand "{command: {position: 1.0, max_effort: 10.0}}"
 ```
+
+</details>
 
 ### Moveit
 #### Launch Robot Control(Use real hardware)
