@@ -260,7 +260,7 @@ ros2 launch hebi_control hebi_movers.launch.py
 
 ### :bear: Terry Bear :bear:
 
-This command makes Mani move and capture depth image.
+This command makes Mani move and captures a depth image.
 ```bash
 ros2 launch mani_capture mani_capture.launch.py
 ```
