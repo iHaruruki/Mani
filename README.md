@@ -120,12 +120,6 @@ Please check: [egpu-ubuntu](https://github.com/iHaruruki/egpu-ubuntu.git)
 ## 🎮 Usage
 HEBI arms can be controlled with ROS 2 in three ways:
 
-- [Standalone HEBI API](#standalone-hebi-ros2-api)
-- [ROS 2 Control](#ros2-control)
-- [MoveIt](#moveit)
-
-The standalone HEBI API provides direct control via the HEBI C++ API, ROS 2 Control offers standardized interfaces, and MoveIt provides advanced motion planning capabilities.
-
 <details>
 
 <summary>Standalone HEBI ROS2 API</summary>
@@ -170,6 +164,7 @@ For ROS 2 control integration, you'll need the following three types of files:
 - ROS2 Control Macro File - Defines hardware interfaces(`/hebi_description/urdf/kits/ros2_control/A-2085-06G.ros2_control.xacro`)
 - Combined URDF File - Combines the macro with the existing URDF(`/hebi_description/urdf/kits/ros2_control/A-2095-06G.urdf.xacro`)
 - Controller Parameter File - Configures controllers(`/hebi_bringup/config/A-2085-06G_controller.yaml`)
+
 > [!TIP]  
 > For standard HEBI kits, these files are already provided in the `hebi_bringup` and `hebi_description` packages.  
 
@@ -188,7 +183,11 @@ ros2 action send_goal /gripper_controller/gripper_cmd control_msgs/action/Grippe
 
 </details>
 
-### Moveit
+<details>
+
+<summary>Moveit2</summary>
+
+### Moveit2
 #### Launch Robot Control(Use real hardware)
 ```bash
 ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
@@ -244,7 +243,23 @@ ros2 launch hebi_a-2085-06g_moveit_config move_group.launch.py
 ros2 launch hebi_control hebi_movers.launch.py
 ```
 
-## :bell: Hand Bell
+</details>
+
+## Use Cases
+
+### :bear: Terry Bear :bear:
+
+This command makes Mani move and capture depth image.
+```bash
+ros2 launch mani_capture mani_capture.launch.py
+```
+
+This command does all the segmentation, prediction, subtraction,clustering, data cleaning and then reconstruct the 3d shapes using TSDF algorithm.
+```bash
+ros2 launch mani_capture mani_postprocess.launch.py
+```
+
+### :bell: Hand Bell :bell:
 ```bash
 ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
 ```
