@@ -2,6 +2,17 @@
 This is a package for Mani.  
 Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.hebirobotics.com/).
 
+| Specification Parameter | Hardware Information |
+| ----------------------- | -------------------- |
+| Product Series | X-Series Arm Kit |
+| Model Type | A-2085-06G | 
+| Degrees of Freedom (DoF) | 6-DoF |
+| Actuation Mechanism | Modular, Series Elastic Actuators (SEA) |
+| End-Effector Type | Two-fingered spring-loaded cable gripper | 
+
+> [!TIP]
+> [X-Series 6-DoF Arm](https://docs.hebi.us/resources/kits/assyInstructions/A-2085-06_Manual.pdf)
+
 ## GitHub Project
 **[Mani project](https://github.com/users/iHaruruki/projects/10)**  
 
