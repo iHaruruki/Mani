@@ -2,6 +2,17 @@
 This is a package for Mani.  
 Mani is a dual-arm robot based on the Arm Kits from [HEBI robotics](https://www.hebirobotics.com/).
 
+| Specification Parameter | Hardware Information |
+| ----------------------- | -------------------- |
+| Product Series | X-Series Arm Kit |
+| Model Type | A-2085-06G | 
+| Degrees of Freedom (DoF) | 6-DoF |
+| Actuation Mechanism | Modular, Series Elastic Actuators (SEA) |
+| End-Effector Type | Two-fingered spring-loaded cable gripper | 
+
+> [!TIP]
+> [X-Series 6-DoF Arm](https://docs.hebi.us/resources/kits/assyInstructions/A-2085-06_Manual.pdf)
+
 ## GitHub Project
 **[Mani project](https://github.com/users/iHaruruki/projects/10)**  
 
@@ -96,7 +107,7 @@ uv pip install hebi-py scipy numpy lxml
 -->
 ### Setup Moveit2
 ```bash
-sudo apt install ros-jazzy-moveit
+sudo apt install ros-$ROS_DISTRO-moveit
 ```
 
 ### Setup CycloneDDS
@@ -114,14 +125,15 @@ export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 ### Setup Depth Camera
 Please check: [OrbbecSDK_ROS2_setup](https://github.com/iHaruruki/OrbbecSDK_ROS2_setup.git)
 
+### Setup GPU
+Please check: [egpu-ubuntu](https://github.com/iHaruruki/egpu-ubuntu.git)
+
 ## 🎮 Usage
 HEBI arms can be controlled with ROS 2 in three ways:
 
-- [Standalone HEBI API](#standalone-hebi-ros2-api)
-- [ROS 2 Control](#ros2-control)
-- [MoveIt](#moveit)
+<details>
 
-The standalone HEBI API provides direct control via the HEBI C++ API, ROS 2 Control offers standardized interfaces, and MoveIt provides advanced motion planning capabilities.
+<summary>Standalone HEBI ROS2 API</summary>
 
 ### Standalone HEBI ROS2 API
 **There are two ways to send angles:**    
@@ -150,12 +162,20 @@ ros2 topic pub /joint_trajectory trajectory_msgs/JointTrajectory "{
 ```bash
 ros2 launch hebi_ros2_examples arm_joystick_teleop.launch.py hebi_arm:=A-2085-06G generate_urdf:=false
 ```
+
+</details>
+
+<details>
+
+<summary>ROS2 Control</summary>
+
 ### ROS2 Control
 For ROS 2 control integration, you'll need the following three types of files:
 
 - ROS2 Control Macro File - Defines hardware interfaces(`/hebi_description/urdf/kits/ros2_control/A-2085-06G.ros2_control.xacro`)
 - Combined URDF File - Combines the macro with the existing URDF(`/hebi_description/urdf/kits/ros2_control/A-2095-06G.urdf.xacro`)
 - Controller Parameter File - Configures controllers(`/hebi_bringup/config/A-2085-06G_controller.yaml`)
+
 > [!TIP]  
 > For standard HEBI kits, these files are already provided in the `hebi_bringup` and `hebi_description` packages.  
 
@@ -172,7 +192,13 @@ ros2 topic echo /joint_states
 ros2 action send_goal /gripper_controller/gripper_cmd control_msgs/action/GripperCommand "{command: {position: 1.0, max_effort: 10.0}}"
 ```
 
-### Moveit
+</details>
+
+<details>
+
+<summary>Moveit2</summary>
+
+### Moveit2
 #### Launch Robot Control(Use real hardware)
 ```bash
 ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
@@ -228,7 +254,23 @@ ros2 launch hebi_a-2085-06g_moveit_config move_group.launch.py
 ros2 launch hebi_control hebi_movers.launch.py
 ```
 
-## :bell: Hand Bell
+</details>
+
+## Use Cases
+
+### :bear: Terry Bear :bear:
+
+This command makes Mani move and captures a depth image.
+```bash
+ros2 launch mani_capture mani_capture.launch.py
+```
+
+This command does all the segmentation, prediction, subtraction,clustering, data cleaning and then reconstruct the 3d shapes using TSDF algorithm.
+```bash
+ros2 launch mani_capture mani_postprocess.launch.py
+```
+
+### :bell: Hand Bell :bell:
 ```bash
 ros2 launch hebi_bringup bringup_arm.launch.py hebi_arm:=A-2085-06G use_mock_hardware:=false use_gripper:=true
 ```
@@ -261,7 +303,7 @@ ros2 run audio_data display_note.py
 ```
 
 
-## ros bsg 
+<!-- ## rosbsg 
 ### ros2 bag play
 ```bash
 rviz2 -d ~/hebi_ws/src/hebi_description/rviz/hebi.rviz
@@ -274,7 +316,7 @@ ros2 run yolo_ros2 object_detection_tf_node
 ```
 ```bash
 ros2 bag play ~/ros2_ws/ros2_bag/rosbag2_xxxx_xx_xx-xx_xx_xx/
-```
+``` -->
 
 ## 👤 Authors
 
