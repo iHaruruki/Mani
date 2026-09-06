@@ -292,7 +292,7 @@ ros2 run audio_data display_note.py
 ```
 
 
-## ros bsg 
+<!-- ## rosbsg 
 ### ros2 bag play
 ```bash
 rviz2 -d ~/hebi_ws/src/hebi_description/rviz/hebi.rviz
@@ -305,7 +305,7 @@ ros2 run yolo_ros2 object_detection_tf_node
 ```
 ```bash
 ros2 bag play ~/ros2_ws/ros2_bag/rosbag2_xxxx_xx_xx-xx_xx_xx/
-```
+``` -->
 
 ## 👤 Authors
 
