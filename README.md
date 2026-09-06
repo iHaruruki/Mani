@@ -22,7 +22,6 @@ HEBI robotics official packages.
 * [hebi_moveit_configs](https://github.com/HebiRobotics/hebi_moveit_configs.git)
 * [mani_capture](https://github.com/bozznyskrtt/mani_capture.git)
 * [auduio_data](https://github.com/iHaruruki/auduio_data.git)
-* [egpu-ubuntu](https://github.com/iHaruruki/egpu-ubuntu.git)
 
 ## 🛠️ Setting up your Workspace
 Run the following commands to set up and download the HEBI ROS 2 packages:
@@ -97,7 +96,7 @@ uv pip install hebi-py scipy numpy lxml
 -->
 ### Setup Moveit2
 ```bash
-sudo apt install ros-jazzy-moveit
+sudo apt install ros-$ROS_DISTRO-moveit
 ```
 
 ### Setup CycloneDDS
@@ -114,6 +113,9 @@ export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 
 ### Setup Depth Camera
 Please check: [OrbbecSDK_ROS2_setup](https://github.com/iHaruruki/OrbbecSDK_ROS2_setup.git)
+
+### Setup GPU
+Please check: [egpu-ubuntu](https://github.com/iHaruruki/egpu-ubuntu.git)
 
 ## 🎮 Usage
 HEBI arms can be controlled with ROS 2 in three ways:
