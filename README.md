@@ -303,6 +303,9 @@ ros2 run audio_data display_note.py
 ```
 
 
+## Dual Armed systems
+![dual_armed_system](/meida/dual_armed_system.md)
+
 <!-- ## rosbsg 
 ### ros2 bag play
 ```bash
